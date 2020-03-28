@@ -538,24 +538,29 @@ hostname = *.amemv.com,*.iydsj.com,*.k.sohu.com,*.tv.sohu.com,*.kakamobi.cn,*.ki
 # > 新浪
 ^https?:\/\/edit\.sinaapp\.com\/ua\?t=adv url reject-200
 # >> 新浪微博
-^https?:\/\/weibointl.api.weibo.cn/portal.php\?a=get_coopen_ads url reject-200
-^https?:\/\/sdkapp\.uve\.weibo\.com\/interface\/sdk\/(actionad|sdkad)\.php url reject-200
-^https?:\/\/wbapp\.uve\.weibo\.com\/wbapplua\/wbpullad\.lua url reject-200
-^https?:\/\/weibointl\.api\.weibo\.cn\/portal\.php\?a=get_coopen_ads url reject-200
-^https?:\/\/simg\.s\.weibo\.com\/.+_ios\d{2}\.gif url reject-200
-^https?:\/\/storage\.wax\.weibo\.com\/\w+\.(png|jpg|mp4) url reject-200
-^https?:\/\/weibointl.api.weibo.cn/portal.php\?a=get_coopen_ads url reject-200
 ^https?:\/\/ad\d\.sina\.com url reject-200
 ^https?:\/\/ad\d\.sina\.com.cn url reject-200
+^https?:\/\/api.weibo.cn/2/statuses/extend\?gsid= reject-200
 ^https?:\/\/d\d\.sina\.com\.cn url reject-200
 ^https?:\/\/d\d\.sinaimg\.cn url reject-200
+^https?:\/\/free.sinaimg.cn/u1.img.mobile.sina.cn reject-200
 ^https?:\/\/sax\d\.sina\.com\.cn url reject-200
 ^https?:\/\/sax\d\.sina\.com\.cn url reject-200
 ^https?:\/\/sax\w?\.sina\.cn url reject-200
 ^https?:\/\/sax\w?\.sina\.com\.cn url reject-200
+^https?:\/\/sdkapp\.uve\.weibo\.com\/interface\/sdk\/(actionad|sdkad)\.php url reject-200
+^https?:\/\/simg\.s\.weibo\.com\/.+_ios\d{2}\.gif url reject-200
+^https?:\/\/storage\.wax\.weibo\.com\/\w+\.(png|jpg|mp4) url reject-200
 ^https?:\/\/u1\.img\.mobile\.sina\.cn\/public\/files\/image\/\d{3}x\d{2,4}.+(png|jpg|mp4) url reject-200
-^https?:\/\/api.weibo.cn/2/statuses/extend\?gsid= - reject
-^https?:\/\/free.sinaimg.cn/u1.img.mobile.sina.cn - reject
+^https?:\/\/weibointl.api.weibo.cn/portal.php\?a=get_coopen_ads url reject-200
+^https?:\/\/wbapp\.uve\.weibo\.com\/wbapplua\/wbpullad\.lua url reject-200
+^https?:\/\/weibointl\.api\.weibo\.cn\/portal\.php\?a=get_coopen_ads url reject-200
+^https?:\/\/weibointl.api.weibo.cn/portal.php\?a=get_coopen_ads url reject-200
+
+^https?://m?api\.weibo\.c(n|om)/2/(statuses/(unread|extend|positives/get|(friends|video)(/|_)timeline)|stories/(video_stream|home_list)|(groups|fangle)/timeline|profile/statuses|comments/build_comments|photo/recommend_list|service/picfeed|searchall|cardlist|page|\!/photos/pic_recommend_status) url script-response-body wb_ad.js
+^https?://(sdk|wb)app\.uve\.weibo\.com(/interface/sdk/sdkad.php|/wbapplua/wbpullad.lua) url script-response-body wb_launch.js
+
+
 # >> 新浪天气通
 ^https?:\/\/tqt\.weibo\.cn\/overall\/redirect\.php\?r=tqt_sdkad url reject-200
 ^https?:\/\/tqt\.weibo\.cn\/overall\/redirect\.php\?r=tqtad url reject-200
