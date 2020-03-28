@@ -144,6 +144,7 @@ DOMAIN-SUFFIX,unityads.unity3d.com,REJECT
 DOMAIN,optimus-ads.amap.com,REJECT
 DOMAIN,optimus-ads.amap.com.w.alikunlun.com,REJECT
 DOMAIN,tunion-api.m.taobao.com,REJECT
+DOMAIN,unidesk.alicdn.com,REJECT
 #淘宝
 DOMAIN-SUFFIX,apoll.m.taobao.com,REJECT
 DOMAIN-SUFFIX,agoodm.m.taobao.com,REJECT
