@@ -603,22 +603,27 @@ hostname = *.amemv.com,*.iydsj.com,*.k.sohu.com,*.tv.sohu.com,*.kakamobi.cn,*.ki
 ^https?:\/\/a\.qiumibao\.com\/activities\/config\.php url reject-200
 ^https?:\/\/.+\/allOne\.php\?ad_name url reject-200
 # > 知乎
-^https?:\/\/www\.zhihu\.com\/api\/v4\/community-ad\/ url reject-200
-^https?:\/\/api\.zhihu\.com\/(launch|real_time) url reject-200
-^https?:\/\/api\.zhihu\.com\/commercial_api\/(launch|real_time) url reject-200
-^https?:\/\/api\.zhihu\.com\/fringe\/ad url reject-200
-^https?:\/\/api\.zhihu\.com\/ad- url reject-200
-^https?:\/\/(api|www)\.zhihu\.com\/((terms\/privacy\/confirm|app_config|banner|commercial_api\/(launch|real_time))|(fringe|zst|drama|adx|commercial|real_time|ad-style-service|banners|market/popover|mqtt|.*(launch|featured-comment-ad|guide|recommendations|community-ad)|search/(top|tab|preset)|ab)) url reject-200
-^https?:\/\/api\.zhihu\.com\/ab\/api url reject-200
-^https?:\/\/api\.zhihu\.com\/ad-style-service url reject-200
-^https?:\/\/api\.zhihu\.com\/app_config url reject-200
-^https?:\/\/api\.zhihu\.com\/appview\/api\/v4\/answers.+recommendations url reject-200
-^https?:\/\/api\.zhihu\.com\/banner url reject-200
-^https?:\/\/api\.zhihu\.com\/market\/popover url reject-200
-^https?:\/\/api\.zhihu\.com\/search\/preset_words url reject-200
-^https?:\/\/api\.zhihu\.com\/search\/top_search url reject-200
-^https?:\/\/api\.zhihu\.com\/zst/events url reject-200
-^https?:\/\/www\.zhihu\.com\/terms\/privacy\/confirm url reject-200
+#^https?:\/\/www\.zhihu\.com\/api\/v4\/community-ad\/ url reject-200
+#^https?:\/\/api\.zhihu\.com\/(launch|real_time) url reject-200
+#^https?:\/\/api\.zhihu\.com\/commercial_api\/(launch|real_time) url reject-200
+#^https?:\/\/api\.zhihu\.com\/fringe\/ad url reject-200
+#^https?:\/\/api\.zhihu\.com\/ad- url reject-200
+#^https?:\/\/(api|www)\.zhihu\.com\/((terms\/privacy\/confirm|app_config|banner|commercial_api\/(launch|real_time))|(fringe|zst|drama|adx|commercial|real_time|ad-style-service|banners|market/popover|mqtt|.*(launch|featured-comment-ad|guide|recommendations|community-ad)|search/(top|tab|preset)|ab)) url reject-200
+#^https?:\/\/api\.zhihu\.com\/ab\/api url reject-200
+#^https?:\/\/api\.zhihu\.com\/ad-style-service url reject-200
+#^https?:\/\/api\.zhihu\.com\/app_config url reject-200
+#^https?:\/\/api\.zhihu\.com\/appview\/api\/v4\/answers.+recommendations url reject-200
+#^https?:\/\/api\.zhihu\.com\/banner url reject-200
+#^https?:\/\/api\.zhihu\.com\/market\/popover url reject-200
+#^https?:\/\/api\.zhihu\.com\/search\/preset_words url reject-200
+#^https?:\/\/api\.zhihu\.com\/search\/top_search url reject-200
+#^https?:\/\/api\.zhihu\.com\/zst/events url reject-200
+#^https?:\/\/www\.zhihu\.com\/terms\/privacy\/confirm url reject-200
+
+^https?://api\.zhihu\.com/moments\?(action|feed_type) url script-response-body zhihu_feed.js
+^https?://api\.zhihu\.com/topstory/recommend url script-response-body zhihu_recommend.js
+^https?://api\.zhihu\.com/v4/questions url script-response-body zhihu_answer.js
+^https?://api\.zhihu\.com/people/ url script-response-body zhihu_people.js
 
 # > 追书神器
 ^https?:\/\/(api|b)\.zhuishushenqi\.com\/advert url reject-200
