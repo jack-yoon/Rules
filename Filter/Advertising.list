@@ -412,7 +412,6 @@ DOMAIN,ad.bn.netease.com,REJECT
 DOMAIN,ad.yixin.im,REJECT
 DOMAIN,admusicpic.music.126.net,REJECT
 DOMAIN,gorgon.youdao.com,REJECT
-DOMAIN,iadmat.nosdn.127.net,REJECT
 DOMAIN,iadmusicmat.music.126.net,REJECT
 DOMAIN,iadmusicmatvideo.music.126.net,REJECT
 DOMAIN,impservice.dictapp.youdao.com,REJECT
