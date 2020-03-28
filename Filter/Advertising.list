@@ -167,6 +167,12 @@ DOMAIN-SUFFIX,temai.taobao.com,REJECT
 DOMAIN-SUFFIX,textlink.simba.taobao.com,REJECT
 DOMAIN-SUFFIX,unitacs.m.taobao.com,REJECT
 DOMAIN-SUFFIX,w.m.taobao.com,REJECT
+
+DOMAIN-SUFFIX,adash.m.taobao.com,REJECT
+DOMAIN-SUFFIX,amdc.m.taobao.com,REJECT
+DOMAIN-SUFFIX,c-adash.m.taobao.com,REJECT
+DOMAIN-SUFFIX,m-adash.m.taobao.com,REJECT
+DOMAIN-SUFFIX,taobayun.cn,REJECT
 # > AutoHome
 DOMAIN,adproxy.autohome.com.cn,REJECT
 DOMAIN,rd.autohome.com.cn,REJECT
