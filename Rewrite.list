@@ -15,6 +15,7 @@ hostname = *.amemv.com,*.iydsj.com,*.k.sohu.com,*.tv.sohu.com,*.kakamobi.cn,*.ki
 # Redirect False to True
 # > IGN China to IGN Global
 ^https?:\/\/(www.)?ign\.xn--fiqs8s\/ url 302 http://cn.ign.com/ccpref/us
+
 # > Fake Website Made By C&J Marketing
 ^https?:\/\/(www.)?abbyychina\.com\/ url 302 https://www.abbyy.cn/
 ^https?:\/\/(www.)?bartender\.cc\/ url 302 https://www.macbartender.com/
@@ -502,6 +503,7 @@ hostname = *.amemv.com,*.iydsj.com,*.k.sohu.com,*.tv.sohu.com,*.kakamobi.cn,*.ki
 ^https?:\/\/client\.mail\.163\.com\/apptrack\/confinfo\/searchMultiAds url reject-200
 # >> 网易云音乐
 ^https?:\/\/.+\/eapi\/(ad|log)\/ url reject-200
+^https?:\/\/iad.*mat\.music\.12[67]\.net/\w+\.(jpg|mp4) url reject-200
 ^https?:\/\/interface3?.music.163.com/eapi/(ad|abtest|sp|hot|mlivestream|store|mlog|search/(specialkeyword|defaultkeyword|hot)) url reject-200
 # >> 网易考拉
 ^https?:\/\/sp\.kaola\.com\/api\/openad url reject-200
