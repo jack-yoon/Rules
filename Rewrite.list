@@ -603,11 +603,6 @@ hostname = *.amemv.com,*.iydsj.com,*.k.sohu.com,*.tv.sohu.com,*.kakamobi.cn,*.ki
 ^https?:\/\/a\.qiumibao\.com\/activities\/config\.php url reject-200
 ^https?:\/\/.+\/allOne\.php\?ad_name url reject-200
 # > 知乎
-^https?\/\/api\.zhihu\.com\/moments/recommend url script-response-body zhihu_feed.js
-^https?\/\/api\.zhihu\.com\/topstory/recommend url script-response-body zhihu_recommend.js
-^https?\/\/api\.zhihu\.com\/v4/questions url script-response-body zhihu_answer.js
-^https?\/\/api\.zhihu\.com\/people/ url script-response-body zhihu_people.js
-
 ^https?:\/\/www\.zhihu\.com\/api\/v4\/community-ad\/ url reject-200
 ^https?:\/\/api\.zhihu\.com\/(launch|real_time) url reject-200
 ^https?:\/\/api\.zhihu\.com\/commercial_api\/(launch|real_time) url reject-200
