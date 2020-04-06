@@ -2,7 +2,7 @@ hostname = *.amemv.com,*.iydsj.com,*.k.sohu.com,*.tv.sohu.com,*.kakamobi.cn,*.ki
 
 #脚本Script
 #zhihu
-^https?://api\.zhihu\.com/moments\?(action|feed_type) url script-response-body zhihu_feed.js
+^https?://api\.zhihu\.com/moments/recommend url script-response-body zhihu_feed.js
 ^https?://api\.zhihu\.com/topstory/recommend url script-response-body zhihu_recommend.js
 ^https?://api\.zhihu\.com/v4/questions url script-response-body zhihu_answer.js
 ^https?://api\.zhihu\.com/people/ url script-response-body zhihu_people.js
@@ -613,7 +613,7 @@ hostname = *.amemv.com,*.iydsj.com,*.k.sohu.com,*.tv.sohu.com,*.kakamobi.cn,*.ki
 ^https?:\/\/a\.qiumibao\.com\/activities\/config\.php url reject-200
 ^https?:\/\/.+\/allOne\.php\?ad_name url reject-200
 # > 知乎
-^https?:\/\/(api|www)\.zhihu\.com\/.*(launch|featured-comment-ad|guide|recommendations|community-ad) url reject-200
+^https?:\/\/(api|www)\.zhihu\.com\/.*(community-ad|extended|featured-comment-ad|guide|launch|recommendations) url reject-200
 ^https?:\/\/(api|www)\.zhihu\.com\/ab\/api url reject-200
 ^https?:\/\/(api|www)\.zhihu\.com\/ad- url reject-200
 ^https?:\/\/(api|www)\.zhihu\.com\/(adx|commercial|drama|mqtt|zst) url reject-200
@@ -628,7 +628,8 @@ hostname = *.amemv.com,*.iydsj.com,*.k.sohu.com,*.tv.sohu.com,*.kakamobi.cn,*.ki
 ^https?:\/\/(api|www)\.zhihu\.com\/market\/popover url reject-200
 ^https?:\/\/(api|www)\.zhihu\.com\/search\/(top|tab|preset|preset_words|top_search)preset_words url reject-200
 ^https?:\/\/(api|www)\.zhihu\.com\/terms\/privacy\/confirm url reject-200
-^https?:\/\/(api|www)\.zhihu\.com\/zst/events url reject-200
+^https?:\/\/(api|www)\.zhihu\.com\/xen url reject-200
+^https?:\/\/(api|www)\.zhihu\.com\/zst url reject-200
 
 # > 追书神器
 ^https?:\/\/(api|b)\.zhuishushenqi\.com\/advert url reject-200
