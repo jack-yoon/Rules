@@ -6,12 +6,6 @@ hostname = *.amemv.com,*.iydsj.com,*.k.sohu.com,*.tv.sohu.com,*.kakamobi.cn,*.ki
 ^https?://api\.zhihu\.com/topstory/recommend url script-response-body zhihu_recommend.js
 ^https?://api\.zhihu\.com/v4/questions url script-response-body zhihu_answer.js
 ^https?://api\.zhihu\.com/people/ url script-response-body zhihu_people.js
-#taobao
-^http://amdc\.m\.taobao\.com/amdc/mobileDispatch url script-response-body tb_price.js
-^https?://trade-acs\.m\.taobao\.com/gw/mtop\.taobao\.detail\.getdetail url script-response-body tb_price.js
-#JD
-^https?://api\.m\.jd\.com/client\.action\?functionId=(wareBusiness|serverConfig) url script-response-body jd_price.js
-
 
 # Redirect Google Search Service
 ^https?:\/\/(www.)?(g|google)\.cn url 302 https://www.google.com
