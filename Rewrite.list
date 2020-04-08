@@ -12,6 +12,7 @@ hostname = *.amemv.com,*.iydsj.com,*.k.sohu.com,*.tv.sohu.com,*.kakamobi.cn,*.ki
 
 # Redirect HTTP to HTTPS
 ^https?:\/\/(www.)?taobao\.com\/ url 302 https://taobao.com/
+^https?://m.taobao.com/ url 302 https://m.taobao.com/
 ^https?:\/\/(www.)?jd\.com\/ url 302 https://www.jd.com/
 ^https?:\/\/(www.)?mi\.com\/ url 302 https://www.mi.com/
 ^https?:\/\/you\.163\.com\/ url 302 https://you.163.com/
@@ -93,12 +94,15 @@ hostname = *.amemv.com,*.iydsj.com,*.k.sohu.com,*.tv.sohu.com,*.kakamobi.cn,*.ki
 ^https?:\/\/acs\.m\.taobao\.com\/gw\/mtop\.taobao\.idle\.home\.welcome\/ url reject-200
 # >> 飞猪
 ^https?:\/\/acs\.m\.taobao\.com\/gw\/mtop\.trip\.activity\.querytmsresources\/ url reject-200
+^https?:\/\/acs\.m\.taobao\.com\/gw\/mtop\.trip\.activity\.querytmsresources\/1\.0\?type=originaljson url reject-200
 # >> 淘票票
 ^https?:\/\/acs\.m\.taobao\.com\/gw\/mtop\.film\.mtopadvertiseapi\.queryadvertise\/ url reject-200
 # >> 口碑
 ^https?:\/\/render\.alipay\.com\/p\/s\/h5data\/prod\/spring-festival-2019-h5data\/popup-h5data\.json url reject-200
 ^https?:\/\/acs\.m\.taobao\.com\/gw\/mtop\.o2o\.ad\.gateway\.get\/ url reject-200
 ^https?:\/\/guide-acs\.m\.taobao\.com\/gw\/mtop\.taobao\.wireless\.home\.splash\.awesome\.get\/ url reject-200
+#淘宝
+^https?:\/\/acs\.m\.taobao\.com\/gw\/mtop\.common\.fetTimestamp url reject-200
 # >> 高德地图
 ^https?:\/\/m\d\.amap\.com\/ws\/valueadded\/alimama\/splash_screen\/ url reject-200
 # >> 优酷
@@ -487,10 +491,7 @@ hostname = *.amemv.com,*.iydsj.com,*.k.sohu.com,*.tv.sohu.com,*.kakamobi.cn,*.ki
 ^https?:\/\/mrobot\.pcauto\.com\.cn\/xsp\/s\/auto\/info\/preload\.xsp url reject-200
 # > 途牛
 ^https?:\/\/m\.tuniu\.com\/api\/operation\/splash\/ url reject-200
-#淘宝
-^https?://m.taobao.com/ url 302 https://m.taobao.com/
-^https?:\/\/acs\.m\.taobao\.com\/gw\/mtop\.trip\.activity\.querytmsresources\/1\.0\?type=originaljson url reject-200
-^https?:\/\/acs\.m\.taobao\.com\/gw\/mtop\.common\.fetTimestamp url reject-200
+
 
 
 # V
