@@ -6,18 +6,31 @@ hostname = *.amemv.com,*.iydsj.com,*.k.sohu.com,*.tv.sohu.com,*.kakamobi.cn,*.ki
 ^https?://api\.zhihu\.com/topstory/recommend url script-response-body zhihu_recommend.js
 ^https?://api\.zhihu\.com/v4/questions url script-response-body zhihu_answer.js
 ^https?://api\.zhihu\.com/people/ url script-response-body zhihu_people.js
+# 阿里
+^https?:\/\/amdc\.m\.taobao\.com\/amdc\/mobileDispatch url request-body &domain=.+?& request-body &
+^https?:\/\/acs\.m\.taobao\.com\/gw\/mtop\.alimama\.etao\.config\.query\/ url response-body "ems_etao_advertise" response-body ""
+
+
+# header-rewrite
+# 百度贴吧
+^https?+:\/\/(?:c\.)?+tieba\.baidu\.com\/(?>f|p) url request-header (\r\n)User-Agent:.+ request-header $1User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.4 Safari/605.1.15
+^https?+:\/\/jump2\.bdimg\.com\/(?>f|p) url request-header (\r\n)User-Agent:.+ request-header $1User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.4 Safari/605.1.15
+# 百度知道
+^https?+:\/\/zhidao\.baidu\.com url request-header (\r\n)User-Agent:.+ request-header $1User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.4 Safari/605.1.15
+# 知乎
+^https?+:\/\/www\.zhihu\.com\/question url request-header (\r\n)User-Agent:.+ request-header $1User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.4 Safari/605.1.15
 
 # Redirect Google Search Service
 ^https?:\/\/(www.)?(g|google)\.cn url 302 https://www.google.com
 
 # Redirect HTTP to HTTPS
-^https?:\/\/(www.)?taobao\.com\/ url 302 https://taobao.com/
-^https?://m.taobao.com/ url 302 https://m.taobao.com/
-^https?:\/\/(www.)?jd\.com\/ url 302 https://www.jd.com/
-^https?:\/\/(www.)?mi\.com\/ url 302 https://www.mi.com/
-^https?:\/\/you\.163\.com\/ url 302 https://you.163.com/
-^https?:\/\/(www.)?suning\.com\/ url 302 https://suning.com/
-^https?:\/\/(www.)?yhd\.com\/ url 302 https://yhd.com/
+^http:\/\/(www.)?taobao\.com\/ url 302 https://taobao.com/
+^http://m.taobao.com/ url 302 https://m.taobao.com/
+^http:\/\/(www.)?jd\.com\/ url 302 https://www.jd.com/
+^http:\/\/(www.)?mi\.com\/ url 302 https://www.mi.com/
+^http:\/\/you\.163\.com\/ url 302 https://you.163.com/
+^http:\/\/(www.)?suning\.com\/ url 302 https://suning.com/
+^http:\/\/(www.)?yhd\.com\/ url 302 https://yhd.com/
 
 # Redirect False to True
 # > IGN China to IGN Global
@@ -430,8 +443,6 @@ hostname = *.amemv.com,*.iydsj.com,*.k.sohu.com,*.tv.sohu.com,*.kakamobi.cn,*.ki
 ^https?:\/\/img01\.10101111cdn\.com\/adpos\/ url reject-200
 # > 扫描全能王
 ^https?:\/\/api\.intsig\.net\/user\/cs\/operating\/app\/get_startpic\/ url reject-200
-# > 省点
-^https?:\/\/api\.waitwaitpay\.com\/\/api\/splash url reject-200
 # > 搜狗
 ^https?:\/\/business-cdn\.shouji\.sogou\.com\/wapdl\/hole\/.+\.jpg url reject-200
 
