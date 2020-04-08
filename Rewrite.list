@@ -158,7 +158,7 @@ hostname = *.amemv.com,*.iydsj.com,*.k.sohu.com,*.tv.sohu.com,*.kakamobi.cn,*.ki
 ^https?:\/\/issuecdn\.baidupcs\.com\/issue\/netdisk\/guanggao\/ url reject-200
 # >> 百度贴吧
 ^https?:\/\/c\.tieba\.baidu\.com\/c\/s\/splashSchedule url reject-200
-^https?:\/\/c\.tieba\.baidu\.com\/c\/s\/logtogether\?cmd= url reject-200
+;^https?:\/\/c\.tieba\.baidu\.com\/c\/s\/logtogether\?cmd= url reject-200
 ^https?:\/\/c\.tieba\.baidu\.com\/c\/f\/forum\/getAdInfo url reject-200
 ^https?:\/\/c\.tieba\.baidu\.com\/c\/p\/img\?src= url reject-200
 ^https?:\/\/c\.tieba\.baidu\.com\/\w+\/\w+\/(sync|newRnSync|mlog) url reject-200
