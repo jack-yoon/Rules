@@ -137,21 +137,21 @@ hostname = *.amemv.com,*.iydsj.com,*.k.sohu.com,*.tv.sohu.com,*.kakamobi.cn,*.ki
 
 # B
 # > 百度
-;^https?:\/\/api\d\.tuisong\.baidu\.com url reject-200
-;^https?:\/\/log\..+\.baidu\.com url reject-200
-;^https?:\/\/sa\d\.tuisong\.baidu\.com url reject-200
-;^https?:\/\/t\d{2}\.baidu\.com url reject-200
-;^https?:\/\/afd\.baidu\.com\/afd\/entry url reject-200
-;^https?:\/\/als\.baidu\.com\/clog\/clog url reject-200
-;^https?:\/\/baichuan\.baidu\.com\/rs\/adpmobile\/launch url reject-200
-;^https?:\/\/bj\.bcebos\.com\/fc-feed\/0\/pic\/ url reject-200
-;^https?:\/\/fcvbjbcebos\.baidu\.com\/.+\.mp4 url reject-200
-;^https?:\/\/wapwenku\.baidu\.com\/view\/fengchao\/ url reject-200
-;^https?:\/\/wapwenku\.baidu\.com\/view\/fengchaoTwojump\/ url reject-200
-;^https?:\/\/wenku\.baidu\.com\/shifen\/ url reject-200
-;^https?:\/\/gss0\.bdstatic\.com\/.+\/static\/wiseindex\/img\/bd_red_packet\.png url reject-200
-;^https?:\/\/tb1\.bdstatic\.com\/tb\/cms\/ngmis\/adsense\/*\.jpg url reject-200
-;^https?:\/\/tb2\.bdstatic\.com\/tb\/mobile\/spb\/widget\/jump url reject-200
+^https?:\/\/api\d\.tuisong\.baidu\.com url reject-200
+^https?:\/\/log\..+\.baidu\.com url reject-200
+^https?:\/\/sa\d\.tuisong\.baidu\.com url reject-200
+^https?:\/\/t\d{2}\.baidu\.com url reject-200
+^https?:\/\/afd\.baidu\.com\/afd\/entry url reject-200
+^https?:\/\/als\.baidu\.com\/clog\/clog url reject-200
+^https?:\/\/baichuan\.baidu\.com\/rs\/adpmobile\/launch url reject-200
+^https?:\/\/bj\.bcebos\.com\/fc-feed\/0\/pic\/ url reject-200
+^https?:\/\/fcvbjbcebos\.baidu\.com\/.+\.mp4 url reject-200
+^https?:\/\/wapwenku\.baidu\.com\/view\/fengchao\/ url reject-200
+^https?:\/\/wapwenku\.baidu\.com\/view\/fengchaoTwojump\/ url reject-200
+^https?:\/\/wenku\.baidu\.com\/shifen\/ url reject-200
+^https?:\/\/gss0\.bdstatic\.com\/.+\/static\/wiseindex\/img\/bd_red_packet\.png url reject-200
+^https?:\/\/tb1\.bdstatic\.com\/tb\/cms\/ngmis\/adsense\/*\.jpg url reject-200
+^https?:\/\/tb2\.bdstatic\.com\/tb\/mobile\/spb\/widget\/jump url reject-200
 # >> 百度网盘
 ^https?:\/\/pan\.baidu\.com\/rest\/2.0\/pcs\/adx url reject-200
 ^https?:\/\/pan\.baidu\.com\/act\/api\/activityentry url reject-200
