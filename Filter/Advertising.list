@@ -144,6 +144,9 @@ DOMAIN,optimus-ads.amap.com,REJECT
 DOMAIN,optimus-ads.amap.com.w.alikunlun.com,REJECT
 DOMAIN,tunion-api.m.taobao.com,REJECT
 DOMAIN,unidesk.alicdn.com,REJECT
+IP-CIDR,112.29.211.120/32,REJECT
+IP-CIDR,203.119.206.64/32,REJECT
+IP-CIDR, 203.119.211.219/32,REJECT
 #淘宝
 
 DOMAIN-SUFFIX,ai.taobao.com,REJECT
@@ -494,7 +497,6 @@ DOMAIN-SUFFIX,jsqmt.qq.com,REJECT
 DOMAIN-SUFFIX,lives.l.qq.com,REJECT
 DOMAIN-SUFFIX,livep.l.qq.com,REJECT
 DOMAIN-SUFFIX,news.l.qq.com,REJECT
-DOMAIN-SUFFIX,mi.gdt.qq.com,REJECT
 DOMAIN-SUFFIX,livep.l.ott.video.qq.com,REJECT
 DOMAIN-SUFFIX,lives.l.ott.video.qq.com,REJECT
 DOMAIN-SUFFIX,masdk.3g.qq.com,REJECT
