@@ -6,7 +6,7 @@ host, music.apple.com, Apple_CDN
 host, mvod.itunes.apple.com, Apple_CDN
 # > App Store
 user-agent, com.apple.appstored*, Apple_CDN
-host-suffix, mzstatic.com, Apple_CDN
+DOMAIN-SUFFIX, mzstatic.com, Apple_CDN
 host, iosapps.itunes.apple.com, Apple_CDN
 host, osxapps.itunes.apple.com, Apple_CDN
 # > Update
@@ -16,5 +16,5 @@ host, swcdn.apple.com, Apple_CDN
 host, apptrailers.itunes.apple.com, Apple_CDN
 host, updates-http.cdn-apple.com, Apple_CDN
 # > Map
-host-suffix, ls.apple.com, Apple_CDN
+DOMAIN-SUFFIX, ls.apple.com, Apple_CDN
 host, gs-loc-cn.apple.com, Apple_CDN
