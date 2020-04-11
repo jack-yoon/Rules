@@ -1,6 +1,5 @@
 # Advertising 广告
-# > General
-DOMAIN-KEYWORD,adservice,REJECT
+
 # >>Thirdparty
 DOMAIN-KEYWORD,adsystem,REJECT
 DOMAIN-KEYWORD,aotter,REJECT
@@ -30,9 +29,8 @@ DOMAIN-SUFFIX,mopub.com,REJECT
 DOMAIN-SUFFIX,pubnative.net,REJECT
 
 
-
-
-
+# > General
+DOMAIN-KEYWORD,adservice,REJECT
 
 DOMAIN-SUFFIX,adcolony.com,REJECT
 DOMAIN-SUFFIX,adinall.com,REJECT
