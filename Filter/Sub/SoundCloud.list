@@ -1,5 +1,5 @@
 # > SoundCloud
-USER-AGENT,SoundCloud*,SoundCloud
-DOMAIN-SUFFIX,p-cdn.us,SoundCloud
-DOMAIN-SUFFIX,sndcdn.com,SoundCloud
-DOMAIN-SUFFIX,soundcloud.com,SoundCloud
+user-agent, SoundCloud*, Global
+host-suffix, p-cdn.us, Global
+host-suffix, sndcdn.com, Global
+host-suffix, soundcloud.com, Global

@@ -1,6 +1,6 @@
-# > BBC_iPlayer
-USER-AGENT,BBCiPlayer*,BBCiPlayer
-DOMAIN-SUFFIX,bbc.co.uk,BBCiPlayer
-DOMAIN-SUFFIX,bbci.co.uk,BBCiPlayer
-DOMAIN-KEYWORD,bbcfmt,BBCiPlayer
-DOMAIN-KEYWORD,uk-live,BBCiPlayer
+# > BBC iPlayer
+user-agent, BBCiPlayer*, Global
+host-suffix, bbc.co.uk, Global
+host-suffix, bbci.co.uk, Global
+host-keyword, bbcfmt, Global
+host-keyword, uk-live, Global

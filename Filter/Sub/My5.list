@@ -1,5 +1,5 @@
 # > My5
-USER-AGENT,My5*,My5
-DOMAIN-SUFFIX,channel5.com,My5
-DOMAIN-SUFFIX,my5.tv,My5
-DOMAIN,d349g9zuie06uo.cloudfront.net,My5
+user-agent, My5*, Global
+host-suffix, channel5.com, Global
+host-suffix, my5.tv, Global
+host, d349g9zuie06uo.cloudfront.net, Global

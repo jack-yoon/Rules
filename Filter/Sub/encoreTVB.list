@@ -1,5 +1,5 @@
 # > encoreTVB
-USER-AGENT,encoreTVB*,encoreTVB
-DOMAIN-SUFFIX,encoretvb.com,encoreTVB
-DOMAIN,edge.api.brightcove.com,encoreTVB
-DOMAIN,bcbolt446c5271-a.akamaihd.net,encoreTVB
+user-agent, encoreTVB*, Global
+host-suffix, encoretvb.com, Global
+host, edge.api.brightcove.com, Global
+host, bcbolt446c5271-a.akamaihd.net, Global

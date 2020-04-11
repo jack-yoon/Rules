@@ -1,4 +1,4 @@
 # > 华文电视
-USER-AGENT,HWTVMobile*,HWTV
-DOMAIN-SUFFIX,5itv.tv,HWTV
-DOMAIN-SUFFIX,ocnttv.com,HWTV
+user-agent, HWTVMobile*, Global
+host-suffix, 5itv.tv, Global
+host-suffix, ocnttv.com, Global

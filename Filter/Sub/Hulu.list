@@ -1,4 +1,4 @@
 # > Hulu
-DOMAIN-SUFFIX,hulu.com,Hulu
-DOMAIN-SUFFIX,huluim.com,Hulu
-DOMAIN-SUFFIX,hulustream.com,Hulu
+host-suffix, hulu.com, Global
+host-suffix, huluim.com, Global
+host-suffix, hulustream.com, Global

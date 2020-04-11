@@ -1,745 +1,584 @@
+# Liby.list
+# Internet Service Providers Hijacking 运营商劫持
+host-suffix, 17gouwuba.com, AdBlock
+host-suffix, 186078.com, AdBlock
+host-suffix, 189zj.cn, AdBlock
+host-suffix, 285680.com, AdBlock
+host-suffix, 3721zh.com, AdBlock
+host-suffix, 4336wang.cn, AdBlock
+host-suffix, 51chumoping.com, AdBlock
+host-suffix, 51mld.cn, AdBlock
+host-suffix, 51mypc.cn, AdBlock
+host-suffix, 58mingri.cn, AdBlock
+host-suffix, 58mingtian.cn, AdBlock
+host-suffix, 5vl58stm.com, AdBlock
+host-suffix, 6d63d3.com, AdBlock
+host-suffix, 7gg.cc, AdBlock
+host-suffix, 91veg.com, AdBlock
+host-suffix, 9s6q.cn, AdBlock
+host-suffix, adsame.com, AdBlock
+host-suffix, aiclk.com, AdBlock
+host-suffix, akuai.top, AdBlock
+host-suffix, atplay.cn, AdBlock
+host-suffix, baiwanchuangyi.com, AdBlock
+host-suffix, beerto.cn, AdBlock
+host-suffix, beilamusi.com, AdBlock
+host-suffix, benshiw.net, AdBlock
+host-suffix, bianxianmao.com, AdBlock
+host-suffix, bryonypie.com, AdBlock
+host-suffix, cishantao.com, AdBlock
+host-suffix, cszlks.com, AdBlock
+host-suffix, cudaojia.com, AdBlock
+host-suffix, dafapromo.com, AdBlock
+host-suffix, daitdai.com, AdBlock
+host-suffix, dsaeerf.com, AdBlock
+host-suffix, dugesheying.com, AdBlock
+host-suffix, dv8c1t.cn, AdBlock
+host-suffix, echatu.com, AdBlock
+host-suffix, erdoscs.com, AdBlock
+host-suffix, fan-yong.com, AdBlock
+host-suffix, feih.com.cn, AdBlock
+host-suffix, fjlqqc.com, AdBlock
+host-suffix, fkku194.com, AdBlock
+host-suffix, freedrive.cn, AdBlock
+host-suffix, gclick.cn, AdBlock
+host-suffix, goufanli100.com, AdBlock
+host-suffix, goupaoerdai.com, AdBlock
+host-suffix, gouwubang.com, AdBlock
+host-suffix, gzxnlk.com, AdBlock
+host-suffix, haoshengtoys.com, AdBlock
+host-suffix, hyunke.com, AdBlock
+host-suffix, ichaosheng.com, AdBlock
+host-suffix, ishop789.com, AdBlock
+host-suffix, jdkic.com, AdBlock
+host-suffix, jiubuhua.com, AdBlock
+host-suffix, jsncke.com, AdBlock
+host-suffix, junkucm.com, AdBlock
+host-suffix, jwg365.cn, AdBlock
+host-suffix, kawo77.com, AdBlock
+host-suffix, kualianyingxiao.cn, AdBlock
+host-suffix, kumihua.com, AdBlock
+host-suffix, ltheanine.cn, AdBlock
+host-suffix, maipinshangmao.com, AdBlock
+host-suffix, minisplat.cn, AdBlock
+host-suffix, mkitgfs.com, AdBlock
+host-suffix, mlnbike.com, AdBlock
+host-suffix, mobjump.com, AdBlock
+host-suffix, nbkbgd.cn, AdBlock
+host-suffix, newapi.com, AdBlock
+host-suffix, pinzhitmall.com, AdBlock
+host-suffix, poppyta.com, AdBlock
+host-suffix, qianchuanghr.com, AdBlock
+host-suffix, qichexin.com, AdBlock
+host-suffix, qinchugudao.com, AdBlock
+host-suffix, quanliyouxi.cn, AdBlock
+host-suffix, qutaobi.com, AdBlock
+host-suffix, ry51w.cn, AdBlock
+host-suffix, sg536.cn, AdBlock
+host-suffix, sifubo.cn, AdBlock
+host-suffix, sifuce.cn, AdBlock
+host-suffix, sifuda.cn, AdBlock
+host-suffix, sifufu.cn, AdBlock
+host-suffix, sifuge.cn, AdBlock
+host-suffix, sifugu.cn, AdBlock
+host-suffix, sifuhe.cn, AdBlock
+host-suffix, sifuhu.cn, AdBlock
+host-suffix, sifuji.cn, AdBlock
+host-suffix, sifuka.cn, AdBlock
+host-suffix, smgru.net, AdBlock
+host-suffix, taoggou.com, AdBlock
+host-suffix, tcxshop.com, AdBlock
+host-suffix, tjqonline.cn, AdBlock
+host-suffix, topitme.com, AdBlock
+host-suffix, tt3sm4.cn, AdBlock
+host-suffix, tuia.cn, AdBlock
+host-suffix, tuipenguin.com, AdBlock
+host-suffix, tuitiger.com, AdBlock
+host-suffix, websd8.com, AdBlock
+host-suffix, wsgblw.com, AdBlock
+host-suffix, wx16999.com, AdBlock
+host-suffix, xchmai.com, AdBlock
+host-suffix, xiaohuau.xyz, AdBlock
+host-suffix, ygyzx.cn, AdBlock
+host-suffix, yinmong.com, AdBlock
+host-suffix, yitaopt.com, AdBlock
+host-suffix, yjqiqi.com, AdBlock
+host-suffix, yukhj.com, AdBlock
+host-suffix, zhaozecheng.cn, AdBlock
+host-suffix, zhenxinet.com, AdBlock
+host-suffix, zlne800.com, AdBlock
+host-suffix, zunmi.cn, AdBlock
+host-suffix, zzd6.com, AdBlock
+ip-cidr, 39.107.15.115/32, AdBlock
+ip-cidr, 47.89.59.182/32, AdBlock
+ip-cidr, 103.49.209.27/32, AdBlock
+ip-cidr, 123.56.152.96/32, AdBlock
+# > ChinaTelecom
+ip-cidr, 61.160.200.223/32, AdBlock
+ip-cidr, 61.160.200.242/32, AdBlock
+ip-cidr, 61.160.200.252/32, AdBlock
+ip-cidr, 61.174.50.214/32, AdBlock
+ip-cidr, 111.175.220.163/32, AdBlock
+ip-cidr, 111.175.220.164/32, AdBlock
+ip-cidr, 122.229.8.47/32, AdBlock
+ip-cidr, 122.229.29.89/32, AdBlock
+ip-cidr, 124.232.160.178/32, AdBlock
+ip-cidr, 175.6.223.15/32, AdBlock
+ip-cidr, 183.59.53.237/32, AdBlock
+ip-cidr, 218.93.127.37/32, AdBlock
+ip-cidr, 221.228.17.152/32, AdBlock
+ip-cidr, 221.231.6.79/32, AdBlock
+ip-cidr, 222.186.61.91/32, AdBlock
+ip-cidr, 222.186.61.95/32, AdBlock
+ip-cidr, 222.186.61.96/32, AdBlock
+ip-cidr, 222.186.61.97/32, AdBlock
+# > ChinaUnicom
+ip-cidr, 106.75.231.48/32, AdBlock
+ip-cidr, 119.4.249.166/32, AdBlock
+ip-cidr, 220.196.52.141/32, AdBlock
+ip-cidr, 221.6.4.148/32, AdBlock
+# > ChinaMobile
+ip-cidr, 114.247.28.96/32, AdBlock
+ip-cidr, 221.179.131.72/32, AdBlock
+ip-cidr, 221.179.140.145/32, AdBlock
+# > Dr.Peng
+ip-cidr, 115.182.16.79/32, AdBlock
+ip-cidr, 118.144.88.126/32, AdBlock
+ip-cidr, 118.144.88.215/32, AdBlock
+ip-cidr, 118.144.88.216/32, AdBlock
+ip-cidr, 120.76.189.132/32, AdBlock
+ip-cidr, 124.14.21.147/32, AdBlock
+ip-cidr, 124.14.21.151/32, AdBlock
+ip-cidr, 180.166.52.24/32, AdBlock
+ip-cidr, 211.161.101.106/32, AdBlock
+ip-cidr, 220.115.251.25/32, AdBlock
+ip-cidr, 222.73.156.235/32, AdBlock
+
+# Analytics 数据收集
+# > Ali
+host, acs4baichuan.m.taobao.com, AdBlock
+host, adash.m.taobao.com, AdBlock
+host, adashbc.m.taobao.com, AdBlock
+host, adashbc.ut.taobao.com, AdBlock
+host, adashx.m.taobao.com, AdBlock
+host, adashxgc.ut.taobao.com, AdBlock
+host, agoodm.m.taobao.com, AdBlock
+host, ai.m.taobao.com, AdBlock
+host, ai.taobao.com, AdBlock
+host, api.waptest.taobao.com, AdBlock
+host, apoll.m.taobao.com, AdBlock
+host, c-adash.m.taobao.com, AdBlock
+host, h-adashx.ut.taobao.com, AdBlock
+host, m-adash.m.taobao.com, AdBlock
+host, nbsdk-baichuan.taobao.com, AdBlock
+host, pics.taobaocdn.com, AdBlock
+host, pindao.huoban.taobao.com, AdBlock
+host, re.m.taobao.com, AdBlock
+host, re.taobao.com, AdBlock
+host, rj.m.taobao.com, AdBlock
+host, sdkinit.taobao.com, AdBlock
+host, show.re.taobao.com, AdBlock
+host, simaba.taobao.com, AdBlock
+host, strip.taobaocdn.com, AdBlock
+host, temai.taobao.com, AdBlock
+host, tunion-api.m.taobao.com, AdBlock
+host, unitacs.m.taobao.com, AdBlock
+host, w.m.taobao.com, AdBlock
+# >> Umeng
+host-suffix, umeng.com, AdBlock
+host-suffix, umengcloud.com, AdBlock
+host-suffix, umsns.com, AdBlock
+# > Appsflyer
+host-suffix, appsflyer.com, AdBlock
+# > Baidu
+host-suffix, pos.baidu.com, AdBlock
+host, hm.baidu.com, AdBlock
+host, hpd.baidu.com, AdBlock
+# > crashlytics
+host-suffix, crashlytics.com, AdBlock
+# > Tencent
+host, ios.bugly.qq.com, AdBlock
+host, pingma.qq.com, AdBlock
+# > Other
+host-suffix, mob.com, AdBlock
+
 # Advertising 广告
-
-# >>Thirdparty
-DOMAIN-KEYWORD,adsystem,REJECT
-DOMAIN-KEYWORD,aotter,REJECT
-DOMAIN-KEYWORD,appsflyer,REJECT
-DOMAIN-KEYWORD,fenxi,REJECT
-DOMAIN-KEYWORD,inmobi,REJECT
-DOMAIN-KEYWORD,logger,REJECT
-DOMAIN-KEYWORD,omniture,REJECT
-DOMAIN-KEYWORD,track,REJECT
-DOMAIN-KEYWORD,talkingdata,REJECT
-DOMAIN-KEYWORD,umeng,REJECT
-DOMAIN-KEYWORD,uploadMobileData,REJECT
-DOMAIN,api.joybj.com,REJECT
-DOMAIN,api.whizzone.com,REJECT
-DOMAIN,app.adjust.com,REJECT
-DOMAIN,applog.uc.cn,REJECT
-DOMAIN-SUFFIX,4paradigm.com,REJECT
-DOMAIN-SUFFIX,adthor.com,REJECT
-DOMAIN-SUFFIX,app-measurement.com,REJECT
-DOMAIN-SUFFIX,appcenter.ms,REJECT
-DOMAIN-SUFFIX,catch.gift,REJECT
-DOMAIN-SUFFIX,flurry.com,REJECT
-DOMAIN-SUFFIX,igexin.com,REJECT
-DOMAIN-SUFFIX,mmstat.com,REJECT
-DOMAIN-SUFFIX,mob.com,REJECT
-DOMAIN-SUFFIX,mopub.com,REJECT
-DOMAIN-SUFFIX,pubnative.net,REJECT
-
-
 # > General
-DOMAIN-KEYWORD,adservice,REJECT
-
-DOMAIN-SUFFIX,adcolony.com,REJECT
-DOMAIN-SUFFIX,adinall.com,REJECT
-DOMAIN-SUFFIX,admaster.com.cn,REJECT
-DOMAIN-SUFFIX,admob.com,REJECT
-DOMAIN-SUFFIX,adnxs.com,REJECT
-DOMAIN-SUFFIX,adnyg.com,REJECT
-DOMAIN-SUFFIX,adsensor.org,REJECT
-DOMAIN-SUFFIX,adsymptotic.com,REJECT
-DOMAIN-SUFFIX,adthor.com,REJECT
-DOMAIN-SUFFIX,adwhirl.com,REJECT
-DOMAIN-SUFFIX,amazon-adsystem.com,REJECT
-DOMAIN-SUFFIX,amobee.com,REJECT
-DOMAIN-SUFFIX,app-adforce.jp,REJECT
-DOMAIN-SUFFIX,appads.com,REJECT
-DOMAIN-SUFFIX,appcpi.net,REJECT
-DOMAIN-SUFFIX,appier.net,REJECT
-DOMAIN-SUFFIX,applift.com,REJECT
-DOMAIN-SUFFIX,applovin.com,REJECT
-DOMAIN-SUFFIX,applvn.com,REJECT
-DOMAIN-SUFFIX,apsalar.com,REJECT
-DOMAIN-SUFFIX,apxadtracking.net,REJECT
-DOMAIN-SUFFIX,axonix.com,REJECT
-DOMAIN-SUFFIX,bayimob.com,REJECT
-DOMAIN-SUFFIX,bjvvqu.cn,REJECT
-DOMAIN-SUFFIX,bulldogcpi.com,REJECT
-DOMAIN-SUFFIX,clotfun.mobi,REJECT
-DOMAIN-SUFFIX,clotfun.online,REJECT
-DOMAIN-SUFFIX,cloudmobi.net,REJECT
-DOMAIN-SUFFIX,crwdcntrl.net,REJECT
-DOMAIN-SUFFIX,ctrmi.com,REJECT
-DOMAIN-SUFFIX,exosrv.com,REJECT
-DOMAIN-SUFFIX,go2cloud.org,REJECT
-DOMAIN-SUFFIX,growingio.com,REJECT
-DOMAIN-SUFFIX,haloapps.com,REJECT
-DOMAIN-SUFFIX,hypers.com,REJECT
-DOMAIN-SUFFIX,idealads.net,REJECT
-DOMAIN-SUFFIX,inmobi.cn,REJECT
-DOMAIN-SUFFIX,inmobi.com,REJECT
-DOMAIN-SUFFIX,inmobi.net,REJECT
-DOMAIN-SUFFIX,inmobicdn.cn,REJECT
-DOMAIN-SUFFIX,inmobicdn.net,REJECT
-DOMAIN-SUFFIX,inner-active.mobi,REJECT
-DOMAIN-SUFFIX,insurads.com,REJECT
-DOMAIN-SUFFIX,ironsrc.com,REJECT
-DOMAIN-SUFFIX,irs01.com,REJECT
-DOMAIN-SUFFIX,iskyworker.com,REJECT
-DOMAIN-SUFFIX,juicyads.com,REJECT
-DOMAIN-SUFFIX,kochava.com,REJECT
-DOMAIN-SUFFIX,leadboltmobile.net,REJECT
-DOMAIN-SUFFIX,lenzmx.com,REJECT
-DOMAIN-SUFFIX,liveadvert.com,REJECT
-DOMAIN-SUFFIX,lnk0.com,REJECT
-DOMAIN-SUFFIX,lnk8.cn,REJECT
-DOMAIN-SUFFIX,localytics.com,REJECT
-DOMAIN-SUFFIX,mdfull.com,REJECT
-DOMAIN-SUFFIX,measurementapi.com,REJECT
-DOMAIN-SUFFIX,medialytics.com,REJECT
-DOMAIN-SUFFIX,meetrics.com,REJECT
-DOMAIN-SUFFIX,meetrics.net,REJECT
-DOMAIN-SUFFIX,miaozhen.com,REJECT
-DOMAIN-SUFFIX,moatads.com,REJECT
-DOMAIN-SUFFIX,mobclix.com,REJECT
-DOMAIN-SUFFIX,mopub.com,REJECT
-DOMAIN-SUFFIX,okjhb.xyz,REJECT
-DOMAIN-SUFFIX,openx.net,REJECT
-DOMAIN-SUFFIX,outbrain.com,REJECT
-DOMAIN-SUFFIX,pubmatic.com,REJECT
-DOMAIN-SUFFIX,qchannel01.cn,REJECT
-DOMAIN-SUFFIX,rayjump.com,REJECT
-DOMAIN-SUFFIX,rtbasia.com,REJECT
-DOMAIN-SUFFIX,rubiconproject.com,REJECT
-DOMAIN-SUFFIX,scorecardresearch.com,REJECT
-DOMAIN-SUFFIX,sdkclick.com,REJECT
-DOMAIN-SUFFIX,shuzilm.cn,REJECT
-DOMAIN-SUFFIX,smaato.net,REJECT
-DOMAIN-SUFFIX,smartadserver.com,REJECT
-DOMAIN-SUFFIX,smartnews-ads.com,REJECT
-DOMAIN-SUFFIX,supersonic.com,REJECT
-DOMAIN-SUFFIX,supersonicads.com,REJECT
-DOMAIN-SUFFIX,tagtic.cn,REJECT
-DOMAIN-SUFFIX,tanv.com,REJECT
-DOMAIN-SUFFIX,tanx.com,REJECT
-DOMAIN-SUFFIX,tapjoy.com,REJECT
-DOMAIN-SUFFIX,trafficjunky.net,REJECT
-DOMAIN-SUFFIX,turn.com,REJECT
-DOMAIN-SUFFIX,uri6.com,REJECT
-DOMAIN-SUFFIX,vidoomy.com,REJECT
-DOMAIN-SUFFIX,vungle.com,REJECT
-DOMAIN-SUFFIX,wedolook.com,REJECT
-DOMAIN-SUFFIX,xdrig.com,REJECT
-DOMAIN-SUFFIX,yumimobi.com,REJECT
-DOMAIN-SUFFIX,zu08e.cn,REJECT
-
-DOMAIN-SUFFIX,ad.cmvideo.cn,REJECT
-DOMAIN-SUFFIX,ad.daum.net,REJECT
-DOMAIN,abema-adx.ameba.jp,REJECT
-DOMAIN,ad.12306.cn,REJECT
-DOMAIN,ad.360in.com,REJECT
-DOMAIN,ad.51wnl-cq.com,REJECT
-DOMAIN,ad.caiyunapp.com,REJECT
-DOMAIN,ad.huajiao.com,REJECT
-DOMAIN,ad.hzyoka.com,REJECT
-DOMAIN,ad.jiemian.com,REJECT
-DOMAIN,ad.qingting.fm,REJECT
-DOMAIN,ad.wappalyzer.com,REJECT
-DOMAIN,ad-cn.jovcloud.com,REJECT
-DOMAIN,adextra.51wnl-cq.com,REJECT
-DOMAIN,api.adnet.mob.com,REJECT
-DOMAIN,ads.adadapted.com,REJECT
-DOMAIN,ads.chinadaily.com.cn,REJECT
-DOMAIN,ads.daydaycook.com.cn,REJECT
-DOMAIN,ads.weilitoutiao.net,REJECT
-DOMAIN,adsapi.manhuaren.com,REJECT
-DOMAIN,adsdk.dmzj.com,REJECT
-DOMAIN,adserver.pandora.com,REJECT
-DOMAIN,adshow.58.com,REJECT
-DOMAIN,adui.tg.meitu.com,REJECT
-DOMAIN,adv.bandi.so,REJECT
-DOMAIN,app-ad.variflight.com,REJECT
-DOMAIN,appnext.hs.llnwd.net,REJECT
-DOMAIN,appnext-a.akamaihd.net,REJECT
-DOMAIN,ggs.myzaker.com,REJECT
-DOMAIN,itad.linetv.tw,REJECT
-DOMAIN,ja.chushou.tv,REJECT
-DOMAIN,mads.suning.com,REJECT
-DOMAIN,mobileads.msn.com,REJECT
-DOMAIN,mopnativeadv.037201.com,REJECT
-DOMAIN,nativeadv.dftoutiao.com,REJECT
-
+host-keyword, adservice, AdBlock
+host-suffix, ad.cmvideo.cn, AdBlock
+host-suffix, ad.daum.net, AdBlock
+host-suffix, adcolony.com, AdBlock
+host-suffix, adinall.com, AdBlock
+host-suffix, admaster.com.cn, AdBlock
+host-suffix, admob.com, AdBlock
+host-suffix, adnxs.com, AdBlock
+host-suffix, adnyg.com, AdBlock
+host-suffix, adsensor.org, AdBlock
+host-suffix, adsymptotic.com, AdBlock
+host-suffix, adthor.com, AdBlock
+host-suffix, adwhirl.com, AdBlock
+host-suffix, amazon-adsystem.com, AdBlock
+host-suffix, amobee.com, AdBlock
+host-suffix, app-adforce.jp, AdBlock
+host-suffix, appads.com, AdBlock
+host-suffix, appcpi.net, AdBlock
+host-suffix, appier.net, AdBlock
+host-suffix, applift.com, AdBlock
+host-suffix, applovin.com, AdBlock
+host-suffix, applvn.com, AdBlock
+host-suffix, apsalar.com, AdBlock
+host-suffix, apxadtracking.net, AdBlock
+host-suffix, axonix.com, AdBlock
+host-suffix, bayimob.com, AdBlock
+host-suffix, bjvvqu.cn, AdBlock
+host-suffix, bulldogcpi.com, AdBlock
+host-suffix, clotfun.mobi, AdBlock
+host-suffix, clotfun.online, AdBlock
+host-suffix, cloudmobi.net, AdBlock
+host-suffix, crwdcntrl.net, AdBlock
+host-suffix, ctrmi.com, AdBlock
+host-suffix, exosrv.com, AdBlock
+host-suffix, go2cloud.org, AdBlock
+host-suffix, growingio.com, AdBlock
+host-suffix, haloapps.com, AdBlock
+host-suffix, hypers.com, AdBlock
+host-suffix, idealads.net, AdBlock
+host-suffix, inmobi.cn, AdBlock
+host-suffix, inmobi.com, AdBlock
+host-suffix, inmobi.net, AdBlock
+host-suffix, inmobicdn.cn, AdBlock
+host-suffix, inmobicdn.net, AdBlock
+host-suffix, inner-active.mobi, AdBlock
+host-suffix, insurads.com, AdBlock
+host-suffix, ironsrc.com, AdBlock
+host-suffix, irs01.com, AdBlock
+host-suffix, iskyworker.com, AdBlock
+host-suffix, juicyads.com, AdBlock
+host-suffix, kochava.com, AdBlock
+host-suffix, leadboltmobile.net, AdBlock
+host-suffix, lenzmx.com, AdBlock
+host-suffix, liveadvert.com, AdBlock
+host-suffix, lnk0.com, AdBlock
+host-suffix, lnk8.cn, AdBlock
+host-suffix, localytics.com, AdBlock
+host-suffix, mdfull.com, AdBlock
+host-suffix, measurementapi.com, AdBlock
+host-suffix, medialytics.com, AdBlock
+host-suffix, meetrics.com, AdBlock
+host-suffix, meetrics.net, AdBlock
+host-suffix, miaozhen.com, AdBlock
+host-suffix, moatads.com, AdBlock
+host-suffix, mobclix.com, AdBlock
+host-suffix, mopub.com, AdBlock
+host-suffix, okjhb.xyz, AdBlock
+host-suffix, openx.net, AdBlock
+host-suffix, outbrain.com, AdBlock
+host-suffix, pubmatic.com, AdBlock
+host-suffix, qchannel01.cn, AdBlock
+host-suffix, rayjump.com, AdBlock
+host-suffix, rtbasia.com, AdBlock
+host-suffix, rubiconproject.com, AdBlock
+host-suffix, scorecardresearch.com, AdBlock
+host-suffix, sdkclick.com, AdBlock
+host-suffix, shuzilm.cn, AdBlock
+host-suffix, smaato.net, AdBlock
+host-suffix, smartadserver.com, AdBlock
+host-suffix, smartnews-ads.com, AdBlock
+host-suffix, supersonic.com, AdBlock
+host-suffix, supersonicads.com, AdBlock
+host-suffix, tagtic.cn, AdBlock
+host-suffix, tanv.com, AdBlock
+host-suffix, tanx.com, AdBlock
+host-suffix, tapjoy.com, AdBlock
+host-suffix, trafficjunky.net, AdBlock
+host-suffix, turn.com, AdBlock
+host-suffix, uri6.com, AdBlock
+host-suffix, vidoomy.com, AdBlock
+host-suffix, vungle.com, AdBlock
+host-suffix, wedolook.com, AdBlock
+host-suffix, xdrig.com, AdBlock
+host-suffix, yumimobi.com, AdBlock
+host-suffix, zu08e.cn, AdBlock
+host, abema-adx.ameba.jp, AdBlock
+host, ad-channel.woyeahgo.tk, AdBlock
+host, ad-cn.jovcloud.com, AdBlock
+host, ad.12306.cn, AdBlock
+host, ad.360in.com, AdBlock
+host, ad.51wnl-cq.com, AdBlock
+host, ad.caiyunapp.com, AdBlock
+host, ad.huajiao.com, AdBlock
+host, ad.hzyoka.com, AdBlock
+host, ad.jiemian.com, AdBlock
+host, ad.qingting.fm, AdBlock
+host, ad.wappalyzer.com, AdBlock
+host, adextra.51wnl-cq.com, AdBlock
+host, ads.adadapted.com, AdBlock
+host, ads.chinadaily.com.cn, AdBlock
+host, ads.daydaycook.com.cn, AdBlock
+host, ads.weilitoutiao.net, AdBlock
+host, adsapi.manhuaren.com, AdBlock
+host, adsdk.dmzj.com, AdBlock
+host, adserver.pandora.com, AdBlock
+host, adshow.58.com, AdBlock
+host, adui.tg.meitu.com, AdBlock
+host, adv.bandi.so, AdBlock
+host, app-ad.variflight.com, AdBlock
+host, appnext-a.akamaihd.net, AdBlock
+host, appnext.hs.llnwd.net, AdBlock
+host, ggs.myzaker.com, AdBlock
+host, itad.linetv.tw, AdBlock
+host, ja.chushou.tv, AdBlock
+host, mads.suning.com, AdBlock
+host, mobileads.msn.com, AdBlock
+host, mopnativeadv.037201.com, AdBlock
+host, nativeadv.dftoutiao.com, AdBlock
+host, oset-api.open-adx.com, AdBlock
+host, sdkauth.hpplay.cn, AdBlock
 # (0~9)
-# > 58 同城
 # (A)
-# > Apple
-DOMAIN-SUFFIX,iadsdk.apple.com,REJECT
-DOMAIN-SUFFIX,ads.internal.unity3d.com,REJECT
-DOMAIN-SUFFIX,ads.prd.ie.internal.unity3d.com,REJECT
-DOMAIN-SUFFIX,unityads.unity3d.com,REJECT
 # > Alibaba
-DOMAIN,optimus-ads.amap.com,REJECT
-DOMAIN,optimus-ads.amap.com.w.alikunlun.com,REJECT
-DOMAIN,tunion-api.m.taobao.com,REJECT
-DOMAIN,unidesk.alicdn.com,REJECT
-IP-CIDR,112.29.211.120/32,REJECT
-IP-CIDR,203.119.206.64/32,REJECT
-IP-CIDR, 203.119.211.219/32,REJECT
-#淘宝
-
-DOMAIN-SUFFIX,ai.taobao.com,REJECT
-DOMAIN-SUFFIX,api.waptest.taobao.com,REJECT
-DOMAIN-SUFFIX,re.taobao.com,REJECT
-DOMAIN-SUFFIX,temai.taobao.com,REJECT
-DOMAIN-SUFFIX,api.waptest.taobao.com,REJECT
-
-DOMAIN-SUFFIX,adash.m.taobao.com,REJECT
-DOMAIN-SUFFIX,agoodm.m.taobao.com,REJECT
-DOMAIN-SUFFIX,ai.m.taobao.com,REJECT
-DOMAIN-SUFFIX,amdc.m.taobao.com,REJECT
-DOMAIN-SUFFIX,apoll.m.taobao.com,REJECT
-DOMAIN-SUFFIX,c-adash.m.taobao.com,REJECT
-DOMAIN-SUFFIX,m-adash.m.taobao.com,REJECT
-DOMAIN-SUFFIX,re.m.taobao.com,REJECT
-DOMAIN-SUFFIX,simba.m.taobao.com,REJECT
-DOMAIN-SUFFIX,tunion-api.m.taobao.com,REJECT
-DOMAIN-SUFFIX,unitacs.m.taobao.com,REJECT
-DOMAIN-SUFFIX,w.m.taobao.com,REJECT
-
-DOMAIN-SUFFIX,dsp.simba.taobao.com,REJECT
-DOMAIN-SUFFIX,fav.simba.taobao.com,REJECT
-DOMAIN-SUFFIX,m.simba.taobao.com,REJECT
-DOMAIN-SUFFIX,mclick.simba.taobao.com,REJECT
-DOMAIN-SUFFIX,redirect.simba.taobao.com,REJECT
-DOMAIN-SUFFIX,srd.simba.taobao.com,REJECT
-DOMAIN-SUFFIX,textlink.simba.taobao.com,REJECT
-
-DOMAIN-SUFFIX,strip.taobaocdn.com,REJECT
-DOMAIN-SUFFIX,taobaoaliyun.cn,REJECT
-DOMAIN-SUFFIX,taobaobo5.com,REJECT
-DOMAIN-SUFFIX,taobayun.cn,REJECT
-
+host, optimus-ads.amap.com, AdBlock
+host, optimus-ads.amap.com.w.alikunlun.com, AdBlock
+host, tunion-api.m.taobao.com, AdBlock
+ip-cidr, 112.29.211.120/32, AdBlock
+ip-cidr, 203.119.206.64/32, AdBlock
+ip-cidr, 203.119.211.219/32, AdBlock
+# > Apple
+host-suffix, ads.internal.unity3d.com, AdBlock
+host-suffix, ads.prd.ie.internal.unity3d.com, AdBlock
+host-suffix, iadsdk.apple.com, AdBlock
+host-suffix, unityads.unity3d.com, AdBlock
 # > AutoHome
-DOMAIN,adproxy.autohome.com.cn,REJECT
-DOMAIN,rd.autohome.com.cn,REJECT
-DOMAIN,al.autohome.com.cn,REJECT
-DOMAIN,applogapi.autohome.com.cn,REJECT
+host, adproxy.autohome.com.cn, AdBlock
+host, al.autohome.com.cn, AdBlock
+host, applogapi.autohome.com.cn, AdBlock
+host, rd.autohome.com.cn, AdBlock
+ip-cidr, 103.75.152.210/32, AdBlock
+ip-cidr, 103.75.153.3/32, AdBlock
 # (B)
 # > Baidu
-#百度
-DOMAIN-SUFFIX,b.bdstatic.com,REJECT
-DOMAIN-SUFFIX,mipcache.bdstatic.com,REJECT
-DOMAIN-SUFFIX,su.bdstatic.com,REJECT
-DOMAIN-SUFFIX,10086.cn.baidu.cdn.yiwk.com,REJECT
-DOMAIN-SUFFIX,a.baidu.com,REJECT
-DOMAIN-SUFFIX,ad.player.baidu.com,REJECT
-DOMAIN-SUFFIX,adm.baidu.com,REJECT
-DOMAIN-SUFFIX,adscdn.baidu.com,REJECT
-DOMAIN-SUFFIX,anquan.baidu.com,REJECT
-DOMAIN-SUFFIX,antivirus.baidu.com,REJECT
-DOMAIN-SUFFIX,app.ibaiducdn.com,REJECT
-DOMAIN-SUFFIX,appc.baidu.com,REJECT
-DOMAIN-SUFFIX,baichuan.baidu.com,REJECT
-DOMAIN-SUFFIX,baidutv.baidu.com,REJECT
-DOMAIN-SUFFIX,baifen.music.baidu.com,REJECT
-DOMAIN-SUFFIX,bce.baidu.com,REJECT
-DOMAIN-SUFFIX,bdplus.baidu.com,REJECT
-DOMAIN-SUFFIX,btlaunch.baidu.com,REJECT
-DOMAIN-SUFFIX,c.baidu.com,REJECT
-DOMAIN-SUFFIX,cb.baidu.com,REJECT
-DOMAIN-SUFFIX,cbjs.baidu.com,REJECT
-DOMAIN-SUFFIX,cjhq.baidu.com,REJECT
-DOMAIN-SUFFIX,cleaner.baidu.com,REJECT
-DOMAIN-SUFFIX,cm.baidu.com,REJECT
-DOMAIN-SUFFIX,cpro.zhidao.baidu.com,REJECT
-DOMAIN-SUFFIX,cpro2.baidu.com,REJECT
-DOMAIN-SUFFIX,cpu.baidu.com,REJECT
-DOMAIN-SUFFIX,cpu-admin.baidu.com,REJEC
-DOMAIN-SUFFIX,crs.baidu.com,REJECT
-DOMAIN-SUFFIX,datax.baidu.com,REJECT
-DOMAIN-SUFFIX,dl.client.baidu.com,REJECT
-DOMAIN-SUFFIX,dl.ops.baidu.com,REJECT
-DOMAIN-SUFFIX,dl1sw.baidu.com,REJECT
-DOMAIN-SUFFIX,dl2.bav.baidu.com,REJECT
-DOMAIN-SUFFIX,dlsw.baidu.com,REJECT
-DOMAIN-SUFFIX,dlsw.br.baidu.com,REJECT
-DOMAIN-SUFFIX,dl-vip.bav.baidu.com,REJECT
-DOMAIN-SUFFIX,download.bav.baidu.com,REJECT
-DOMAIN-SUFFIX,download.sd.baidu.com,REJECT
-DOMAIN-SUFFIX,drmcmm.baidu.com,REJECT
-DOMAIN-SUFFIX,duiwai.baidu.com,REJECT
-DOMAIN-SUFFIX,dxp.baidu.com,REJECT
-DOMAIN-SUFFIX,dzl.baidu.com,REJECT
-DOMAIN-SUFFIX,e.baidu.com,REJECT
-DOMAIN-SUFFIX,eclick.baidu.com,REJECT
-DOMAIN-SUFFIX,eiv.baidu.com,REJECT
-DOMAIN-SUFFIX,em.baidu.com,REJECT
-DOMAIN-SUFFIX,entry.baidu.com,REJECT
-DOMAIN-SUFFIX,ers.baidu.com,REJECT
-DOMAIN-SUFFIX,fclick.baidu.com,REJECT
-DOMAIN-SUFFIX,feed.baidu.com,REJECT
-DOMAIN-SUFFIX,fexclick.baidu.com,REJECT
-DOMAIN-SUFFIX,g.baidu.com,REJECT
-DOMAIN-SUFFIX,gimg.baidu.com,REJECT
-DOMAIN-SUFFIX,guanjia.baidu.com,REJECT
-DOMAIN-SUFFIX,hc.baidu.com,REJECT
-DOMAIN-SUFFIX,hdj.baidu.com,REJECT
-DOMAIN-SUFFIX,hpd.baidu.com,REJECT
-DOMAIN-SUFFIX,idm-su.baidu.com,REJECT
-DOMAIN-SUFFIX,iebar.baidu.com,REJECT
-DOMAIN-SUFFIX,ikcode.baidu.com,REJECT
-DOMAIN-SUFFIX,iwanad.baidu.com,REJECT
-DOMAIN-SUFFIX,j.br.baidu.com,REJECT
-DOMAIN-SUFFIX,kstj.baidu.com,REJECT
-DOMAIN-SUFFIX,libs.baidu.com,REJECT
-DOMAIN-SUFFIX,m1.baidu.com,REJECT
-DOMAIN-SUFFIX,ma.baidu.com,REJECT
-DOMAIN-SUFFIX,mpro.baidu.com,REJECT
-DOMAIN-SUFFIX,msite.baidu.com,REJECT
-DOMAIN-SUFFIX,mssp.baidu.com,REJECT
-DOMAIN-SUFFIX,mtj.baidu.com,REJECT
-DOMAIN-SUFFIX,neirong.baidu.com,REJECT
-DOMAIN-SUFFIX,nlog.baidu.com,REJECT
-DOMAIN-SUFFIX,nsclickvideo.baidu.com,REJECT
-DOMAIN-SUFFIX,openrcv.baidu.com,REJECT
-DOMAIN-SUFFIX,paimgcdn.baidu.com,REJECT
-DOMAIN-SUFFIX,pc.videoclick.baidu.com,REJECT
-DOMAIN-SUFFIX,push.zhanzhang.baidu.com,REJECT
-DOMAIN-SUFFIX,qianclick.baidu.com,REJECT
-DOMAIN-SUFFIX,release.baidu.com,REJECT
-DOMAIN-SUFFIX,river.zhidao.baidu.com,REJECT
-DOMAIN-SUFFIX,rj.baidu.com,REJECT
-DOMAIN-SUFFIX,rplog.baidu.com,REJECT
-DOMAIN-SUFFIX,s.baidu.com,REJECT
-DOMAIN-SUFFIX,sclick.baidu.com,REJECT
-DOMAIN-SUFFIX,sestat.baidu.com,REJECT
-DOMAIN-SUFFIX,shadu.baidu.com,REJECT
-DOMAIN-SUFFIX,sobar.baidu.com,REJECT
-DOMAIN-SUFFIX,sobartop.baidu.com,REJECT
-DOMAIN-SUFFIX,spcode.baidu.com,REJECT
-DOMAIN-SUFFIX,tk.baidu.com,REJECT
-DOMAIN-SUFFIX,tkweb.baidu.com,REJECT
-DOMAIN-SUFFIX,toolbar.baidu.com,REJECT
-DOMAIN-SUFFIX,tuijian.baidu.com,REJECT
-DOMAIN-SUFFIX,tuisong.baidu.com,REJECT
-DOMAIN-SUFFIX,ucstat.baidu.com,REJECT
-DOMAIN-SUFFIX,ulic.baidu.com,REJECT
-DOMAIN-SUFFIX,ulog.imap.baidu.com,REJECT
-DOMAIN-SUFFIX,union.baidu.com,REJECT
-DOMAIN-SUFFIX,unionimage.baidu.com,REJECT
-DOMAIN-SUFFIX,utility.baidu.com,REJECT
-DOMAIN-SUFFIX,utk.baidu.com,REJECT
-DOMAIN-SUFFIX,videopush.baidu.com,REJECT
-DOMAIN-SUFFIX,w.gdown.baidu.com,REJECT
-DOMAIN-SUFFIX,w.x.baidu.com,REJECT
-DOMAIN-SUFFIX,wangmeng.baidu.com,REJECT
-DOMAIN-SUFFIX,weishi.baidu.com,REJECT
-DOMAIN-SUFFIX,wisepush.video.baidu.com,REJECT
-DOMAIN-SUFFIX,wm.baidu.com,REJECT
-DOMAIN-SUFFIX,yingxiao.baidu.com,REJECT
-DOMAIN-SUFFIX,znsv.baidu.com,REJECT
-DOMAIN-SUFFIX,cpro.baidu.com,REJECT
-DOMAIN-SUFFIX,pos.baidu.com,REJECT
-DOMAIN,afd.baidu.com,REJECT
-DOMAIN,als.baidu.com,REJECT
-DOMAIN,duclick.baidu.com,REJECT
-DOMAIN,mobads.baidu.com,REJECT
-DOMAIN,mobads-logs.baidu.com,REJECT
-DOMAIN,nsclick.baidu.com,REJECT
-# > ByteDance
-DOMAIN,ad.toutiao.com,REJECT
+host-suffix, cpro.baidu.com, AdBlock
+host, afd.baidu.com, AdBlock
+host, als.baidu.com, AdBlock
+host, duclick.baidu.com, AdBlock
+host, mobads-logs.baidu.com, AdBlock
+host, mobads.baidu.com, AdBlock
+host, nsclick.baidu.com, AdBlock
+# > bika
+host, ad-display.wikawika.xyz, AdBlock
+host, ads.wakamoment.tk, AdBlock
 # > BitAuto
-DOMAIN,adx.yiche.com,REJECT
-DOMAIN,log.ycapp.yiche.com,REJECT
+host, adx.yiche.com, AdBlock
+host, log.ycapp.yiche.com, AdBlock
+# > ByteDance
+host, ad.toutiao.com, AdBlock
 # > 百词斩
-DOMAIN,advertise.baicizhan.com,REJECT
-DOMAIN,advertise.baicizhan.org,REJECT
+host, advertise.baicizhan.com, AdBlock
+host, advertise.baicizhan.org, AdBlock
 # (C)
-# > CNTV
-DOMAIN,galaxy.bjcathay.com,REJECT
-DOMAIN,mdrecv.app.cntvwb.cn,REJECT
-DOMAIN,sdapprecv.app.cntvwb.cn,REJECT
-DOMAIN,vdapprecv.app.cntvwb.cn,REJECT
 # > ChinaTelecom
-DOMAIN,ad.21cn.com,REJECT
-DOMAIN,ad.k.21cn.com,REJECT
-DOMAIN,admarket.21cn.com,REJECT
-DOMAIN,adshows.21cn.com,REJECT
+host, ad.21cn.com, AdBlock
+host, ad.k.21cn.com, AdBlock
+host, admarket.21cn.com, AdBlock
+host, adshows.21cn.com, AdBlock
+# > CNTV
+host, galaxy.bjcathay.com, AdBlock
+host, mdrecv.app.cntvwb.cn, AdBlock
+host, sdapprecv.app.cntvwb.cn, AdBlock
+host, vdapprecv.app.cntvwb.cn, AdBlock
 # > 车来了
-DOMAIN,atrace.chelaile.net.cn,REJECT
-DOMAIN,logs.chelaile.net.cn,REJECT
-#豆瓣
-DOMAIN-SUFFIX,ad.doubanio.com,REJECT
-DOMAIN-SUFFIX,erebor.douban.com,REJECT
-
-#饿了么
-DOMAIN-SUFFIX,app-monitor.ele.me,REJECT
-DOMAIN-SUFFIX,client-api.ele.me,REJECT
-DOMAIN-SUFFIX,grand.ele.me,REJECT
-DOMAIN-SUFFIX,mobile-pubt.ele.me,REJECT
-DOMAIN-SUFFIX,newton-api.ele.me,REJECT
-DOMAIN-SUFFIX,app-monitor.ele.me,REJECT
-DOMAIN-SUFFIX,client-api.ele.me,REJECT
-DOMAIN-SUFFIX,grand.ele.me,REJECT
-DOMAIN-SUFFIX,mobile-pubt.ele.me,REJECT
-DOMAIN-SUFFIX,newton-api.ele.me,REJECT
-
+host, atrace.chelaile.net.cn, AdBlock
+host, logs.chelaile.net.cn, AdBlock
+# (D)
+# > 懂球帝
+host, ap.dongqiudi.com, AdBlock
 # (G)
 # > Google
-DOMAIN-SUFFIX,doubleclick.net,REJECT
-DOMAIN-SUFFIX,googleadservices.com,REJECT
-DOMAIN-SUFFIX,googleadsserving.cn,REJECT
-DOMAIN-SUFFIX,googlesyndication.com,REJECT
+host-suffix, doubleclick.net, AdBlock
+host-suffix, googleadservices.com, AdBlock
+host-suffix, googleadsserving.cn, AdBlock
+host-suffix, googlesyndication.com, AdBlock
+# (J)
+# 京东
+host, dns.jd.com, AdBlock
+host-suffix, 101.124.19.122/32, AdBlock
 # (H)
 # > HunanTV
-DOMAIN-SUFFIX,da.mgtv.com,REJECT
-DOMAIN-SUFFIX,da.hunantv.com,REJECT
+host-suffix, da.hunantv.com, AdBlock
+host-suffix, da.mgtv.com, AdBlock
 # > Hupu
-DOMAIN,adx.hupu.com,REJECT
-DOMAIN,adx-api.hupu.com,REJECT
-DOMAIN,goblin.hupu.com,REJECT
+host, adx-api.hupu.com, AdBlock
+host, adx.hupu.com, AdBlock
+host, goblin.hupu.com, AdBlock
 # (I)
-# > iQiyi
-DOMAIN,t7z.cupid.iqiyi.com,REJECT
-IP-CIDR,101.227.97.240/32,REJECT,no-resolve
-IP-CIDR,101.227.200.11/32,REJECT,no-resolve
-IP-CIDR,101.227.200.28/32,REJECT,no-resolve
-IP-CIDR,124.192.153.42/32,REJECT,no-resolve
 # > Ifeng
-DOMAIN-SUFFIX,deliver.ifeng.com,REJECT
-DOMAIN,api.newad.ifeng.com,REJECT
-DOMAIN,ifengad.3g.ifeng.com,REJECT
-#京东
-DOMAIN-SUFFIX,cm.jd.com,REJECT
-DOMAIN-SUFFIX,c-nfa.jd.com,REJECT
-DOMAIN-SUFFIX,du.jd.com,REJECT
-DOMAIN-SUFFIX,img-x.jd.com,REJECT
-DOMAIN-SUFFIX,jzt.jd.com,REJECT
+host-suffix, deliver.ifeng.com, AdBlock
+host, api.newad.ifeng.com, AdBlock
+host, ifengad.3g.ifeng.com, AdBlock
+# > iQiyi
+host, t7z.cupid.iqiyi.com, AdBlock
+ip-cidr, 101.227.97.240/32, AdBlock
+ip-cidr, 101.227.200.11/32, AdBlock
+ip-cidr, 101.227.200.28/32, AdBlock
+ip-cidr, 124.192.153.42/32, AdBlock
 # (K)
-# > KuGou and Kuwo
-DOMAIN,adserviceretry.kugou.com,REJECT
-DOMAIN,ads.service.kugou.com,REJECT
-DOMAIN,adsfile.bssdlbig.kugou.com,REJECT
-DOMAIN,g.koowo.com,REJECT
-DOMAIN,kgmobilestat.kugou.com,REJECT
-DOMAIN,kgmobilestatbak.kugou.com,REJECT
-DOMAIN,mobilelog.kugou.com,REJECT
-DOMAIN,mobilead.kuwo.cn,REJECT
-DOMAIN,rich.kuwo.cn,REJECT
 # > Kingsoft
-DOMAIN,ad-stat.ksosoft.com,REJECT
-DOMAIN,img.auction-ads.wpscdn.cn,REJECT
-DOMAIN,counter.kingsoft.com,REJECT
-DOMAIN,counter.ksosoft.com,REJECT
-DOMAIN,minfo.wps.cn,REJECT
-DOMAIN,mobad.ijinshan.com,REJECT
-DOMAIN,ups.ksmobile.net,REJECT
-DOMAIN,ws.ksmobile.net,REJECT
+host, ad-stat.ksosoft.com, AdBlock
+host, counter.kingsoft.com, AdBlock
+host, counter.ksosoft.com, AdBlock
+host, img.auction-ads.wpscdn.cn, AdBlock
+host, minfo.wps.cn, AdBlock
+host, mobad.ijinshan.com, AdBlock
+host, ups.ksmobile.net, AdBlock
+host, ws.ksmobile.net, AdBlock
+# > KuGou and Kuwo
+host, ads.service.kugou.com, AdBlock
+host, adserviceretry.kugou.com, AdBlock
+host, adsfile.bssdlbig.kugou.com, AdBlock
+host, g.koowo.com, AdBlock
+host, kgmobilestat.kugou.com, AdBlock
+host, kgmobilestatbak.kugou.com, AdBlock
+host, mobilead.kuwo.cn, AdBlock
+host, mobilelog.kugou.com, AdBlock
+host, rich.kuwo.cn, AdBlock
 # (L)
 # > Le
-DOMAIN-SUFFIX,webp2p.letv.com,REJECT
-DOMAIN,ark.letv.com,REJECT
-DOMAIN,emma-414870e223.huodonghezi.com,REJECT
-DOMAIN,g3.letv.com,REJECT
-DOMAIN,n.mark.letv.com,REJECT
+host-suffix, webp2p.letv.com, AdBlock
+host, ark.letv.com, AdBlock
+host, emma-414870e223.huodonghezi.com, AdBlock
+host, g3.letv.com, AdBlock
+host, n.mark.letv.com, AdBlock
 # > 乐播投屏
-DOMAIN,ad.hpplay.cn,REJECT
-DOMAIN,adcdn.hpplay.cn,REJECT
-DOMAIN,adeng.hpplay.cn,REJECT
-DOMAIN,rp.hpplay.cn,REJECT
+host, ad.hpplay.cn, AdBlock
+host, adcdn.hpplay.cn, AdBlock
+host, adeng.hpplay.cn, AdBlock
+host, rp.hpplay.cn, AdBlock
 # (M)
 # > MI
-DOMAIN-SUFFIX,ad.intl.xiaomi.com,REJECT
-DOMAIN-SUFFIX,ad.xiaomi.com,REJECT
-DOMAIN-SUFFIX,admob.xiaomi.com,REJECT
-DOMAIN,adv.sec.intl.miui.com,REJECT
-DOMAIN,adv.sec.miui.com,REJECT
+host-suffix, ad.intl.xiaomi.com, AdBlock
+host-suffix, ad.xiaomi.com, AdBlock
+host-suffix, admob.xiaomi.com, AdBlock
+host, adv.sec.intl.miui.com, AdBlock
 # > 墨迹天气
-DOMAIN,ad.api.moji.com,REJECT
-DOMAIN,adlaunch.moji.com,REJECT
-DOMAIN,ads.mojicdn.com,REJECT
-DOMAIN,v1.log.moji.com,REJECT
+host, ad.api.moji.com, AdBlock
+host, adlaunch.moji.com, AdBlock
+host, ads.mojicdn.com, AdBlock
+host, v1.log.moji.com, AdBlock
 # (N)
 # > NetEase
-DOMAIN,ad.bn.netease.com,REJECT
-DOMAIN,ad.yixin.im,REJECT
-DOMAIN,admusicpic.music.126.net,REJECT
-DOMAIN,gorgon.youdao.com,REJECT
-DOMAIN,iadmusicmat.music.126.net,REJECT
-DOMAIN,iadmusicmatvideo.music.126.net,REJECT
-DOMAIN,impservice.dictapp.youdao.com,REJECT
-DOMAIN,impservice.youdao.com,REJECT
-DOMAIN,log.yex.youdao.com,REJECT
-DOMAIN,log-yex.youdao.com,REJECT
-DOMAIN,n.3g.163.com,REJECT
-DOMAIN,nex.163.com,REJECT
-DOMAIN,yt-adp.nosdn.127.net,REJECT
-DOMAIN,yt-adp.ws.126.net,REJECT
+host, ad.bn.netease.com, AdBlock
+host, ad.yixin.im, AdBlock
+host, admusicpic.music.126.net, AdBlock
+host, gorgon.youdao.com, AdBlock
+host, iadmat.nosdn.127.net, AdBlock
+host, iadmusicmat.music.126.net, AdBlock
+host, iadmusicmatvideo.music.126.net, AdBlock
+host, impservice.dictapp.youdao.com, AdBlock
+host, impservice.youdao.com, AdBlock
+host, log-yex.youdao.com, AdBlock
+host, log.yex.youdao.com, AdBlock
+host, n.3g.163.com, AdBlock
+host, nex.163.com, AdBlock
+host, yt-adp.nosdn.127.net, AdBlock
+host, yt-adp.ws.126.net, AdBlock
 # (P)
-# > PPTV
-DOMAIN,ads.aplus.pptv.com,REJECT
-DOMAIN,ads.aplusapi.pptv.com,REJECT
-DOMAIN,asimgs.pplive.cn,REJECT
-DOMAIN,de.as.pptv.com,REJECT
-# > Photoable
-DOMAIN,regist.fotoable.com,REJECT
-DOMAIN,cdn.adapi.fotoable.com,REJECT
 # > PeanutWiFiMpass
-DOMAIN,adnew.wifi8.com,REJECT
-DOMAIN,adfile.wifi8.com,REJECT
-#QQ
-DOMAIN-SUFFIX,activeqq.3g.qq.com,REJECT
-DOMAIN-SUFFIX,ad.qq.com,REJECT
-DOMAIN-SUFFIX,adping.qq.com,REJECT
-DOMAIN-SUFFIX,adpm.app.qq.com,REJECT
-DOMAIN-SUFFIX,adrdir.qq.com,REJECT
-DOMAIN-SUFFIX,adsclick.qq.com,REJECT
-DOMAIN-SUFFIX,adsense.html5.qq.com,REJECT
-DOMAIN-SUFFIX,adsfile.qq.com,REJECT
-DOMAIN-SUFFIX,adsgroup.qq.com,REJECT
-DOMAIN-SUFFIX,adshmct.qq.com,REJECT
-DOMAIN-SUFFIX,adshmmsg.qq.com,REJECT
-DOMAIN-SUFFIX,adslvfile.qq.com,REJECT
-DOMAIN-SUFFIX,adslvseed.qq.com,REJECT
-DOMAIN-SUFFIX,adsolution.imtt.qq.com,REJECT
-DOMAIN-SUFFIX,adsqqclick.qq.com,REJECT
-DOMAIN-SUFFIX,adstextview.qq.com,REJECT
-DOMAIN-SUFFIX,adsview.qq.com,REJECT
-DOMAIN-SUFFIX,adsview2.qq.com,REJECT
-DOMAIN-SUFFIX,adv.app.qq.com,REJECT
-DOMAIN-SUFFIX,adver.qq.com,REJECT
-DOMAIN-SUFFIX,aeventlog.beacon.qq.com,REJECT
-DOMAIN-SUFFIX,aliqqjd.cn,REJECT
-DOMAIN-SUFFIX,analy.qq.com,REJECT
-DOMAIN-SUFFIX,android.rqd.qq.com,REJECT
-DOMAIN-SUFFIX,aqqgli3vle.bid,REJECT
-DOMAIN-SUFFIX,astrategy.beacon.qq.com,REJECT
-DOMAIN-SUFFIX,bd.wayqq.cn,REJECT
-DOMAIN-SUFFIX,bd1.wowoqq.com,REJECT
-DOMAIN-SUFFIX,c.gdt.qq.com,REJECT
-DOMAIN-SUFFIX,c.gj.qq.com,REJECT
-DOMAIN-SUFFIX,canvas.gdt.qq.com,REJECT
-DOMAIN-SUFFIX,d.gdt.qq.com,REJECT
-DOMAIN-SUFFIX,d3g.qq.com,REJECT
-DOMAIN-SUFFIX,download.sj.qq.com,REJECT
-DOMAIN-SUFFIX,dp3.qq.com,REJECT
-DOMAIN-SUFFIX,dqq.lnfund.org.cn,REJECT
-DOMAIN-SUFFIX,eventlog.beacon.qq.com,REJECT
-DOMAIN-SUFFIX,game.html5.qq.com,REJECT
-DOMAIN-SUFFIX,i.gdt.qq.com,REJECT
-DOMAIN-SUFFIX,j.wit.qq.com,REJECT
-DOMAIN-SUFFIX,jpush.html5.qq.com,REJECT
-DOMAIN-SUFFIX,jqmt.qq.com,REJECT
-DOMAIN-SUFFIX,jrlt.beacon.qq.com,REJECT
-DOMAIN-SUFFIX,jsqmt.qq.com,REJECT
-DOMAIN-SUFFIX,lives.l.qq.com,REJECT
-DOMAIN-SUFFIX,livep.l.qq.com,REJECT
-DOMAIN-SUFFIX,news.l.qq.com,REJECT
-DOMAIN-SUFFIX,livep.l.ott.video.qq.com,REJECT
-DOMAIN-SUFFIX,lives.l.ott.video.qq.com,REJECT
-DOMAIN-SUFFIX,masdk.3g.qq.com,REJECT
-DOMAIN-SUFFIX,mfm.video.qq.com,REJECT
-DOMAIN-SUFFIX,mini2015.qq.com,REJECT
-DOMAIN-SUFFIX,monitor.uu.qq.com,REJECT
-DOMAIN-SUFFIX,mqqad.cs0309.html5.qq.com,REJECT
-DOMAIN-SUFFIX,mqqad.html5.qq.com,REJECT
-DOMAIN-SUFFIX,mqqadr.reader.qq.com,REJECT
-DOMAIN-SUFFIX,nc.gdt.qq.com,REJECT
-DOMAIN-SUFFIX,news.mpush.qq.com,REJECT
-DOMAIN-SUFFIX,news-l.play.ott.video.qq.com,REJECT
-DOMAIN-SUFFIX,novelsns.html5.qq.com,REJECT
-DOMAIN-SUFFIX,oth.str.mdt.qq.com,REJECT
-DOMAIN-SUFFIX,oth.update.mdt.qq.com,REJECT
-DOMAIN-SUFFIX,pcbrowser.dd.qq.com,REJECT
-DOMAIN-SUFFIX,pmir.3g.qq.com,REJECT
-DOMAIN-SUFFIX,pvstat.html5.qq.com,REJECT
-DOMAIN-SUFFIX,q.i.gdt.qq.com,REJECT
-DOMAIN-SUFFIX,qqshow2-item.qq.com,REJECT
-DOMAIN-SUFFIX,rm.gdt.qq.com,REJECT
-DOMAIN-SUFFIX,scdown.qq.com,REJECT
-DOMAIN-SUFFIX,setting.snswin.qq.com,REJECT
-DOMAIN-SUFFIX,sngmta.qq.com,REJECT
-DOMAIN-SUFFIX,strategy.beacon.qq.com,REJECT
-DOMAIN-SUFFIX,t.gdt.qq.com,REJECT
-DOMAIN-SUFFIX,t.sj.qq.com,REJECT
-DOMAIN-SUFFIX,ta.qq.com,REJECT
-DOMAIN-SUFFIX,tcss.qq.com,REJECT
-DOMAIN-SUFFIX,tpush.html5.qq.com,REJECT
-DOMAIN-SUFFIX,updatecenter.qq.com,REJECT
-DOMAIN-SUFFIX,v.gdt.qq.com,REJECT
-DOMAIN-SUFFIX,video.ureport.push.qq.com,REJECT
-DOMAIN-SUFFIX,video.wap.mpush.qq.com,REJECT
-DOMAIN-SUFFIX,vlive.qqvideo.tc.qq.com,REJECT
-DOMAIN-SUFFIX,wap.mpush.qq.com,REJECT
-DOMAIN-SUFFIX,win.gdt.qq.com,REJECT
-DOMAIN-SUFFIX,ws.sj.qq.com,REJECT
-DOMAIN-SUFFIX,wxsnsdy.tc.qq.com,REJECT
-DOMAIN-SUFFIX,wxsnsdy.video.qq.com,REJECT
-#起点
-DOMAIN-SUFFIX,game.qidian.com,REJECT
-DOMAIN-SUFFIX,o.if.qidian.com,REJECT
-DOMAIN-SUFFIX,cj.qidian.com,REJECT
-DOMAIN-SUFFIX,cndjs-1251973891.coshk.myqcloud.com,REJECT
-DOMAIN-SUFFIX,mibook-10006092.cos.myqcloud.com,REJECT
-DOMAIN-SUFFIX,moren-1252794300.file.myqcloud.com,REJECT
-DOMAIN-SUFFIX,redpaper-10006092.cos.myqcloud.com,REJECT
+host, adfile.wifi8.com, AdBlock
+host, adnew.wifi8.com, AdBlock
+# > Photoable
+host, cdn.adapi.fotoable.com, AdBlock
+host, regist.fotoable.com, AdBlock
+# > PPTV
+host, ads.aplus.pptv.com, AdBlock
+host, ads.aplusapi.pptv.com, AdBlock
+host, asimgs.pplive.cn, AdBlock
+host, de.as.pptv.com, AdBlock
+# (R)
+# > 人人影视字幕组
+host, tj.playcvn.com, AdBlock
+host, tu.cvnad.com, AdBlock
 # (S)
 # > Sina
-DOMAIN-SUFFIX,beacon.sina.com.cn,REJECT
-DOMAIN,adimg.vue.weibo.com,REJECT
-DOMAIN,u1.img.mobile.sina.cn,REJECT
-DOMAIN,sax.sina.com.cn,REJECT
-DOMAIN,saxs.sina.com.cn,REJECT
-DOMAIN,saxn.sina.com.cn,REJECT
-DOMAIN-SUFFIX,2016.sina.cn,REJECT
-DOMAIN-SUFFIX,73.sinawap.com,REJECT
-DOMAIN-SUFFIX,ad.sina.com.cn,REJECT
-DOMAIN-SUFFIX,ad4.sina.com.cn,REJECT
-DOMAIN-SUFFIX,adbox.sina.com.cn,REJECT
-DOMAIN-SUFFIX,adimages.sina.com.hk,REJECT
-DOMAIN-SUFFIX,adimg.mobile.sina.cn,REJECT
-DOMAIN-SUFFIX,adm.leju.sina.com.cn,REJECT
-DOMAIN-SUFFIX,alisinak.com,REJECT
-DOMAIN-SUFFIX,api.apps.sina.cn,REJECT
-DOMAIN-SUFFIX,appgift.sinaapp.com,REJECT
-DOMAIN-SUFFIX,appsupdate.sinaapp.com,REJECT
-DOMAIN-SUFFIX,as.sinahk.net,REJECT
-DOMAIN-SUFFIX,atm.sina.com,REJECT
-DOMAIN-SUFFIX,beacon.sina.com.cn,REJECT
-DOMAIN-SUFFIX,contentrecommend-out.mobile.sina.cn,REJECT
-DOMAIN-SUFFIX,count.video.sina.com.cn,REJECT
-DOMAIN-SUFFIX,counter.sina.com.cn,REJECT
-DOMAIN-SUFFIX,cre.dp.sina.cn,REJECT
-DOMAIN-SUFFIX,cre.mix.sina.com.cn,REJECT
-DOMAIN-SUFFIX,cre-dp.sina.cn,REJECT
-DOMAIN-SUFFIX,current.sina.com.cn,REJECT
-DOMAIN-SUFFIX,d0.sina.com.cn,REJECT
-DOMAIN-SUFFIX,d0.sinaimg.cn,REJECT
-DOMAIN-SUFFIX,d00.sina.com.cn,REJECT
-DOMAIN-SUFFIX,d1.sina.com.cn,REJECT
-DOMAIN-SUFFIX,d1.sinaimg.cn,REJECT
-DOMAIN-SUFFIX,d2.sina.com.cn,REJECT
-DOMAIN-SUFFIX,d2.sinaimg.cn,REJECT
-DOMAIN-SUFFIX,d3.sina.com.cn,REJECT
-DOMAIN-SUFFIX,d3.sinaimg.cn,REJECT
-DOMAIN-SUFFIX,d4.sina.com.cn,REJECT
-DOMAIN-SUFFIX,d5.sina.com.cn,REJECT
-DOMAIN-SUFFIX,d6.sina.com.cn,REJECT
-DOMAIN-SUFFIX,d6.sinaimg.cn,REJECT
-DOMAIN-SUFFIX,d7.sina.com.cn,REJECT
-DOMAIN-SUFFIX,d7.sinaimg.cn,REJECT
-DOMAIN-SUFFIX,d8.sina.com.cn,REJECT
-DOMAIN-SUFFIX,d8.sinaimg.cn,REJECT
-DOMAIN-SUFFIX,d9.sina.com.cn,REJECT
-DOMAIN-SUFFIX,dcads.sina.com.cn,REJECT
-DOMAIN-SUFFIX,dl.kjava.sina.cn,REJECT
-DOMAIN-SUFFIX,dmp.sina.cn,REJECT
-DOMAIN-SUFFIX,img.adbox.sina.com.cn,REJECT
-DOMAIN-SUFFIX,img.amp.ad.sina.com.cn,REJECT
-DOMAIN-SUFFIX,int.dpool.sina.com.cn,REJECT
-DOMAIN-SUFFIX,interest.mix.sina.com.cn,REJECT
-DOMAIN-SUFFIX,m.beacon.sina.com.cn,REJECT
-DOMAIN-SUFFIX,mg.games.sina.com.cn,REJECT
-DOMAIN-SUFFIX,motu.p4p.sina.com.cn,REJECT
-DOMAIN-SUFFIX,newspush.sinajs.cn,REJECT
-DOMAIN-SUFFIX,oascentral.sina.com,REJECT
-DOMAIN-SUFFIX,oascentral.sina.com.hk,REJECT
-DOMAIN-SUFFIX,p4p.sina.com.cn,REJECT
-DOMAIN-SUFFIX,palmnews.sina.cn,REJECT
-DOMAIN-SUFFIX,pay.mobile.sina.cn,REJECT
-DOMAIN-SUFFIX,pfp.sina.com.cn,REJECT
-DOMAIN-SUFFIX,pfpip.sina.com,REJECT
-DOMAIN-SUFFIX,r.dmp.sina.com.cn,REJECT
-DOMAIN-SUFFIX,rm.sina.com.cn,REJECT
-DOMAIN-SUFFIX,rs.sinajs.cn,REJECT
-DOMAIN-SUFFIX,s.img.mix.sina.com.cn,REJECT
-DOMAIN-SUFFIX,s3.pfp.sina.net,REJECT
-DOMAIN-SUFFIX,sapi.sina.cn,REJECT
-DOMAIN-SUFFIX,sbeacon.sina.com.cn,REJECT
-DOMAIN-SUFFIX,sdkapp.mobile.sina.cn,REJECT
-DOMAIN-SUFFIX,sdkclick.mobile.sina.cn,REJECT
-DOMAIN-SUFFIX,sina.wrating.com,REJECT
-DOMAIN-SUFFIX,sina.yinstar.org,REJECT
-DOMAIN-SUFFIX,sinaalicdn.com,REJECT
-DOMAIN-SUFFIX,sinaaliyun.cn,REJECT
-DOMAIN-SUFFIX,slog.sina.cn,REJECT
-DOMAIN-SUFFIX,slog.sina.com.cn,REJECT
-DOMAIN-SUFFIX,staticadm.leju.sina.com.cn,REJECT
-DOMAIN-SUFFIX,tjs.sjs.sinajs.cn,REJECT
-DOMAIN-SUFFIX,trends.mobile.sina.cn,REJECT
-DOMAIN-SUFFIX,wapwbclick.mobile.sina.cn,REJECT
-DOMAIN-SUFFIX,wbapp.mobile.sina.cn,REJECT
-DOMAIN-SUFFIX,wbclick.mobile.sina.cn,REJECT
-DOMAIN-SUFFIX,wbpctips.mobile.sina.cn,REJECT
-DOMAIN-SUFFIX,woocall.sina.com.cn,REJECT
-#微博
-DOMAIN-SUFFIX,adimg.uve.weibo.com,REJECT
-DOMAIN-SUFFIX,alitui.weibo.com,REJECT
-DOMAIN-SUFFIX,biz.weibo.com,REJECT
-DOMAIN-SUFFIX,game.weibo.cn,REJECT
-DOMAIN-SUFFIX,game.weibo.com,REJECT
-DOMAIN-SUFFIX,gw5.push.mcp.weibo.cn,REJECT
-DOMAIN-SUFFIX,gw6.push.mcp.weibo.cn,REJECT
-DOMAIN-SUFFIX,promote.biz.weibo.cn,REJECT
-DOMAIN-SUFFIX,s.alitui.weibo.com,REJECT
-DOMAIN-SUFFIX,sdkapp.uve.weibo.com,REJECT
-DOMAIN-SUFFIX,weibomingzi.com,REJECT
-DOMAIN-SUFFIX,zymo.mps.weibo.com,REJECT
+host-suffix, beacon.sina.com.cn, AdBlock
+host, adimg.vue.weibo.com, AdBlock
+host, sax.sina.com.cn, AdBlock
+host, saxn.sina.com.cn, AdBlock
+host, saxs.sina.com.cn, AdBlock
+host, u1.img.mobile.sina.cn, AdBlock
 # > Sohu
-DOMAIN-SUFFIX,ad.sohu.com,REJECT
-DOMAIN-SUFFIX,ads.sohu.com,REJECT
-DOMAIN-SUFFIX,aty.sohu.com,REJECT
-DOMAIN,imp.optaim.com,REJECT
-DOMAIN,v2.reachmax.cn,REJECT
-DOMAIN,track.sohu.com,REJECT
-DOMAIN,hui.sohu.com,REJECT
+host-suffix, ad.sohu.com, AdBlock
+host-suffix, ads.sohu.com, AdBlock
+host-suffix, aty.sohu.com, AdBlock
+host, hui.sohu.com, AdBlock
+host, imp.optaim.com, AdBlock
+host, track.sohu.com, AdBlock
+host, v2.reachmax.cn, AdBlock
 # (T)
 # > Tencent
-DOMAIN-SUFFIX,e.qq.com,REJECT
-DOMAIN-SUFFIX,gdt.qq.com,REJECT
-DOMAIN-SUFFIX,l.qq.com,REJECT
-DOMAIN,adsmind.apdcdn.tc.qq.com,REJECT
-DOMAIN,adsmind.gdtimg.com,REJECT
-DOMAIN,adsmind.tc.qq.com,REJECT
-DOMAIN,pgdt.gtimg.cn,REJECT
-DOMAIN,pgdt.gtimg.com,REJECT
-DOMAIN,pgdt.ugdtimg.com,REJECT
-DOMAIN,splashqqlive.gtimg.com,REJECT
-DOMAIN,wa.gtimg.com,REJECT
-DOMAIN,wxsnsdy.wxs.qq.com,REJECT
-DOMAIN,wxsnsdythumb.wxs.qq.com,REJECT
+host-suffix, e.qq.com, AdBlock
+host-suffix, gdt.qq.com, AdBlock
+host-suffix, l.qq.com, AdBlock
+host, adsmind.apdcdn.tc.qq.com, AdBlock
+host, adsmind.gdtimg.com, AdBlock
+host, adsmind.tc.qq.com, AdBlock
+host, btrace.qq.com, AdBlock
+host, pgdt.gtimg.cn, AdBlock
+host, pgdt.gtimg.com, AdBlock
+host, pgdt.ugdtimg.com, AdBlock
+host, splashqqlive.gtimg.com, AdBlock
+host, wa.gtimg.com, AdBlock
+host, wxsnsdy.wxs.qq.com, AdBlock
+host, wxsnsdythumb.wxs.qq.com, AdBlock
+# >> 体育
+host, dp3.qq.com, AdBlock
+host, lives.l.qq.com, AdBlock
 # > The Paper
-DOMAIN,admonitor.thepaper.cn,REJECT
-DOMAIN,adpai.thepaper.cn,REJECT
-DOMAIN,imgadpai.thepaper.cn,REJECT
+host, admonitor.thepaper.cn, AdBlock
+host, adpai.thepaper.cn, AdBlock
+host, imgadpai.thepaper.cn, AdBlock
 # > Thunder
-DOMAIN,adsp.xunlei.com,REJECT
-DOMAIN,etl.xlmc.sandai.net,REJECT
+host, adsp.xunlei.com, AdBlock
+host, etl.xlmc.sandai.net, AdBlock
 # > 同花顺
-DOMAIN,adm.10jqka.com.cn,REJECT
-DOMAIN,stat.10jqka.com.cn,REJECT
+host, adm.10jqka.com.cn, AdBlock
+host, stat.10jqka.com.cn, AdBlock
 # > 太平洋
-DOMAIN,ad-analysis.pconline.com.cn,REJECT
-DOMAIN,iad0ssl.pcauto.com.cn,REJECT
-DOMAIN,iad0ssl.pconline.com.cn,REJECT
-DOMAIN,imgad0.pcauto.com.cn,REJECT
-DOMAIN,imgad0.pconline.com.cn,REJECT
-DOMAIN,ivy.pchouse.com.cn,REJECT
+host, ad-analysis.pconline.com.cn, AdBlock
+host, iad0ssl.pcauto.com.cn, AdBlock
+host, iad0ssl.pconline.com.cn, AdBlock
+host, imgad0.pcauto.com.cn, AdBlock
+host, imgad0.pconline.com.cn, AdBlock
+host, ivy.pchouse.com.cn, AdBlock
 # (W)
 # > WiFi 万能钥匙
-DOMAIN,a.wkanx.com,REJECT
-DOMAIN,cwx.lianwangtech.com,REJECT
-DOMAIN,c1wx.lianwangtech.com,REJECT
+host, a.wkanx.com, AdBlock
+host, c1wx.lianwangtech.com, AdBlock
+host, cwx.lianwangtech.com, AdBlock
 # (X)
 # > 喜马拉雅
-DOMAIN,ad.ximalaya.com,REJECT
-DOMAIN,adbs.ximalaya.com,REJECT
-DOMAIN,adse.ximalaya.com,REJECT
-DOMAIN,adse.wsa.ximalaya.com,REJECT
-DOMAIN,adbehavior.wsa.ximalaya.com,REJECT
-DOMAIN,adsebs.ximalaya.com,REJECT
+host, ad.ximalaya.com, AdBlock
+host, adbehavior.wsa.ximalaya.com, AdBlock
+host, adbs.ximalaya.com, AdBlock
+host, adse.wsa.ximalaya.com, AdBlock
+host, adse.ximalaya.com, AdBlock
+host, adsebs.ximalaya.com, AdBlock
 # > 小红书
-DOMAIN,ads-img-qc.xhscdn.com,REJECT
-DOMAIN,ads-video-qc.xhscdn.com,REJECT
-DOMAIN,t-ads.xiaohongshu.com,REJECT
+host, ads-img-qc.xhscdn.com, AdBlock
+host, ads-video-qc.xhscdn.com, AdBlock
+host, t-ads.xiaohongshu.com, AdBlock
 # (Y)
 # > Youku
-DOMAIN-SUFFIX,atm.youku.com,REJECT
-DOMAIN,ad.mobile.youku.com,REJECT
-DOMAIN,iyes.youku.com,REJECT
+host-suffix, atm.youku.com, AdBlock
+host, ad.mobile.youku.com, AdBlock
+host, iyes.youku.com, AdBlock
+# > YouTube++
+host, ehg-youtube.hitbox.com, AdBlock
 # (Z)
 # > ZOL
-DOMAIN,apppv.zol.com.cn,REJECT
-DOMAIN,pvnapp.zol.com.cn,REJECT
+host, apppv.zol.com.cn, AdBlock
+host, pvnapp.zol.com.cn, AdBlock
+# > 字节跳动
+host, sf3-ttcdn-tos.pstatp.com, AdBlock
+host, sf6-ttcdn-tos.pstatp.com, AdBlock
+# > 知到
+host, app-advertise.zhihuishu.com, AdBlock
