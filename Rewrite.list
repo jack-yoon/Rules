@@ -1,4 +1,4 @@
-hostname = *.amemv.com,*.k.sohu.com,*.tv.sohu.com,*.kakamobi.cn,*.kingsoft-office-service.com,*.meituan.net,*.musical.ly,*.pstatp.com,*.snssdk.com,*.uve.weibo.com,*.ydstatic.com,*pi.feng.com,4gimg.map.qq.com,a.apicloud.com,a.wkanx.com,acs.m.taobao.com,act.vip.iqiyi.com,api.bjxkhc.com,api.caijingmobile.com,api.douban.com,api.gotokeep.com,api.intsig.net,api.jr.mi.com,api.kkmh.com,api.m.jd.com,api.qbb6.com,api.resso.app,api.rr.tv,api.smzdm.com,api.waitwaitpay.com,api.wallstreetcn.com,api.xiachufang.com,api.yangkeduo.com,api.zhihu.com,*.tiktokv.com,*.tiktokcdn.com,api-mifit*.huami.com,app.58.com,app.api.ke.com,app.bilibili.com,appconf.mail.163.com,app.wy.guahao.com,app.yinxiang.com,app-api.smzdm.com,business-cdn.shouji.sogou.com,c.m.163.com,cap.caocaokeji.cn,cloud.189.cn,clientaccess.10086.cn,client.mail.163.com,dl.app.gtja.com,dxy.com,e.dangdang.com,easyreadfs.nosdn.127.net,enjoy.abchina.com,guide-acs.m.taobao.com,g.cdn.pengpengla.com,gw.alicdn.com,gw.csdn.net,gw-passenger.01zhuanche.com,heic.alicdn.com,huichuan.sm.cn,i.weread.qq.com,iapi.bishijie.com,iface.iqiyi.com,ih2.ireader.com,imeclient.openspeech.cn,img*.10101111cdn.com,img*.360buyimg.com,interface.music.163.com,ios.wps.cn,m*.amap.com,m.client.10010.com,m.ibuscloud.com,m.tuniu.com,m.youtube.com,manga.bilibili.com,mapi.mafengwo.cn,media.qyer.com,mlife.jf365.boc.cn,mp.weixin.qq.com,mrobot.pcauto.com.cn,mrobot.pconline.com.cn,ms.jr.jd.com,msspjh.emarbox.com,news.ssp.qq.com,newsso.map.qq.com,open.qyer.com,p.du.163.com,pic1cdn.cmbchina.com,r.inews.qq.com,render.alipay.com,rtbapi.douyucdn.cn,s*.zdmimg.com,smkmp.96225.com,sp.kaola.com,ss0.bdstatic.com,ssl.kohsocialapp.qq.com,static.vuevideo.net,static1.keepcdn.com,support.you.163.com,s.youtube.com,thor.weidian.com,weibointl.api.weibo.cn,www.youtube.com,www.zhihu.com,www.zybang.com,youtubei.googleapis.com,qidian.qpic.cn,mage.if.qidian.com,api2.helper.qq.com,mi.gdt.qq.com,lives.l.qq.com,cube.elemecdn.com,fuss10.elemecdn.com,storage.wax.weibo.com,sdkapp.uve.weibo.com,mapi.weibo.com
+hostname = api.cognitive.microsofttranslator.com,offline.microsofttranslator.com,sf*ttcdn-tos.pstatp.com,oset-api.open-adx.com,*.amemv.com,*.k.sohu.com,*.tv.sohu.com,*.kakamobi.cn,*.kingsoft-office-service.com,*.meituan.net,*.musical.ly,*.pstatp.com,*.snssdk.com,*.uve.weibo.com,*.ydstatic.com,*pi.feng.com,4gimg.map.qq.com,a.apicloud.com,a.wkanx.com,acs.m.taobao.com,act.vip.iqiyi.com,api.bjxkhc.com,api.caijingmobile.com,api.douban.com,api.gotokeep.com,api.intsig.net,api.jr.mi.com,api.kkmh.com,api.m.jd.com,api.qbb6.com,api.resso.app,api.rr.tv,api.smzdm.com,api.waitwaitpay.com,api.wallstreetcn.com,api.xiachufang.com,api.yangkeduo.com,api.zhihu.com,*.tiktokv.com,*.tiktokcdn.com,api-mifit*.huami.com,app.58.com,app.api.ke.com,app.bilibili.com,appconf.mail.163.com,app.wy.guahao.com,app.yinxiang.com,app-api.smzdm.com,business-cdn.shouji.sogou.com,c.m.163.com,cap.caocaokeji.cn,cloud.189.cn,clientaccess.10086.cn,client.mail.163.com,dl.app.gtja.com,dxy.com,e.dangdang.com,easyreadfs.nosdn.127.net,enjoy.abchina.com,guide-acs.m.taobao.com,g.cdn.pengpengla.com,gw.alicdn.com,gw.csdn.net,gw-passenger.01zhuanche.com,heic.alicdn.com,huichuan.sm.cn,i.weread.qq.com,iapi.bishijie.com,iface.iqiyi.com,ih2.ireader.com,imeclient.openspeech.cn,img*.10101111cdn.com,img*.360buyimg.com,interface.music.163.com,ios.wps.cn,m*.amap.com,m.client.10010.com,m.ibuscloud.com,m.tuniu.com,m.youtube.com,manga.bilibili.com,mapi.mafengwo.cn,media.qyer.com,mlife.jf365.boc.cn,mp.weixin.qq.com,mrobot.pcauto.com.cn,mrobot.pconline.com.cn,ms.jr.jd.com,msspjh.emarbox.com,news.ssp.qq.com,newsso.map.qq.com,open.qyer.com,p.du.163.com,pic1cdn.cmbchina.com,r.inews.qq.com,render.alipay.com,rtbapi.douyucdn.cn,s*.zdmimg.com,smkmp.96225.com,sp.kaola.com,ss0.bdstatic.com,ssl.kohsocialapp.qq.com,static.vuevideo.net,static1.keepcdn.com,support.you.163.com,s.youtube.com,thor.weidian.com,weibointl.api.weibo.cn,www.youtube.com,www.zhihu.com,www.zybang.com,youtubei.googleapis.com,qidian.qpic.cn,mage.if.qidian.com,api2.helper.qq.com,mi.gdt.qq.com,lives.l.qq.com,cube.elemecdn.com,fuss10.elemecdn.com,storage.wax.weibo.com,sdkapp.uve.weibo.com,mapi.weibo.com
 
 #脚本Script
 #zhihu
@@ -85,6 +85,9 @@ hostname = *.amemv.com,*.k.sohu.com,*.tv.sohu.com,*.kakamobi.cn,*.kingsoft-offic
 ^https?:\/\/(www.)?yuanchengxiezuo\.com\/ url 302 https://www.teamviewer.com/
 ^https?:\/\/(www.)?zbrushcn.com/ url 302 https://pixologic.com/
 
+#广告联盟
+^https?:\/\/sf.*-ttcdn-tos\.pstatp\.com\/obj\/ad url reject-200
+^https?:\/\/oset-api\.open-adx\.com\/ad\/ url reject-200
 # TikTok
 (.*video_id=\w{32})(.*watermark=)(.*) url 302 $1
 (?<=(carrier|account|sys)_region=)CN url 307 JP
@@ -247,20 +250,20 @@ hostname = *.amemv.com,*.k.sohu.com,*.tv.sohu.com,*.kakamobi.cn,*.kingsoft-offic
 
 # J
 # > 京东
+\^https?://union.click.jd.com/jda? url request-header ^(.+?\s).+?(\s[\s\S]+?Host:).+?(\r\n) request-header $1/jda?adblock=$2union.click.jd.com$3
+^https?://union.click.jd.com/sem.php? url request-header ^(.+?\s).+?(\s[\s\S]+?Host:).+?(\r\n) request-header $1/sem.php?adblock=$2union.click.jd.com$3
 ^https?:\/\/api\.m\.jd.com\/client\.action\?functionId=(start|queryMaterialAdverts) url reject-200
 ^https?:\/\/b?dsp-x\.jd\.com\/adx\/ url reject-200
 ^https?:\/\/ms\.jr\.jd\.com\/gw\/generic\/base\/na\/m\/adInfo url reject-200
 ^https?:\/\/ms\.jr\.jd\.com\/gw\/generic\/aladdin\/na\/m\/getLoadingPicture url reject-200
-^https?://coupon.m.jd.com/ url 302 https://coupon.m.jd.com/
-^https?://h5.m.jd.com/ url 302 https://h5.m.jd.com/
-^https?://item.m.jd.com/ url 302 https://item.m.jd.com/
-^https?://m.jd.com url 302 https://m.jd.com
-^https?://newcz.m.jd.com/ url 302 https://newcz.m.jd.com/
-^https?://p.m.jd.com/ url 302 https://p.m.jd.com/
-^https?://so.m.jd.com/ url 302 https://so.m.jd.com/
-^https?://union.click.jd.com/jda? url request-header ^(.+?\s).+?(\s[\s\S]+?Host:).+?(\r\n) request-header $1/jda?adblock=$2union.click.jd.com$3
-^https?://union.click.jd.com/sem.php? url request-header ^(.+?\s).+?(\s[\s\S]+?Host:).+?(\r\n) request-header $1/sem.php?adblock=$2union.click.jd.com$3
-^https?://www.jd.com/ url 302 https://www.jd.com/
+^http://coupon.m.jd.com/ url 302 https://coupon.m.jd.com/
+^http://h5.m.jd.com/ url 302 https://h5.m.jd.com/
+^http://item.m.jd.com/ url 302 https://item.m.jd.com/
+^http://m.jd.com url 302 https://m.jd.com
+^http://newcz.m.jd.com/ url 302 https://newcz.m.jd.com/
+^http://p.m.jd.com/ url 302 https://p.m.jd.com/
+^http://so.m.jd.com/ url 302 https://so.m.jd.com/
+^http://www.jd.com/ url 302 https://www.jd.com/
 
 # > 金山 WPS
 ^https?:\/\/ios\.wps\.cn\/ad-statistics-service url reject-200
@@ -279,6 +282,9 @@ hostname = *.amemv.com,*.k.sohu.com,*.tv.sohu.com,*.kakamobi.cn,*.kingsoft-offic
 
 
 # M
+#Microsoft
+^https:\/\/api\.cognitive\.microsofttranslator\.com\/languages\?scope=compact,transliteration&api-version= url request-header (\r\n)If-None-Match:.+(\r\n) request-header $1
+^https:\/\/offline\.microsofttranslator\.com\/translatorresources\.svc\/GetMetadata\?platform=ios&version= url request-header (\r\n)If-None-Match:.+(\r\n) request-header $1
 # > 小米
 ^https?:\/\/api\.m\.mi\.com\/v\d\/app\/start url reject-200
 ^https?:\/\/api\.jr\.mi\.com\/v\d\/adv\/ url reject-200
