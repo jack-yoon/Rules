@@ -488,7 +488,7 @@ hostname = wallet.95516.com,api.cognitive.microsofttranslator.com,offline.micros
 # > 印象笔记
 ^https?:\/\/app\.yinxiang\.com\/ads\/ url reject-200
 # > 云闪付
-^https?:\/\/wallet\.95516\.com\/s\/wl\/ url reject-200
+#^https?:\/\/wallet\.95516\.com\/s\/wl\/ url reject-200
 
 # Z
 
