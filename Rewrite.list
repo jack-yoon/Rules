@@ -320,8 +320,8 @@ hostname = wallet.95516.com,api.cognitive.microsofttranslator.com,offline.micros
 # > 亲宝宝
 ^https?:\/\/api\.qbb6\.com\/ad\/ url reject-200
 #起点
-#^https?:\/\/shp\.qpic\.cn\/pggamehead\/.*h=\d{4} url reject-200
-#^https?:\/\/mage\.if\.qidian\.com\/Atom\.axd\/Api\/Client\/GetConfIOS url reject-200
+^https?:\/\/shp\.qpic\.cn\/pggamehead\/.*h=\d{4} url reject-200
+^https?:\/\/mage\.if\.qidian\.com\/Atom\.axd\/Api\/Client\/GetConfIOS url reject-200
 
 # R
 # > 人人视频
