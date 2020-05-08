@@ -495,7 +495,7 @@ hostname = wallet.95516.com,api.cognitive.microsofttranslator.com,offline.micros
 ^https?:\/\/(api|www)\.zhihu\.com\/.*(community-ad|extended|featured-comment-ad|guide|launch|recommendations) url reject-200
 ^https?:\/\/(api|www)\.zhihu\.com\/ab\/api url reject-200
 ^https?:\/\/(api|www)\.zhihu\.com\/answers\/.*/comments/featured-comment-ad url reject-200
-^https?:\/\/(api|www)\.zhihu\.com\/api\/v4\/(community-ad|mcn ) url reject-200
+^https?:\/\/(api|www)\.zhihu\.com\/api\/v4\/(community-ad|mcn) url reject-200
 ^https?:\/\/(api|www)\.zhihu\.com\/appview\/api\/v4\/answers\/.+recommendations url reject-200
 ^https?:\/\/(api|www)\.zhihu\.com\/commercial_api\/(launch|real_time) url reject-200
 ^https?:\/\/(api|www)\.zhihu\.com\/fringe\/ad url reject-200
