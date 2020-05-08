@@ -4,8 +4,8 @@ hostname = wallet.95516.com,api.cognitive.microsofttranslator.com,offline.micros
 #zhihu
 ^https?://api\.zhihu\.com/moments/recommend url script-response-body zhihu_feed.js
 ^https?://api\.zhihu\.com/topstory/recommend url script-response-body zhihu_recommend.js
-^https?://api\.zhihu\.com/v4/questions url script-response-body zhihu_answer.js
-^https?://api\.zhihu\.com/people/ url script-response-body zhihu_people.js
+#^https?://api\.zhihu\.com/v4/questions url script-response-body zhihu_answer.js
+#^https?://api\.zhihu\.com/people/ url script-response-body zhihu_people.js
 # 阿里
 ^https?:\/\/amdc\.m\.taobao\.com\/amdc\/mobileDispatch url request-body &domain=.+?& request-body &
 ^https?:\/\/acs\.m\.taobao\.com\/gw\/mtop\.alimama\.etao\.config\.query\/ url response-body "ems_etao_advertise" response-body ""
