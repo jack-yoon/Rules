@@ -491,17 +491,17 @@ hostname = wallet.95516.com,api.cognitive.microsofttranslator.com,offline.micros
 # Z
 
 # > 知乎
-^https?:\/\/(api|www)\.zhihu\.com\/(?>ad-style-service|adx|app_config|banners|drama|commercial|mqtt|xen|xen) url reject-200
-^https?:\/\/(api|www)\.zhihu\.com\/.*?(?>community-ad|extended|featured-comment-ad|guide|launch|recommendations) url reject-200
+^https?:\/\/(api|www)\.zhihu\.com\/(ad-style-service|adx|app_config|banners|drama|commercial|mqtt|xen|xen) url reject-200
+^https?:\/\/(api|www)\.zhihu\.com\/.*(community-ad|extended|featured-comment-ad|guide|launch|recommendations) url reject-200
 ^https?:\/\/(api|www)\.zhihu\.com\/ab\/api url reject-200
-^https?:\/\/(api|www)\.zhihu\.com\/answers\/.*?/comments/featured-comment-ad url reject-200
+^https?:\/\/(api|www)\.zhihu\.com\/answers\/.*/comments/featured-comment-ad url reject-200
 ^https?:\/\/(api|www)\.zhihu\.com\/api\/v4\/(community-ad|mcn ) url reject-200
 ^https?:\/\/(api|www)\.zhihu\.com\/appview\/api\/v4\/answers\/.+recommendations url reject-200
-^https?:\/\/(api|www)\.zhihu\.com\/commercial_api\/(?>launch|real_time) url reject-200
+^https?:\/\/(api|www)\.zhihu\.com\/commercial_api\/(launch|real_time) url reject-200
 ^https?:\/\/(api|www)\.zhihu\.com\/fringe\/ad url reject-200
-^https?:\/\/(api|www)\.zhihu\.com\/(?>launch|real_time) url reject-200
+^https?:\/\/(api|www)\.zhihu\.com\/(launch|real_time) url reject-200
 ^https?:\/\/(api|www)\.zhihu\.com\/market\/popover url reject-200
-^https?:\/\/(api|www)\.zhihu\.com\/search\/(?>top|tab|preset|preset_words|top_search) url reject-200
+^https?:\/\/(api|www)\.zhihu\.com\/search\/(top|tab|preset|preset_words|top_search) url reject-200
 ^https?:\/\/(api|www)\.zhihu\.com\/terms\/privacy\/confirm url reject-200
 
 # > 作业帮
