@@ -6,7 +6,6 @@ hostname = api.cognitive.microsofttranslator.com,offline.microsofttranslator.com
 ^https?://api\.zhihu\.com/moments/recommend url script-response-body zhihu_feed.js
 ^https?://api\.zhihu\.com/people/ url script-response-body zhihu_people.js
 ^https?://api\.zhihu\.com/topstory/recommend url script-response-body zhihu_recommend.js
-^https?://link.zhihu.com/\?target= url script-response-body zhihu_link.js
 # 阿里
 ^https?+:\/\/amdc\.m\.taobao\.com\/amdc\/mobileDispatch url response-body .+ response-body eyJjYXJyaWVyIjoiIiwiY2xpZW50SXNwIjoiIiwiY29kZSI6MTAwMCwiY3YiOjEsImRucyI6W3siYWlzbGVzIjpbXSwiaG9zdCI6IiIsImlwcyI6W10sInN0cmF0ZWdpZXMiOltdLCJ0dGwiOjMwMH1dLCJpcCI6IiIsInVpZCI6IiIsInVuaXQiOiIifQ==
 ^https?:\/\/acs\.m\.taobao\.com\/gw\/mtop\.alimama\.etao\.config\.query\/ url response-body "ems_etao_advertise" response-body ""
