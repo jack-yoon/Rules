@@ -2,16 +2,16 @@ hostname = api.cognitive.microsofttranslator.com,offline.microsofttranslator.com
 #qidian.qpic.cn,mage.if.qidian.com,
 #脚本Script
 #zhihu
-^https?://api\.zhihu\.com/v4/questions url script-response-body zhihu_answer.js
-^https?://api\.zhihu\.com/moments/recommend url script-response-body zhihu_feed.js
-^https?://api\.zhihu\.com/people/ url script-response-body zhihu_people.js
-^https?://api\.zhihu\.com/topstory/recommend url script-response-body zhihu_recommend.js
+^https?://api\.zhihu\.com/v4/questions url script-response-body https://raw.githubusercontent.com/jack-yoon/Rules/master/JS/zhihu_answer.js
+^https?://api\.zhihu\.com/moments/recommend url script-response-body https://raw.githubusercontent.com/jack-yoon/Rules/master/JS/zhihu_feed.js
+^https?://api\.zhihu\.com/people/ url script-response-body https://raw.githubusercontent.com/jack-yoon/Rules/master/JS/zhihu_people.js
+^https?://api\.zhihu\.com/topstory/recommend url script-response-body https://raw.githubusercontent.com/jack-yoon/Rules/master/JS/zhihu_recommend.js
 # 阿里
 ^https?+:\/\/amdc\.m\.taobao\.com\/amdc\/mobileDispatch url response-body .+ response-body eyJjYXJyaWVyIjoiIiwiY2xpZW50SXNwIjoiIiwiY29kZSI6MTAwMCwiY3YiOjEsImRucyI6W3siYWlzbGVzIjpbXSwiaG9zdCI6IiIsImlwcyI6W10sInN0cmF0ZWdpZXMiOltdLCJ0dGwiOjMwMH1dLCJpcCI6IiIsInVpZCI6IiIsInVuaXQiOiIifQ==
 ^https?:\/\/acs\.m\.taobao\.com\/gw\/mtop\.alimama\.etao\.config\.query\/ url response-body "ems_etao_advertise" response-body ""
 #weibo
-^https?://m?api\.weibo\.c(n|om)/2/(statuses/(unread|extend|positives/get|(friends|video)(/|_)timeline)|stories/(video_stream|home_list)|(groups|fangle)/timeline|profile/statuses|comments/build_comments|photo/recommend_list|service/picfeed|searchall|cardlist|page|\!/photos/pic_recommend_status) url script-response-body wb_ad.js
-^https?://(sdk|wb)app\.uve\.weibo\.com(/interface/sdk/sdkad.php|/wbapplua/wbpullad.lua) url script-response-body wb_launch.js
+^https?://m?api\.weibo\.c(n|om)/2/(statuses/(unread|extend|positives/get|(friends|video)(/|_)timeline)|stories/(video_stream|home_list)|(groups|fangle)/timeline|profile/statuses|comments/build_comments|photo/recommend_list|service/picfeed|searchall|cardlist|page|\!/photos/pic_recommend_status) url script-response-body https://raw.githubusercontent.com/jack-yoon/Rules/master/JS/wb_ad.js
+^https?://(sdk|wb)app\.uve\.weibo\.com(/interface/sdk/sdkad.php|/wbapplua/wbpullad.lua) url script-response-body https://raw.githubusercontent.com/jack-yoon/Rules/master/JS/wb_launch.js
 
 
 # header-rewrite
