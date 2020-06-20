@@ -110,8 +110,8 @@ s.youtube.com
 www.youtube.com
 s*.zdmimg.com
 api.zhihu.com
-link.zhihu.com
-www.zhihu.com
+#link.zhihu.com
+#www.zhihu.com
 www.zybang.com
 *.musical.ly
 easyreadfs.nosdn.127.net
