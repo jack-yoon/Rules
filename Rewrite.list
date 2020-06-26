@@ -12,7 +12,7 @@ hostname = 118.89.204.198,api.resso.app,cloud.189.cn,clientaccess.10086.cn,mlife
 ^(http|https)://m?api\.weibo\.c(n|om)/2/(statuses/(unread|extend|positives/get|(friends|video)(/|_)(mix)?timeline)|stories/(video_stream|home_list)|(groups|fangle)/timeline|profile/statuses|comments/build_comments|photo/recommend_list|service/picfeed|searchall|cardlist|page|\!/photos/pic_recommend_status) url script-response-body https://raw.githubusercontent.com/jack-yoon/Rules/master/JS/wb_ad.js
 ^(http|https)://(sdk|wb)app\.uve\.weibo\.com(/interface/sdk/sdkad.php|/wbapplua/wbpullad.lua) url script-response-body https://raw.githubusercontent.com/jack-yoon/Rules/master/JS/wb_launch.js
 # 阿里
-^https?+:\/\/amdc\.m\.taobao\.com\/amdc\/mobileDispatch url response-body .+ response-body eyJjYXJyaWVyIjoiIiwiY2xpZW50SXNwIjoiIiwiY29kZSI6MTAwMCwiY3YiOjEsImRucyI6W3siYWlzbGVzIjpbXSwiaG9zdCI6IiIsImlwcyI6W10sInN0cmF0ZWdpZXMiOltdLCJ0dGwiOjMwMH1dLCJpcCI6IiIsInVpZCI6IiIsInVuaXQiOiIifQ==
+^(http|https):\/\/amdc\.m\.taobao\.com\/amdc\/mobileDispatch url response-body .+ response-body eyJjYXJyaWVyIjoiIiwiY2xpZW50SXNwIjoiIiwiY29kZSI6MTAwMCwiY3YiOjEsImRucyI6W3siYWlzbGVzIjpbXSwiaG9zdCI6IiIsImlwcyI6W10sInN0cmF0ZWdpZXMiOltdLCJ0dGwiOjMwMH1dLCJpcCI6IiIsInVpZCI6IiIsInVuaXQiOiIifQ==
 ^(http|https):\/\/acs\.m\.taobao\.com\/gw\/mtop\.alimama\.etao\.config\.query\/ url response-body "ems_etao_advertise" response-body ""
 
 
@@ -101,15 +101,9 @@ hostname = 118.89.204.198,api.resso.app,cloud.189.cn,clientaccess.10086.cn,mlife
 
 # Advertising Block
 # 0~9
-# > 58同城
-^(http|https):\/\/app\.58\.com\/api\/home\/(advertising|appadv)\/ url reject-200
-^(http|https):\/\/app\.58\.com\/api\/home\/invite\/popupAdv url reject-200
-^(http|https):\/\/app\.58\.com\/api\/log\/ url reject-200
-^(http|https):\/\/.+\.58cdn\.com\.cn\/brandads\/ url reject-200
-
 # A
 # > 阿里巴巴
-^https?+:\/\/guide-acs\.m\.taobao\.com\/gw\/mtop\.tmall\.wireless url reject-200
+^(http|https):\/\/guide-acs\.m\.taobao\.com\/gw\/mtop\.tmall\.wireless url reject-200
 # >> 1688
 ^(http|https):\/\/acs\.m\.taobao\.com\/gw\/mtop\.alibaba\.advertisementservice\.getadv url reject-200
 # >> 飞猪
@@ -129,10 +123,6 @@ hostname = 118.89.204.198,api.resso.app,cloud.189.cn,clientaccess.10086.cn,mlife
 ^(http|https):\/\/.+\.mp4\?ccode=0902 url reject-200
 ^(http|https):\/\/.+\.mp4\?sid= url reject-200
 ^(http|https):\/\/vali\.cp31\.ott\.cibntv\.net\/youku\/.+\.mp4\?sid= url reject-200
-# > AcFun
-^(http|https):\/\/aes\.acfun\.cn\/s\?adzones url reject-200
-# > 爱回收
-^(http|https):\/\/gw\.aihuishou\.com\/app-portal\/home\/getadvertisement url reject-200
 # > APICloud
 ^(http|https):\/\/a\.apicloud\.com\/start_page\/ url reject-200
 
@@ -163,10 +153,10 @@ hostname = 118.89.204.198,api.resso.app,cloud.189.cn,clientaccess.10086.cn,mlife
 ^(http|https):\/\/c\.tieba\.baidu\.com\/c\/f\/forum\/getAdInfo url reject-200
 ^(http|https):\/\/c\.tieba\.baidu\.com\/c\/p\/img\?src= url reject-200
 ^(http|https):\/\/c\.tieba\.baidu\.com\/\w+?\/\w+?\/(?>sync|newRnSync|mlog) url reject-200
-
 # >> 百度地图
 ^(http|https):\/\/.+\/client\/phpui2\/ url reject-200
 ^(http|https):\/\/ss0\.bdstatic\.com/.+_\d{3}_\d{4}\.jpg url reject-200
+
 # >> 爱奇艺
 ^(http|https):\/\/iface\.iqiyi\.com\/api\/getNewAdInfo url reject-200
 ^(http|https):\/\/.+\/(mixer|track2)\? url reject-200
@@ -175,8 +165,6 @@ hostname = 118.89.204.198,api.resso.app,cloud.189.cn,clientaccess.10086.cn,mlife
 # > 哔哩哔哩
 ^(http|https):\/\/app\.bilibili\.com\/x\/v\d\/splash\/ url reject-200
 ^(http|https):\/\/manga\.bilibili\.com\/twirp\/comic\.v\d\.Comic\/Flash url reject-200
-# > 百词斩
-^(http|https):\/\/7n\.bczcdn\.com\/launchad\/ url reject-200
 # > 贝壳找房
 ^(http|https):\/\/app\.api\.ke\.com\/config\/config\/bootpage url reject-200
 
@@ -186,22 +174,12 @@ hostname = 118.89.204.198,api.resso.app,cloud.189.cn,clientaccess.10086.cn,mlife
 ^(http|https):\/\/asp\.cntv\.myalicdn\.com\/.+\?maxbr=850 url reject-200
 ^(http|https):\/\/www\.cntv\.cn\/nettv\/adp\/ url reject-200
 ^(http|https):\/\/v\.cctv\.com\/.+850 url reject-200
-# > 曹操出行
-^(http|https):\/\/cap\.caocaokeji\.cn\/advert-bss\/ url reject-200
-# > 财经
-^(http|https):\/\/api\.caijingmobile\.com\/(ad|advert)\/ url reject-200
-# > 超级课程表
-^(http|https):\/\/.+/V\d\/splash\/getSplashV\d\.action url reject-200
-# > 超级星饭团
-^(http|https):\/\/g\.cdn\.pengpengla\.com\/starfantuan\/boot-screen-info\/ url reject-200
 
 # D
 # > 豆瓣 (154.8.131.* 自签证书不可用)
 ^(http|https):\/\/api\.douban\.com\/v\d\/app_ads\/ url reject-200
 ^(http|https):\/\/api\.douban\.com\/v2\/app_ads\/common_ads url reject-200
 ^(http|https):\/\/api\.douban\.com\/v2\/app_ads\/splash url reject-200
-# > 斗鱼
-^(http|https):\/\/rtbapi\.douyucdn\.cn\/japi\/sign\/app\/getinfo url reject-200
 # > 当当
 ^(http|https):\/\/mapi\.dangdang\.com\/index\.php\?action=init url reject-200
 ^(http|https):\/\/e\.dangdang\.com\/.+getDeviceStartPage url reject-200
@@ -221,7 +199,6 @@ hostname = 118.89.204.198,api.resso.app,cloud.189.cn,clientaccess.10086.cn,mlife
 ^(http|https):\/\/www1\.elecfans\.com\/www\/delivery\/ url reject-200
 
 # F
-
 # G
 # > Google
 ^(http|https):\/\/.+\.googlevideo\.com\/.+(&oad|ctier) url reject-200
@@ -232,39 +209,25 @@ hostname = 118.89.204.198,api.resso.app,cloud.189.cn,clientaccess.10086.cn,mlife
 ^(http|https):\/\/dl\.app\.gtja\.com\/dzswem\/kvController\/.+\.jpg$ url reject-200
 
 # H
-# > 杭州公交
-^(http|https):\/\/m\.ibuscloud.com\/v2\/app\/getStartPage url reject-200
-# > 杭州市·市民卡
-^(http|https):\/\/smkmp\.96225.com\/smkcenter\/ad/ url reject-200
-# > 虎扑
-^(http|https):\/\/games\.mobileapi\.hupu\.com\/.+\/(interfaceAdMonitor|interfaceAd)\/ url reject-200
-^(http|https):\/\/business\.msstatic\.com\/advertiser\/ url reject-200
-# > 韩剧社
-^(http|https):\/\/47\.97\.20\.12\/ad\/ url reject-200
-
 # I
-# > 讯飞
-^(http|https):\/\/imeclient\.openspeech\.cn\/adservice\/ url reject-200
-
-
 # J
 # > 京东
-\^(http|https)://union.click.jd.com/jda? url request-header ^(.+?\s).+?(\s[\s\S]+?Host:).+?(\r\n) request-header $1/jda?adblock=$2union.click.jd.com$3
+^(http|https)://union.click.jd.com/jda? url request-header ^(.+?\s).+?(\s[\s\S]+?Host:).+?(\r\n) request-header $1/jda?adblock=$2union.click.jd.com$3
 ^(http|https)://union.click.jd.com/sem.php? url request-header ^(.+?\s).+?(\s[\s\S]+?Host:).+?(\r\n) request-header $1/sem.php?adblock=$2union.click.jd.com$3
 ^(http|https):\/\/api\.m\.jd.com\/client\.action\?functionId=(start|queryMaterialAdverts) url reject-200
 ^(http|https):\/\/b?dsp-x\.jd\.com\/adx\/ url reject-200
 ^(http|https):\/\/ms\.jr\.jd\.com\/gw\/generic\/base\/na\/m\/adInfo url reject-200
 ^(http|https):\/\/ms\.jr\.jd\.com\/gw\/generic\/aladdin\/na\/m\/getLoadingPicture url reject-200
-^http://coupon.m.jd.com/ url 302 https://coupon.m.jd.com/
-^http://h5.m.jd.com/ url 302 https://h5.m.jd.com/
-^http://item.m.jd.com/ url 302 https://item.m.jd.com/
-^http://m.jd.com url 302 https://m.jd.com
-^http://newcz.m.jd.com/ url 302 https://newcz.m.jd.com/
-^http://p.m.jd.com/ url 302 https://p.m.jd.com/
-^http://so.m.jd.com/ url 302 https://so.m.jd.com/
-^http://www.jd.com/ url 302 https://www.jd.com/
+^(http|https)://coupon.m.jd.com/ url 302 https://coupon.m.jd.com/
+^(http|https)://h5.m.jd.com/ url 302 https://h5.m.jd.com/
+^(http|https)://item.m.jd.com/ url 302 https://item.m.jd.com/
+^(http|https)://m.jd.com url 302 https://m.jd.com
+^(http|https)://newcz.m.jd.com/ url 302 https://newcz.m.jd.com/
+^(http|https)://p.m.jd.com/ url 302 https://p.m.jd.com/
+^(http|https)://so.m.jd.com/ url 302 https://so.m.jd.com/
+^(http|https)://www.jd.com/ url 302 https://www.jd.com/
 
-# > 金山 WPS
+# > 金山WPS
 ^(http|https):\/\/ios\.wps\.cn\/ad-statistics-service url reject-200
 ^(http|https):\/\/mobile-pic\.cache\.iciba\.com\/feeds_ad\/ url reject-200
 ^(http|https):\/\/\w+\.kingsoft-office-service\.com\/ad url reject-200
@@ -272,25 +235,18 @@ hostname = 118.89.204.198,api.resso.app,cloud.189.cn,clientaccess.10086.cn,mlife
 # K
 # > Keep
 ^(http|https):\/\/api\.gotokeep\.com\/ads url reject-200
-# > 快看漫画
-^(http|https):\/\/api\.kkmh\.com\/.+(ad|advertisement)\/ url reject-200
 
 # L
-# > 乐视
-^(http|https):\/\/.+\/letv-gug\/ url reject-200
-
 
 # M
 #Microsoft
-^https:\/\/api\.cognitive\.microsofttranslator\.com\/languages\?scope=compact,transliteration&api-version= url request-header (\r\n)If-None-Match:.+(\r\n) request-header $1
-^https:\/\/offline\.microsofttranslator\.com\/translatorresources\.svc\/GetMetadata\?platform=ios&version= url request-header (\r\n)If-None-Match:.+(\r\n) request-header $1
+^(http|https):\/\/api\.cognitive\.microsofttranslator\.com\/languages\?scope=compact,transliteration&api-version= url request-header (\r\n)If-None-Match:.+(\r\n) request-header $1
+^(http|https):\/\/offline\.microsofttranslator\.com\/translatorresources\.svc\/GetMetadata\?platform=ios&version= url request-header (\r\n)If-None-Match:.+(\r\n) request-header $1
 # > 小米
 ^(http|https):\/\/api\.m\.mi\.com\/v\d\/app\/start url reject-200
 ^(http|https):\/\/api\.jr\.mi\.com\/v\d\/adv\/ url reject-200
 ^(http|https):\/\/api\.jr\.mi\.com\/jr\/api\/playScreen url reject-200
 ^(http|https):\/\/api-mifit.+\.huami\.com\/discovery\/mi\/discovery\/.+_ad\? url reject-200
-# > 漫画人
-^(http|https):\/\/mangaapi\.manhuaren\.com\/v\d\/public\/getStartPageAds url reject-200
 # > 美团
 ^(http|https):\/\/img\.meituan\.net\/(adunion|display|midas)\/.+\.(gif|jpg|jpg\.webp)$ url reject-200
 ^(http|https):\/\/p\d\.meituan\.net\/wmbanner\/[A-Za-z0-9]+\.jpg url reject-200
@@ -308,11 +264,9 @@ hostname = 118.89.204.198,api.resso.app,cloud.189.cn,clientaccess.10086.cn,mlife
 # > NationalGeographicChina
 ^(http|https):\/\/wap\.ngchina\.cn\/news\/adverts\/ url reject-200
 
+
 # O
-
-
 # P
-
 # > 拼多多
 ^(http|https):\/\/api\.yangkeduo\.com\/api\/cappuccino\/splash url reject-200
 
@@ -321,44 +275,22 @@ hostname = 118.89.204.198,api.resso.app,cloud.189.cn,clientaccess.10086.cn,mlife
 ^(http|https):\/\/open\.qyer\.com\/qyer\/startpage\/ url reject-200
 ^(http|https):\/\/open\.qyer\.com\/qyer\/config\/get url reject-200
 ^(http|https):\/\/media\.qyer\.com\/ad\/ url reject-200
-# > 亲宝宝
-^(http|https):\/\/api\.qbb6\.com\/ad\/ url reject-200
+
 #起点
 ^(http|https):\/\/shp\.qpic\.cn\/pggamehead\/.*h=\d{4} url reject-200
 ^(http|https):\/\/mage\.if\.qidian\.com\/Atom\.axd\/Api\/Client\/GetConfIOS url reject-200
 
 # R
-# > 人人视频
-^(http|https):\/\/msspjh\.emarbox\.com\/getAdConfig url reject-200
-^(http|https):\/\/api\.videozhishi\.com\/api\/getAdvertising url reject-200
-^(http|https):\/\/api\.rr\.tv\/ad\/ url reject-200
-
-
 # S
 # > 搜狐
 ^(http|https):\/\/api\.k\.sohu\.com\/api\/news\/adsense url reject-200
 ^(http|https):\/\/pic\.k\.sohu\.com\/img8\/wb\/tj\/ url reject-200
 ^(http|https):\/\/s1\.api\.tv\.itc\.cn\/v4\/mobile\/control\/switch\.json url reject-200
 ^(http|https):\/\/api\.tv\.sohu\.com\/agg\/api\/app\/config\/bootstrap url reject-200
-# > 什么值得买
-^(http|https):\/\/api\.smzdm\.com\/v\d\/util\/loading url reject-200
-^(http|https):\/\/app-api\.smzdm\.com\/util\/loading url reject-200
-^(http|https):\/\/s\d\.zdmimg\.com\/www\/api\/v\d\/api\/thirdAd\.php url reject-200
-# > 肆客足球
-^(http|https):\/\/api\.qiuduoduo\.cn\/guideimage url reject-200
-# > 识货
-^(http|https):\/\/www\.shihuo\.cn\/app\d\/saveAppInfo url reject-200
-# > 首汽约车
-^(http|https):\/\/gw-passenger\.01zhuanche\.com\/gw-passenger\/car-rest\/webservice\/passenger\/recommendADs url reject-200
-^(http|https):\/\/gw-passenger\.01zhuanche\.com\/gw-passenger\/zhuanche-passenger-token\/leachtoken\/webservice\/homepage\/queryADs url reject-200
 # > 苏宁
 ^(http|https):\/\/image\.suning\.cn\/uimg\/ma\/ad\/ url reject-200
 # > 神舟专车
 ^(http|https):\/\/img01\.10101111cdn\.com\/adpos\/ url reject-200
-# > 扫描全能王
-^(http|https):\/\/api\.intsig\.net\/user\/cs\/operating\/app\/get_startpic\/ url reject-200
-# > 搜狗
-^(http|https):\/\/business-cdn\.shouji\.sogou\.com\/wapdl\/hole\/.+\.jpg url reject-200
 
 # T
 # > 腾讯QQ
@@ -402,25 +334,18 @@ hostname = 118.89.204.198,api.resso.app,cloud.189.cn,clientaccess.10086.cn,mlife
 # >> 腾讯视频
 ^(http|https):\/\/btrace.qq.com url reject-200
 ^(http|https):\/\/vv\.video\.qq\.com\/getvmind\? url reject-200
-# ^(http|https):\/\/.+\.mp4.+&sdtfrom=v3004 url reject-200
+^(http|https):\/\/.+\.mp4.+&sdtfrom=v3004 url reject-200
 ^(http|https):\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/.+\.tc\.qq\.com\/.+p201\.1\.mp4\? url reject-200
-# >> 腾讯新闻
-^(http|https):\/\/r\.inews\.qq\.com\/(adsBlacklist|getFullScreenPic|getQQNewsRemoteConfig) url reject-200
 # >> 腾讯体育
 ^(http|https):\/\/news\.ssp\.qq\.com\/app url reject-200
 # >> 微信
 ^(http|https):\/\/mp\.weixin\.qq\.com\/mp\/(ad_|advertisement|getappmsgad) url reject-200
-# > 澎湃新闻
-^(http|https):\/\/adpai\.thepaper\.cn\/.+&ad= url reject-200
 # > 太平洋
 ^(http|https):\/\/agent-count\.pconline\.com\.cn\/counter\/adAnalyse\/ url reject-200
 ^(http|https):\/\/mrobot\.pconline\.com\.cn\/v\d\/ad2p url reject-200
 ^(http|https):\/\/mrobot\.pconline\.com\.cn\/s\/onlineinfo\/ad\/ url reject-200
 ^(http|https):\/\/mrobot\.pcauto\.com\.cn\/v\d\/ad2p url reject-200
 ^(http|https):\/\/mrobot\.pcauto\.com\.cn\/xsp\/s\/auto\/info\/preload\.xsp url reject-200
-# > 途牛
-^(http|https):\/\/m\.tuniu\.com\/api\/operation\/splash\/ url reject-200
-
 
 
 # V
@@ -430,12 +355,6 @@ hostname = 118.89.204.198,api.resso.app,cloud.189.cn,clientaccess.10086.cn,mlife
 
 # W
 # > 网易
-# >> 网易邮箱
-^(http|https):\/\/appconf\.mail\.163\.com\/mmad\/ url reject-200
-# >> 网易新闻
-^(http|https):\/\/c\.m\.163\.com\/nc\/gl\/ url reject-200
-# >> 网易有钱
-^(http|https):\/\/client\.mail\.163\.com\/apptrack\/confinfo\/searchMultiAds url reject-200
 # >> 网易云音乐
 ^(http|https):\/\/.+\/eapi\/(ad|log)\/ url reject-200
 ^(http|https):\/\/iad.*mat\.music\.12[67]\.net/\w+\.(jpg|mp4) url reject-200
@@ -444,20 +363,10 @@ hostname = 118.89.204.198,api.resso.app,cloud.189.cn,clientaccess.10086.cn,mlife
 ^(http|https):\/\/sp\.kaola\.com\/api\/openad url reject-200
 # >> 网易严选
 ^(http|https):\/\/support\.you\.163\.com\/xhr\/boot\/getBootMedia\.json url reject-200
-# >> 网易蜗牛读书
-^(http|https):\/\/easyreadfs\.nosdn\.127\.net\/ad-material\/ url reject-200
-^(http|https):\/\/p\.du\.163\.com\/ad\/ url reject-200
 # >> 有道词典
 ^(http|https):\/\/oimage([a-z])([0-9])\.ydstatic\.com\/.+adpublish url reject-200
 ^(http|https):\/\/dsp-impr2\.youdao\.com\/adload.s\? url reject-200
-# > 微医
-^(http|https):\/\/app\.wy\.guahao\.com\/json\/white\/dayquestion\/getpopad url reject-200
-# > 微店
-^(http|https):\/\/thor\.weidian\.com\/ares\/home\.splash\/ url reject-200
-# > 华尔街见闻
-^(http|https):\/\/api\.wallstreetcn\.com\/apiv\d\/advertising\/ url reject-200
-# > 威锋
-^(http|https):\/\/api\.feng\.com\/v\d\/advertisement\/.*Claunch url reject-200
+
 
 # X
 # > 新浪
@@ -482,7 +391,6 @@ hostname = 118.89.204.198,api.resso.app,cloud.189.cn,clientaccess.10086.cn,mlife
 ^(http|https):\/\/weibointl\.api\.weibo\.cn\/portal\.php\?a=get_coopen_ads url reject-200
 ^(http|https):\/\/weibointl.api.weibo.cn/portal.php\?a=get_coopen_ads url reject-200
 
-
 # > 虾米
 ^(http|https):\/\/acs\.m\.taobao\.com\/gw\/mtop\.alimusic\.common\.mobileservice\.startinit\/ url reject-200
 
@@ -490,10 +398,9 @@ hostname = 118.89.204.198,api.resso.app,cloud.189.cn,clientaccess.10086.cn,mlife
 # > 印象笔记
 ^(http|https):\/\/app\.yinxiang\.com\/ads\/ url reject-200
 # > 云闪付
-#^(http|https):\/\/wallet\.95516\.com\/s\/wl\/ url reject-200
+^(http|https):\/\/wallet\.95516\.com\/s\/wl\/ url reject-200
 
 # Z
-
 # > 知乎
 ^(http|https):\/\/(api|www)\.zhihu\.com\/(ad-style-service|adx|app_config|banners|drama|commercial|mqtt|xen|xen) url reject-200
 ^(http|https):\/\/(api|www)\.zhihu\.com\/.*(community-ad|extended|guide|launch|recommendations) url reject-200
@@ -542,8 +449,4 @@ hostname = 118.89.204.198,api.resso.app,cloud.189.cn,clientaccess.10086.cn,mlife
 # > 中国联通
 ^(http|https):\/\/m\.client\.10010\.com\/mobileService\/customer\/accountListData\.htm url reject-200
 ^(http|https):\/\/m\.client\.10010\.com\/uniAdmsInterface\/getWelcomeAd url reject-200
-# > 掌阅
-^(http|https):\/\/ih2\.ireader\.com\/zyapi\/bookstore\/ad\/ url reject-200
-^(http|https):\/\/ih2\.ireader\.com\/zyapi\/self\/screen\/ad url reject-200
-^(http|https):\/\/ih2\.ireader\.com\/zycl\/api\/ad\/ url reject-200
-^(http|https):\/\/ih2\.ireader\.com\/zycl\/api\/ad\/ url reject-200
+
