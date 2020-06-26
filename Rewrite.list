@@ -278,8 +278,8 @@ hostname = 118.89.204.198,api.resso.app,cloud.189.cn,clientaccess.10086.cn,mlife
 ^(http|https):\/\/media\.qyer\.com\/ad\/ url reject-200
 
 #起点
-^(http|https):\/\/shp\.qpic\.cn\/pggamehead\/.*h=\d{4} url reject-200
-^(http|https):\/\/mage\.if\.qidian\.com\/Atom\.axd\/Api\/Client\/GetConfIOS url reject-200
+#^(http|https):\/\/shp\.qpic\.cn\/pggamehead\/.*h=\d{4} url reject-200
+#^(http|https):\/\/mage\.if\.qidian\.com\/Atom\.axd\/Api\/Client\/GetConfIOS url reject-200
 ^(http|https):\/\/mage\.if\.qidian\.com\/argus\/api\/v\d\/client\/getsplashscreen url reject-200
 # R
 # S
