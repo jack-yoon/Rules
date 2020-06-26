@@ -129,24 +129,24 @@ hostname = 118.89.204.198,api.resso.app,cloud.189.cn,clientaccess.10086.cn,mlife
 # B
 # > 百度
 ^(http|https):\/\/api\d\.tuisong\.baidu\.com url reject-200
-^(http|https):\/\/log\..+\.baidu\.com url reject-200
-^(http|https):\/\/sa\d\.tuisong\.baidu\.com url reject-200
-^(http|https):\/\/t\d{2}\.baidu\.com url reject-200
 ^(http|https):\/\/afd\.baidu\.com\/afd\/entry url reject-200
 ^(http|https):\/\/als\.baidu\.com\/clog\/clog url reject-200
 ^(http|https):\/\/baichuan\.baidu\.com\/rs\/adpmobile\/launch url reject-200
 ^(http|https):\/\/bj\.bcebos\.com\/fc-feed\/0\/pic\/ url reject-200
 ^(http|https):\/\/fcvbjbcebos\.baidu\.com\/.+\.mp4 url reject-200
+^(http|https):\/\/gss0\.bdstatic\.com\/.+\/static\/wiseindex\/img\/bd_red_packet\.png url reject-200
+^(http|https):\/\/log\..+\.baidu\.com url reject-200
+^(http|https):\/\/sa\d\.tuisong\.baidu\.com url reject-200
+^(http|https):\/\/t\d{2}\.baidu\.com url reject-200
+^(http|https):\/\/tb1\.bdstatic\.com\/tb\/cms\/ngmis\/adsense\/*\.jpg url reject-200
+^(http|https):\/\/tb2\.bdstatic\.com\/tb\/mobile\/spb\/widget\/jump url reject-200
 ^(http|https):\/\/wapwenku\.baidu\.com\/view\/fengchao\/ url reject-200
 ^(http|https):\/\/wapwenku\.baidu\.com\/view\/fengchaoTwojump\/ url reject-200
 ^(http|https):\/\/wenku\.baidu\.com\/shifen\/ url reject-200
-^(http|https):\/\/gss0\.bdstatic\.com\/.+\/static\/wiseindex\/img\/bd_red_packet\.png url reject-200
-^(http|https):\/\/tb1\.bdstatic\.com\/tb\/cms\/ngmis\/adsense\/*\.jpg url reject-200
-^(http|https):\/\/tb2\.bdstatic\.com\/tb\/mobile\/spb\/widget\/jump url reject-200
 # >> 百度网盘
+^(http|https):\/\/issuecdn\.baidupcs\.com\/issue\/netdisk\/guanggao\/ url reject-200
 ^(http|https):\/\/pan\.baidu\.com\/rest\/2\.0\/pcs\/adx url reject-200
 ^(http|https):\/\/pan\.baidu\.com\/act\/api\/activityentry url reject-200
-^(http|https):\/\/issuecdn\.baidupcs\.com\/issue\/netdisk\/guanggao\/ url reject-200
 # >> 百度贴吧
 ^(http|https):\/\/c\.tieba\.baidu\.com\/c\/s\/splashSchedule url reject-200
 ^(http|https):\/\/c\.tieba\.baidu\.com\/c\/s\/logtogether\?cmd= url reject-200
@@ -158,10 +158,10 @@ hostname = 118.89.204.198,api.resso.app,cloud.189.cn,clientaccess.10086.cn,mlife
 ^(http|https):\/\/ss0\.bdstatic\.com/.+_\d{3}_\d{4}\.jpg url reject-200
 
 # >> 爱奇艺
-^(http|https):\/\/iface\.iqiyi\.com\/api\/getNewAdInfo url reject-200
 ^(http|https):\/\/.+\/(mixer|track2)\? url reject-200
 ^(http|https):\/\/act\.vip\.iqiyi\.com\/interact\/api\/show.do url reject-200
 ^(http|https):\/\/act\.vip\.iqiyi\.com\/interact\/api\/v2\/show url reject-200
+^(http|https):\/\/iface\.iqiyi\.com\/api\/getNewAdInfo url reject-200
 # > 哔哩哔哩
 ^(http|https):\/\/app\.bilibili\.com\/x\/v\d\/splash\/ url reject-200
 ^(http|https):\/\/manga\.bilibili\.com\/twirp\/comic\.v\d\.Comic\/Flash url reject-200
@@ -170,10 +170,11 @@ hostname = 118.89.204.198,api.resso.app,cloud.189.cn,clientaccess.10086.cn,mlife
 
 # C
 # > CNTV
-^(http|https):\/\/cntv\.hls\.cdn\.myqcloud\.com\/.+\?maxbr=850 url reject-200
 ^(http|https):\/\/asp\.cntv\.myalicdn\.com\/.+\?maxbr=850 url reject-200
-^(http|https):\/\/www\.cntv\.cn\/nettv\/adp\/ url reject-200
+^(http|https):\/\/cntv\.hls\.cdn\.myqcloud\.com\/.+\?maxbr=850 url reject-200
 ^(http|https):\/\/v\.cctv\.com\/.+850 url reject-200
+^(http|https):\/\/www\.cntv\.cn\/nettv\/adp\/ url reject-200
+
 
 # D
 # > 豆瓣 (154.8.131.* 自签证书不可用)
@@ -181,8 +182,8 @@ hostname = 118.89.204.198,api.resso.app,cloud.189.cn,clientaccess.10086.cn,mlife
 ^(http|https):\/\/api\.douban\.com\/v2\/app_ads\/common_ads url reject-200
 ^(http|https):\/\/api\.douban\.com\/v2\/app_ads\/splash url reject-200
 # > 当当
-^(http|https):\/\/mapi\.dangdang\.com\/index\.php\?action=init url reject-200
 ^(http|https):\/\/e\.dangdang\.com\/.+getDeviceStartPage url reject-200
+^(http|https):\/\/mapi\.dangdang\.com\/index\.php\?action=init url reject-200
 # > 丁香医生
 ^(http|https):\/\/dxy\.com\/app\/i\/ask\/biz\/feed\/launch url reject-200
 
@@ -190,11 +191,11 @@ hostname = 118.89.204.198,api.resso.app,cloud.189.cn,clientaccess.10086.cn,mlife
 # > e代驾
 ^(http|https):\/\/pic\.edaijia\.cn\/adsplash\/ url reject-200
 #饿了么
+^(http|https):\/\/cube\.elemecdn\.com\/.*\.mp4\? url reject-200
 ^(http|https):\/\/elemecdn\.com\/.+\/sitemap url reject-200
 ^(http|https):\/\/fuss10\.elemecdn\.com\/.+\/w\/640\/h\/\d{3,4} url reject-200
 ^(http|https):\/\/fuss10\.elemecdn\.com\/.+\/w\/750\/h\/\d{3,4} url reject-200
 ^(http|https):\/\/fuss10\.elemecdn\.com\/.+\.mp4 url reject-200
-^(http|https):\/\/cube\.elemecdn\.com\/.*\.mp4\? url reject-200
 ^(http|https):\/\/m\.elecfans\.com\/static\/js\/ad\.js url reject-200
 ^(http|https):\/\/www1\.elecfans\.com\/www\/delivery\/ url reject-200
 
