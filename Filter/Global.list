@@ -35,7 +35,8 @@ host-suffix, oculuscdn.com, Global
 host-suffix, rocksdb.org, Global
 host-suffix, whatsapp.com, Global
 host-suffix, whatsapp.net, Global
-host-keyword, facebook, Global
+host-suffix, facebook.com, Global
+host-suffix, facebook.com, Global
 ip-cidr, 3.123.36.126/32, Global
 ip-cidr, 35.157.215.84/32, Global
 ip-cidr, 35.157.217.255/32, Global
@@ -53,7 +54,7 @@ host-suffix, twimg.co, Global
 host-suffix, twimg.com, Global
 host-suffix, twitpic.com, Global
 host-suffix, vine.co, Global
-host-keyword, twitter, Global
+host-suffix, twitter.com, Global
 # > Telegram
 host-suffix, t.me, Global
 host-suffix, tdesktop.com, Global
@@ -88,6 +89,7 @@ host-suffix, abc.com, Global
 host-suffix, abc.net.au, Global
 host-suffix, abebooks.com, Global
 host-suffix, amazon.co.jp, Global
+host-suffix, ao3, Global
 host-suffix, apigee.com, Global
 host-suffix, apk-dl.com, Global
 host-suffix, apkfind.com, Global

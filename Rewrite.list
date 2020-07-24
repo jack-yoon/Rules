@@ -101,9 +101,6 @@ hostname = 59.111.181.*,118.89.204.198,api.resso.app,cloud.189.cn,clientaccess.1
 (?<=&app_version=)16..(?=.?.?&) url 307 1
 (?<=\?version_code=)16..(?=.?.?&) url 307 1
 
-# Resso
-(?<=(carrier|account|sys|sim)_region=)cn url 307 in
-
 # Advertising Block
 # 0~9
 # A
