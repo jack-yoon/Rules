@@ -221,6 +221,13 @@ host-suffix, meetrics.com, AdBlock
 host-suffix, meetrics.net, AdBlock
 host-suffix, miaozhen.com, AdBlock
 host-suffix, moatads.com, AdBlock
+host-suffix, m.data.mob.com, AdBlock
+host-suffix, api.cmt.mob.com, AdBlock
+host-suffix, api.exc.mob.com, AdBlock
+host-suffix, api.share.mob.com, AdBlock
+host-suffix, c.data.mob.com, AdBlock
+host-suffix, cca.mob.com, AdBlock
+host-suffix, devs.data.mob.com, AdBlock
 host-suffix, mobclix.com, AdBlock
 host-suffix, mopub.com, AdBlock
 host-suffix, okjhb.xyz, AdBlock
