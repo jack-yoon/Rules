@@ -531,6 +531,8 @@ host, adsebs.ximalaya.com, AdBlock
 host, ads-img-qc.xhscdn.com, AdBlock
 host, ads-video-qc.xhscdn.com, AdBlock
 host, t-ads.xiaohongshu.com, AdBlock
+# > 无忌
+host, www8.xitek.com, AdBlock
 # (Y)
 # > Youku
 host-suffix, atm.youku.com, AdBlock
