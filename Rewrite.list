@@ -8,14 +8,14 @@ hostname = 59.111.181.*,118.89.204.198,api.resso.app,cloud.189.cn,clientaccess.1
 ^(http|https)://api\.zhihu\.com/people/ url script-response-body https://raw.githubusercontent.com/jack-yoon/Rules/master/JS/zhihu_people.js
 ^(http|https)://api\.zhihu\.com/topstory/recommend url script-response-body https://raw.githubusercontent.com/jack-yoon/Rules/master/JS/zhihu_recommend.js
 #weibo
-^(http|https)://m?api\.weibo\.c(n|om)/2/(cardlist|page|searchall|service/picfeed) url script-response-body https://raw.githubusercontent.com/jack-yoon/Rules/master/JS/wb_launch.js 
-^(http|https)://m?api\.weibo\.c(n|om)/2/comments/build_comments|photo/recommend_list url script-response-body https://raw.githubusercontent.com/jack-yoon/Rules/master/JS/wb_launch.js 
-^(http|https)://m?api\.weibo\.c(n|om)/2/(groups|fangle)/timeline|profile/statuses url script-response-body https://raw.githubusercontent.com/jack-yoon/Rules/master/JS/wb_launch.js
-^(http|https)://m?api\.weibo\.c(n|om)/2/!/photos/pic_recommend_status url script-response-body https://raw.githubusercontent.com/jack-yoon/Rules/master/JS/wb_launch.js
-^(http|https)://m?api\.weibo\.c(n|om)/2/statuses/(extend|unread|positives/get|(friends|video)(/|_)(mix)?timeline) url script-response-body https://raw.githubusercontent.com/jack-yoon/Rules/master/JS/wb_launch.js
-^(http|https)://m?api\.weibo\.c(n|om)/2/stories/(video_stream|home_list) url script-response-body https://raw.githubusercontent.com/jack-yoon/Rules/master/JS/wb_launch.js
-^(http|https)://m?api\.weibo\.c(n|om)/2/video/tiny_stream_video_list url script-response-body https://raw.githubusercontent.com/jack-yoon/Rules/master/JS/wb_launch.js
-^(http|https)://(sdk|wb)app\.uve\.weibo\.com(/interface/sdk/sdkad.php|/wbapplua/wbpullad.lua) url script-response-body https://raw.githubusercontent.com/jack-yoon/Rules/master/JS/wb_launch.js
+^(http|https)://m?api.weibo.c(n|om)/2/(cardlist|page|searchall|service/picfeed) url script-response-body https://raw.githubusercontent.com/jack-yoon/Rules/master/JS/wb_launch.js 
+^(http|https)://m?api.weibo.c(n|om)/2/comments/build_comments|photo/recommend_list url script-response-body https://raw.githubusercontent.com/jack-yoon/Rules/master/JS/wb_launch.js 
+^(http|https)://m?api.weibo.c(n|om)/2/(groups|fangle)/timeline|profile/statuses url script-response-body https://raw.githubusercontent.com/jack-yoon/Rules/master/JS/wb_launch.js
+^(http|https)://m?api.weibo.c(n|om)/2/!/photos/pic_recommend_status url script-response-body https://raw.githubusercontent.com/jack-yoon/Rules/master/JS/wb_launch.js
+^(http|https)://m?api.weibo.c(n|om)/2/statuses/(extend|unread|positives/get|(friends|video)(/|_)(mix)?timeline) url script-response-body https://raw.githubusercontent.com/jack-yoon/Rules/master/JS/wb_launch.js
+^(http|https)://m?api.weibo.c(n|om)/2/stories/(video_stream|home_list) url script-response-body https://raw.githubusercontent.com/jack-yoon/Rules/master/JS/wb_launch.js
+^(http|https)://m?api.weibo.c(n|om)/2/video/tiny_stream_video_list url script-response-body https://raw.githubusercontent.com/jack-yoon/Rules/master/JS/wb_launch.js
+^(http|https)://(sdk|wb)app.uve.weibo.com(/interface/sdk/sdkad.php|/wbapplua/wbpullad.lua) url script-response-body https://raw.githubusercontent.com/jack-yoon/Rules/master/JS/wb_launch.js
 # 阿里
 ^(http|https):\/\/amdc\.m\.taobao\.com\/amdc\/mobileDispatch url response-body .+ response-body eyJjYXJyaWVyIjoiIiwiY2xpZW50SXNwIjoiIiwiY29kZSI6MTAwMCwiY3YiOjEsImRucyI6W3siYWlzbGVzIjpbXSwiaG9zdCI6IiIsImlwcyI6W10sInN0cmF0ZWdpZXMiOltdLCJ0dGwiOjMwMH1dLCJpcCI6IiIsInVpZCI6IiIsInVuaXQiOiIifQ==
 ^(http|https):\/\/acs\.m\.taobao\.com\/gw\/mtop\.alimama\.etao\.config\.query\/ url response-body "ems_etao_advertise" response-body ""
