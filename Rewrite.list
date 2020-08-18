@@ -99,8 +99,8 @@ hostname = 59.111.181.*,118.89.204.198,api.resso.app,cloud.189.cn,clientaccess.1
 
 # TikTok
 (?<=_region=)CN(?=&) url 307 JP
-(?<=&app_version=)1(6|7)..(?=.?.?&) url 307 1
-(?<=\?version_code=)1(6|7)..(?=.?.?&) url 307 1
+(?<=&app_version=)17..(?=.?.?&) url 307 1
+(?<=\?version_code=)17..(?=.?.?&) url 307 1
 
 # Advertising Block
 # 0~9
