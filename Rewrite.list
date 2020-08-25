@@ -5,7 +5,7 @@ hostname = 59.111.181.*,118.89.204.198,api.resso.app,cloud.189.cn,clientaccess.1
 #zhihu
 ^(http|https)://api\.zhihu\.com/v4/questions url script-response-body https://raw.githubusercontent.com/jack-yoon/Rules/master/JS/zhihu_answer.js
 ^(http|https)://api\.zhihu\.com/moments/recommend url script-response-body https://raw.githubusercontent.com/jack-yoon/Rules/master/JS/zhihu_feed.js
-^(http|https)://api\.zhihu\.com/people/ url script-response-body https://raw.githubusercontent.com/jack-yoon/Rules/master/JS/zhihu_people.js
+#^(http|https)://api\.zhihu\.com/people/ url script-response-body https://raw.githubusercontent.com/jack-yoon/Rules/master/JS/zhihu_people.js
 ^(http|https)://api\.zhihu\.com/topstory/recommend url script-response-body https://raw.githubusercontent.com/jack-yoon/Rules/master/JS/zhihu_recommend.js
 #weibo
 ^(http|https)://m?api.weibo.c(n|om)/2/(cardlist|page|searchall|service/picfeed) url script-response-body https://raw.githubusercontent.com/jack-yoon/Rules/master/JS/wb_launch.js 
