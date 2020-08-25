@@ -408,7 +408,7 @@ hostname = 59.111.181.*,118.89.204.198,api.resso.app,cloud.189.cn,clientaccess.1
 ^(http|https):\/\/(api|www)\.zhihu\.com\/(ad-style-service|adx|app_config|banners|drama) url reject-200
 #^(http|https):\/\/(api|www)\.zhihu\.com\/(commercial|launch|mqtt|real_time|xen) url reject-200
 ^(http|https):\/\/(api|www)\.zhihu\.com\/.*(community-ad|extended|guide|launch|recommendations) url reject-200
-^(http|https):\/\/(api|www)\.zhihu\.com\/ad\/api url reject-200
+^(http|https):\/\/(api|www)\.zhihu\.com\/ab\/api url reject-200
 ^(http|https):\/\/(api|www)\.zhihu\.com\/answers\/.*/comments/featured-comment-ad url reject-200
 ^(http|https):\/\/(api|www)\.zhihu\.com\/api\/v4\/community-ad url reject-200
 ^(http|https):\/\/(api|www)\.zhihu\.com\/appview\/api\/v4\/answers\/.+recommendations url reject-200
