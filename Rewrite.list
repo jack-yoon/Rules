@@ -414,7 +414,6 @@ hostname = 59.111.181.*,118.89.204.198,api.resso.app,cloud.189.cn,clientaccess.1
 ^(http|https):\/\/api\.zhihu\.com\/appview\/api\/v\d\/answers\/\d+\/recommendations url reject-200
 ^(http|https):\/\/api\.zhihu\.com\/commercial_api\/(launch|real_time) url reject-200
 ^(http|https):\/\/api\.zhihu\.com\/market\/popover url reject-200
-#^(http|https):\/\/(api|www)\.zhihu\.com\/search\/(top|tab|preset|preset_words|top_search) url reject-200
 ^(http|https):\/\/www\.zhihu\.com\/terms\/privacy\/confirm url reject-200
 
 # > 作业帮
