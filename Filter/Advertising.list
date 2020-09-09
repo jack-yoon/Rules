@@ -455,6 +455,10 @@ host, ads.aplus.pptv.com, AdBlock
 host, ads.aplusapi.pptv.com, AdBlock
 host, asimgs.pplive.cn, AdBlock
 host, de.as.pptv.com, AdBlock
+# >Qidian
+host-suffix, cj.qidian.com,AdBlock
+host-suffix, game.qidian.com,AdBlock
+host-suffix, o.if.qidian.com,AdBlock
 # (R)
 # > 人人影视字幕组
 host, tj.playcvn.com, AdBlock

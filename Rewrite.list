@@ -95,7 +95,7 @@ hostname = 59.111.181.*,118.89.204.198,api.resso.app,cloud.189.cn,clientaccess.1
 ^(http|https):\/\/(www.)?zbrushcn.com/ url 302 https://pixologic.com/
 
 #广告联盟
-^https?:\/\/sf.*-ttcdn-tos\.pstatp\.com\/obj\/ad url reject
+^https?:\/\/sf.*?-ttcdn-tos\.pstatp\.com\/obj\/ad url reject
 ^https?:\/\/oset-api\.open-adx\.com\/ad\/ url reject
 
 # TikTok
@@ -126,9 +126,9 @@ hostname = 59.111.181.*,118.89.204.198,api.resso.app,cloud.189.cn,clientaccess.1
 # >> 高德地图
 ^https?:\/\/m\d\.amap\.com\/ws\/valueadded\/alimama\/splash_screen\/ url reject
 # >> 优酷
-^https?:\/\/.+\.mp4\?ccode=0902 url reject
-^https?:\/\/.+\.mp4\?sid= url reject
-^https?:\/\/vali\.cp31\.ott\.cibntv\.net\/youku\/.+\.mp4\?sid= url reject
+^https?:\/\/.+?\.mp4\?ccode=0902 url reject
+^https?:\/\/.+?\.mp4\?sid= url reject
+^https?:\/\/vali\.cp31\.ott\.cibntv\.net\/youku\/.+?\.mp4\?sid= url reject
 # > APICloud
 ^https?:\/\/a\.apicloud\.com\/start_page\/ url reject
 
@@ -139,9 +139,9 @@ hostname = 59.111.181.*,118.89.204.198,api.resso.app,cloud.189.cn,clientaccess.1
 ^https?:\/\/als\.baidu\.com\/clog\/clog url reject
 ^https?:\/\/baichuan\.baidu\.com\/rs\/adpmobile\/launch url reject
 ^https?:\/\/bj\.bcebos\.com\/fc-feed\/0\/pic\/ url reject
-^https?:\/\/fcvbjbcebos\.baidu\.com\/.+\.mp4 url reject
-^https?:\/\/gss0\.bdstatic\.com\/.+\/static\/wiseindex\/img\/bd_red_packet\.png url reject
-^https?:\/\/log\..+\.baidu\.com url reject
+^https?:\/\/fcvbjbcebos\.baidu\.com\/.+?\.mp4 url reject
+^https?:\/\/gss0\.bdstatic\.com\/.+?\/static\/wiseindex\/img\/bd_red_packet\.png url reject
+^https?:\/\/log\..+?\.baidu\.com url reject
 ^https?:\/\/sa\d\.tuisong\.baidu\.com url reject
 ^https?:\/\/t\d{2}\.baidu\.com url reject
 ^https?:\/\/tb1\.bdstatic\.com\/tb\/cms\/ngmis\/adsense\/*\.jpg url reject
@@ -160,11 +160,11 @@ hostname = 59.111.181.*,118.89.204.198,api.resso.app,cloud.189.cn,clientaccess.1
 ^https?:\/\/c\.tieba\.baidu\.com\/c\/p\/img\?src= url reject
 ^https?:\/\/c\.tieba\.baidu\.com\/\w+?\/\w+?\/(?>sync|newRnSync|mlog) url reject
 # >> 百度地图
-^https?:\/\/.+\/client\/phpui2\/ url reject
-^https?:\/\/ss0\.bdstatic\.com/.+_\d{3}_\d{4}\.jpg url reject
+^https?:\/\/.+?\/client\/phpui2\/ url reject
+^https?:\/\/ss0\.bdstatic\.com/.+?_\d{3}_\d{4}\.jpg url reject
 
 # >> 爱奇艺
-^https?:\/\/.+\/(mixer|track2)\? url reject
+^https?:\/\/.+?\/(mixer|track2)\? url reject
 ^https?:\/\/act\.vip\.iqiyi\.com\/interact\/api\/show.do url reject
 ^https?:\/\/act\.vip\.iqiyi\.com\/interact\/api\/v2\/show url reject
 ^https?:\/\/iface\.iqiyi\.com\/api\/getNewAdInfo url reject
@@ -176,9 +176,9 @@ hostname = 59.111.181.*,118.89.204.198,api.resso.app,cloud.189.cn,clientaccess.1
 
 # C
 # > CNTV
-^https?:\/\/asp\.cntv\.myalicdn\.com\/.+\?maxbr=850 url reject
-^https?:\/\/cntv\.hls\.cdn\.myqcloud\.com\/.+\?maxbr=850 url reject
-^https?:\/\/v\.cctv\.com\/.+850 url reject
+^https?:\/\/asp\.cntv\.myalicdn\.com\/.+?\?maxbr=850 url reject
+^https?:\/\/cntv\.hls\.cdn\.myqcloud\.com\/.+?\?maxbr=850 url reject
+^https?:\/\/v\.cctv\.com\/.+?850 url reject
 ^https?:\/\/www\.cntv\.cn\/nettv\/adp\/ url reject
 
 
@@ -188,7 +188,7 @@ hostname = 59.111.181.*,118.89.204.198,api.resso.app,cloud.189.cn,clientaccess.1
 ^https?:\/\/api\.douban\.com\/v2\/app_ads\/common_ads url reject
 ^https?:\/\/api\.douban\.com\/v2\/app_ads\/splash url reject
 # > 当当
-^https?:\/\/e\.dangdang\.com\/.+getDeviceStartPage url reject
+^https?:\/\/e\.dangdang\.com\/.+?getDeviceStartPage url reject
 ^https?:\/\/mapi\.dangdang\.com\/index\.php\?action=init url reject
 # > 丁香医生
 ^https?:\/\/dxy\.com\/app\/i\/ask\/biz\/feed\/launch url reject
@@ -197,24 +197,24 @@ hostname = 59.111.181.*,118.89.204.198,api.resso.app,cloud.189.cn,clientaccess.1
 # > e代驾
 ^https?:\/\/pic\.edaijia\.cn\/adsplash\/ url reject
 #饿了么
-^https?:\/\/cube\.elemecdn\.com\/.*\.mp4\? url reject
+^https?:\/\/cube\.elemecdn\.com\/.*?\.mp4\? url reject
 ^https?:\/\/cube\.elemecdn\.com\/[\w\/]+\.jpeg\?x-oss-process=image\/resize,m_fill,w_\d{3},h_\d{4}\/format,webp\/ url reject
 ^https?:\/\/cube\.elemecdn\.com\/[\w\/]+\.jpeg\?x-oss-process=image\/resize,m_fill,w_6\d{2},h_8\d{2}\/format,webp\/ url reject
-^https?:\/\/elemecdn\.com\/.+\/sitemap url reject
-^https?:\/\/fuss10\.elemecdn\.com\/.+\/w\/640\/h\/\d{3,4} url reject
-^https?:\/\/fuss10\.elemecdn\.com\/.+\/w\/750\/h\/\d{3,4} url reject
-^https?:\/\/fuss10\.elemecdn\.com\/.+\.mp4 url reject
+^https?:\/\/elemecdn\.com\/.+?\/sitemap url reject
+^https?:\/\/fuss10\.elemecdn\.com\/.+?\/w\/640\/h\/\d{3,4} url reject
+^https?:\/\/fuss10\.elemecdn\.com\/.+?\/w\/750\/h\/\d{3,4} url reject
+^https?:\/\/fuss10\.elemecdn\.com\/.+?\.mp4 url reject
 
 
 # F
 # G
 # > Google
-^https?:\/\/.+\.googlevideo\.com\/.+(&oad|ctier) url reject
-^https?:\/\/youtubei\.googleapis\.com\/youtubei\/.+ad_ url reject
-^https?:\/\/\w+\.youtube\.com\/api\/stats\/(ads|.+adformat) url reject
+^https?:\/\/.+?\.googlevideo\.com\/.+?(&oad|ctier) url reject
+^https?:\/\/youtubei\.googleapis\.com\/youtubei\/.+?ad_ url reject
+^https?:\/\/\w+\.youtube\.com\/api\/stats\/(ads|.+?adformat) url reject
 ^https?:\/\/\w+\.youtube\.com\/(pagead|ptracking) url reject
 # > 国泰君安
-^https?:\/\/dl\.app\.gtja\.com\/dzswem\/kvController\/.+\.jpg$ url reject
+^https?:\/\/dl\.app\.gtja\.com\/dzswem\/kvController\/.+?\.jpg$ url reject
 
 # H
 # I
@@ -254,12 +254,12 @@ hostname = 59.111.181.*,118.89.204.198,api.resso.app,cloud.189.cn,clientaccess.1
 ^https?:\/\/api\.m\.mi\.com\/v\d\/app\/start url reject
 ^https?:\/\/api\.jr\.mi\.com\/v\d\/adv\/ url reject
 ^https?:\/\/api\.jr\.mi\.com\/jr\/api\/playScreen url reject
-^https?:\/\/api-mifit.+\.huami\.com\/discovery\/mi\/discovery\/.+_ad\? url reject
+^https?:\/\/api-mifit.+?\.huami\.com\/discovery\/mi\/discovery\/.+?_ad\? url reject
 # > 美团
-^https?:\/\/img\.meituan\.net\/(adunion|display|midas)\/.+\.(gif|jpg|jpg\.webp)$ url reject
+^https?:\/\/img\.meituan\.net\/(adunion|display|midas)\/.+?\.(gif|jpg|jpg\.webp)$ url reject
 ^https?:\/\/p\d\.meituan\.net\/wmbanner\/[A-Za-z0-9]+\.jpg url reject
 ^https?:\/\/p\d\.meituan\.net\/movie\/[A-Za-z0-9]+\.jpg\?may_covertWebp url reject
-^https?:\/\/s3plus\.meituan\.net\/.+\/linglong\/.+\.(gif|jpg|mp4) url reject
+^https?:\/\/s3plus\.meituan\.net\/.+?\/linglong\/.+?\.(gif|jpg|mp4) url reject
 # > 秒拍
 ^https?:\/\/b-api\.ins\.miaopai\.com\/\d\/ad/ url reject
 # > 马蜂窝
@@ -302,18 +302,18 @@ hostname = 59.111.181.*,118.89.204.198,api.resso.app,cloud.189.cn,clientaccess.1
 # T
 # > 腾讯QQ
 ^https?://sqimg.qq.com/ url 302 https://sqimg.qq.com/
-^https?:\/\/.+.mp4\?cdncode=.+&sdtfrom=v3004 - reject
-^https?:\/\/.+/hls.cache.p4p/ - reject
-^https?:\/\/.+/music/common/upload/t_splash_info - reject
-^https?:\/\/.+/tips/fcgi-bin/fcg_get_advert - reject
-^https?:\/\/.+\.beacon\.qq\.com url reject
-^https?:\/\/.+\.gdt\.qq\.com url reject
-^https?:\/\/.+\.l\.qq\.com url reject
-^https?:\/\/.+\/variety.tc.qq.com\/ url reject
-^https?:\/\/.+\/omts.tc.qq.com\/ url reject
-^https?:\/\/.+\/variety.tc.qq.com\/ url reject
+^https?:\/\/.+?.mp4\?cdncode=.+?&sdtfrom=v3004 - reject
+^https?:\/\/.+?/hls.cache.p4p/ - reject
+^https?:\/\/.+?/music/common/upload/t_splash_info - reject
+^https?:\/\/.+?/tips/fcgi-bin/fcg_get_advert - reject
+^https?:\/\/.+?\.beacon\.qq\.com url reject
+^https?:\/\/.+?\.gdt\.qq\.com url reject
+^https?:\/\/.+?\.l\.qq\.com url reject
+^https?:\/\/.+?\/variety.tc.qq.com\/ url reject
+^https?:\/\/.+?\/omts.tc.qq.com\/ url reject
+^https?:\/\/.+?\/variety.tc.qq.com\/ url reject
 ^https?:\/\/api2\.helper\.qq\.com\/game\/buttons url reject
-^https?:\/\/bla\.gtimg\.com\/qqlive\/\d{6}.+\.png url reject
+^https?:\/\/bla\.gtimg\.com\/qqlive\/\d{6}.+?\.png url reject
 ^https?:\/\/imgcache\.qq\.com\/qqlive\/ url reject
 ^https?:\/\/lives\.l\.qq\.com\/livemsg\?sdtfrom= url reject
 ^https?:\/\/mtteve\.beacon\.qq\.com\/analytics url reject
@@ -326,8 +326,8 @@ hostname = 59.111.181.*,118.89.204.198,api.resso.app,cloud.189.cn,clientaccess.1
 ^https?:\/\/r\.inews\.qq\.com\/upLoadLoc url reject
 ^https?:\/\/szextshort\.weixin\.qq\.com\/cgi-bin\/mmoc-bin\/ad\/ url reject
 ^https?:\/\/mi\.gdt\.qq\.com\/gdt_mview\.fcg url reject
-^https?:\/\/mmgr\.gtimg\.com\/gjsmall\/qqpim\/public\/ios\/splash\/.+\/\d{4}_\d{4} url reject
-^https?:\/\/[\s\S]*\/.+\.tc\.qq\.com/.*p201.1\.mp4 url reject
+^https?:\/\/mmgr\.gtimg\.com\/gjsmall\/qqpim\/public\/ios\/splash\/.+?\/\d{4}_\d{4} url reject
+^https?:\/\/[\s\S]*\/.+?\.tc\.qq\.com/.*?p201.1\.mp4 url reject
 ^https?:\/\/mp\.weixin\.qq\.com\/(s|mp)\/(ad_|advertisement|getappmsgad|author|report|appmsgreport|appmsgpicreport) url reject
 ^https?:\/\/vv.video.qq.com/getvmind\? - reject
 ^https?://y.gtimg.cn/music/common/upload/targeted_ads - reject
@@ -341,7 +341,7 @@ hostname = 59.111.181.*,118.89.204.198,api.resso.app,cloud.189.cn,clientaccess.1
 # >> 腾讯视频
 ^https?:\/\/btrace.qq.com url reject
 ^https?:\/\/vv\.video\.qq\.com\/getvmind\? url reject
-^https?:\/\/.+\.mp4.+&sdtfrom=v3004 url reject
+^https?:\/\/.+?\.mp4.+?&sdtfrom=v3004 url reject
 ^https?:\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/.+\.tc\.qq\.com\/.+p201\.1\.mp4\? url reject
 # >> 腾讯体育
 ^https?:\/\/news\.ssp\.qq\.com\/app url reject
@@ -357,18 +357,18 @@ hostname = 59.111.181.*,118.89.204.198,api.resso.app,cloud.189.cn,clientaccess.1
 
 # V
 # > VUE
-^https?:\/\/static\.vuevideo\.net\/styleAssets\/.+\/splash_ad url reject
+^https?:\/\/static\.vuevideo\.net\/styleAssets\/.+?\/splash_ad url reject
 ^https?:\/\/static\.vuevideo\.net\/styleAssets\/advertisement\/ url reject
 
 # W
 # > 网易
 # >> 网易云音乐
-^https?:\/\/iad.*mat\.music\.12[67]\.net/\w+\.(jpg|mp4) url reject
+^https?:\/\/iad.*?mat\.music\.12[67]\.net/\w+\.(jpg|mp4) url reject
 ^https?:\/\/p[^4](c)?\.music\.126\.net\/\w+==\/10995\d{13}\.jpg$ url reject
 ^https?:\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/eapi\/ad\/ url reject
 ^https?:\/\/interface(\d)?.music.163.com\/eapi\/ad\/ url reject
 # >> 有道词典
-^https?:\/\/oimage([a-z])([0-9])\.ydstatic\.com\/.+adpublish url reject
+^https?:\/\/oimage([a-z])([0-9])\.ydstatic\.com\/.+?adpublish url reject
 ^https?:\/\/dsp-impr2\.youdao\.com\/adload.s\? url reject
 
 
@@ -387,9 +387,9 @@ hostname = 59.111.181.*,118.89.204.198,api.resso.app,cloud.189.cn,clientaccess.1
 ^https?:\/\/sax\w?\.sina\.cn url reject
 ^https?:\/\/sax\w?\.sina\.com\.cn url reject
 ^https?:\/\/sdkapp\.uve\.weibo\.com\/interface\/sdk\/(actionad|sdkad)\.php url reject
-^https?:\/\/simg\.s\.weibo\.com\/.+_ios\d{2}\.gif url reject
+^https?:\/\/simg\.s\.weibo\.com\/.+?_ios\d{2}\.gif url reject
 ^https?:\/\/storage\.wax\.weibo\.com\/\w+\.(png|jpg|mp4) url reject
-^https?:\/\/u1\.img\.mobile\.sina\.cn\/public\/files\/image\/\d{3}x\d{2,4}.+(png|jpg|mp4) url reject
+^https?:\/\/u1\.img\.mobile\.sina\.cn\/public\/files\/image\/\d{3}x\d{2,4}.+?(png|jpg|mp4) url reject
 ^https?:\/\/weibointl.api.weibo.cn/portal.php\?a=get_coopen_ads url reject
 ^https?:\/\/wbapp\.uve\.weibo\.com\/wbapplua\/wbpullad\.lua url reject
 ^https?:\/\/weibointl\.api\.weibo\.cn\/portal\.php\?a=get_coopen_ads url reject
@@ -408,7 +408,7 @@ hostname = 59.111.181.*,118.89.204.198,api.resso.app,cloud.189.cn,clientaccess.1
 # > 知乎
 ^https?:\/\/(api|www)\.zhihu\.com\/(ad-style-service|adx|app_config|banners|drama) url reject
 ^https?:\/\/(api|www)\.zhihu\.com\/(commercial|launch|mqtt|real_time|xen) url reject
-^https?:\/\/(api|www)\.zhihu\.com\/.*(community-ad|extended|guide|launch|recommendations) url reject
+^https?:\/\/(api|www)\.zhihu\.com\/.*?(community-ad|extended|guide|launch|recommendations) url reject
 ^https?:\/\/api\.zhihu\.com\/ab\/api url reject
 ^https?:\/\/api\.zhihu\.com\/ad url reject
 ^https?:\/\/api\.zhihu\.com\/answers\/\d+\/comments\/featured-comment-ad url reject
@@ -421,15 +421,15 @@ hostname = 59.111.181.*,118.89.204.198,api.resso.app,cloud.189.cn,clientaccess.1
 # > 作业帮
 ^https?:\/\/www\.zybang\.com\/adx\/ url reject
 # > 字节跳动
-^https?:\/\/.+\.pstatp\.com\/img\/ad url reject
-^https?:\/\/.+\.(amemv|musical|snssdk|tiktokv)\.(com|ly)\/(api|motor)\/ad\/ url reject
+^https?:\/\/.+?\.pstatp\.com\/img\/ad url reject
+^https?:\/\/.+?\.(amemv|musical|snssdk|tiktokv)\.(com|ly)\/(api|motor)\/ad\/ url reject
 ^https?:\/\/dsp\.toutiao\.com\/api\/xunfei\/ads\/ url reject
-^https?:\/\/.+\.snssdk\.com\/motor\/operation\/activity\/display\/config\/V2\/ url reject
-^https?:\/\/.+/img\/ad\.union\.api\/ url reject
+^https?:\/\/.+?\.snssdk\.com\/motor\/operation\/activity\/display\/config\/V2\/ url reject
+^https?:\/\/.+?/img\/ad\.union\.api\/ url reject
 # > 中国银行
 ^https?:\/\/mlife\.jf365\.boc\.cn\/AppPrj\/FirstPic\.do\? url reject
 # > 中信银行
-^https?:\/\/m\.creditcard\.ecitic\.com\/citiccard\/mbk\/.+\/appStartAdv url reject
+^https?:\/\/m\.creditcard\.ecitic\.com\/citiccard\/mbk\/.+?\/appStartAdv url reject
 # > 中国工商银行
 ^https?:\/\/v\.icbc\.com\.cn\/userfiles\/Resources\/WAP\/advertisement\/ url reject
 # > 中国招商银行
@@ -449,7 +449,7 @@ hostname = 59.111.181.*,118.89.204.198,api.resso.app,cloud.189.cn,clientaccess.1
 ^https?:\/\/gg\w+\.cmvideo\.cn\/v\d\/iflyad\/ url reject
 ^https?:\/\/ggic(\d)?\.cmvideo\.cn\/ad\/ url reject
 ^https?:\/\/ggx\.cmvideo\.cn\/request\/ url reject
-^https?:\/\/.+\/cdn-adn\/ url reject
+^https?:\/\/.+?\/cdn-adn\/ url reject
 # > 中国联通
 ^https?:\/\/m\.client\.10010\.com\/mobileService\/customer\/accountListData\.htm url reject
 ^https?:\/\/m\.client\.10010\.com\/uniAdmsInterface\/getWelcomeAd url reject
