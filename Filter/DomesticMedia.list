@@ -1,6 +1,0 @@
-# (DomesticMedia)
-# > 愛奇藝台灣站
-host,cache.video.iqiyi.com,DomesticMedia
-# > bilibili
-host,api.bilibili.com,DomesticMedia
-host,upos-hz-mirrorakam.akamaized.net,DomesticMedia

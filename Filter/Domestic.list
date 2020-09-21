@@ -156,6 +156,8 @@ host, file-igamecj.akamaized.net, Domestic
 host-suffix, byteoversea.com, Domestic
 host-suffix, faceu.mobi, Domestic
 host-suffix, ibytedtos.com, Domestic
+# > Xingshengyouxuan
+host-suffix, xsyxsc.com, Domestic
 # > YYeTs
 user-agent, YYeTs*, Domestic
 host-suffix, zimuzu.io, Domestic
