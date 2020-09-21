@@ -1,222 +1,264 @@
-# GlobalMedia.list
+# GloabalMedia
+# (Podcast)
+# > Himalaya
+USER-AGENT,Himalaya*,GloabalMedia
+DOMAIN-SUFFIX,himalaya.com,GloabalMedia
 # (Music)
 # > Deezer
-user-agent, Deezer*, GlobalMedia
-host-suffix, deezer.com, GlobalMedia
-host-suffix, dzcdn.net, GlobalMedia
-# > KKBOX
-host-suffix, kkbox.com, GlobalMedia
-host-suffix, kkbox.com.tw, GlobalMedia
-host-suffix, kfs.io, GlobalMedia
+USER-AGENT,Deezer*,GloabalMedia
+DOMAIN-SUFFIX,deezer.com,GloabalMedia
+DOMAIN-SUFFIX,dzcdn.net,GloabalMedia
 # > JOOX
-user-agent, WeMusic*, GlobalMedia
-user-agent, JOOX*, GlobalMedia
-host-suffix, joox.com, GlobalMedia
+USER-AGENT,JOOX*,GloabalMedia
+USER-AGENT,WeMusic*,GloabalMedia
+DOMAIN-SUFFIX,joox.com,GloabalMedia
+DOMAIN-KEYWORD,jooxweb-api,GloabalMedia
+# > KKBOX
+DOMAIN-SUFFIX,kkbox.com,GloabalMedia
+DOMAIN-SUFFIX,kkbox.com.tw,GloabalMedia
+DOMAIN-SUFFIX,kfs.io,GloabalMedia
 # > Pandora
-user-agent, Pandora*, GlobalMedia
-host-suffix, pandora.com, GlobalMedia
+USER-AGENT,Pandora*,GloabalMedia
+DOMAIN-SUFFIX,pandora.com,GloabalMedia
 # > SoundCloud
-user-agent, SoundCloud*, GlobalMedia
-host-suffix, p-cdn.us, GlobalMedia
-host-suffix, sndcdn.com, GlobalMedia
-host-suffix, soundcloud.com, GlobalMedia
+USER-AGENT,SoundCloud*,GloabalMedia
+DOMAIN-SUFFIX,p-cdn.us,GloabalMedia
+DOMAIN-SUFFIX,sndcdn.com,GloabalMedia
+DOMAIN-SUFFIX,soundcloud.com,GloabalMedia
 # > Spotify
-user-agent, Spotify*, GlobalMedia
-host-suffix, pscdn.co, GlobalMedia
-host-suffix, scdn.co, GlobalMedia
-host-suffix, spotify.com, GlobalMedia
-host-suffix, spoti.fi, GlobalMedia
-host-keyword, spotify.com, GlobalMedia
-host-keyword, -spotify-com, GlobalMedia
+USER-AGENT,Spotify*,GloabalMedia
+DOMAIN-SUFFIX,pscdn.co,GloabalMedia
+DOMAIN-SUFFIX,scdn.co,GloabalMedia
+DOMAIN-SUFFIX,spotify.com,GloabalMedia
+DOMAIN-SUFFIX,spoti.fi,GloabalMedia
+DOMAIN-KEYWORD,spotify.com,GloabalMedia
+DOMAIN-KEYWORD,-spotify-com,GloabalMedia
 # > TIDAL
-user-agent, TIDAL*, GlobalMedia
-host-suffix, tidal.com, GlobalMedia
+USER-AGENT,TIDAL*,GloabalMedia
+DOMAIN-SUFFIX,tidal.com,GloabalMedia
 # > YouTubeMusic
-user-agent, com.google.ios.youtubemusic*, GlobalMedia
-user-agent, YouTubeMusic*, GlobalMedia
+USER-AGENT,com.google.ios.youtubemusic*,GloabalMedia
+USER-AGENT,YouTubeMusic*,GloabalMedia
 # (Video)
-# > All4
-user-agent, All4*, GlobalMedia
-host-suffix, c4assets.com, GlobalMedia
-host-suffix, channel4.com, GlobalMedia
 # > AbemaTV
-user-agent, AbemaTV*, GlobalMedia
-host-suffix, abema.io, GlobalMedia
-host-suffix, ameba.jp, GlobalMedia
-host-suffix, abema.tv, GlobalMedia
-host-suffix, hayabusa.io, GlobalMedia
-host, abematv.akamaized.net, GlobalMedia
-host, ds-linear-abematv.akamaized.net, GlobalMedia
-host, ds-vod-abematv.akamaized.net, GlobalMedia
-host, linear-abematv.akamaized.net, GlobalMedia
+USER-AGENT,AbemaTV*,GloabalMedia
+DOMAIN-SUFFIX,abema.io,GloabalMedia
+DOMAIN-SUFFIX,abema.tv,GloabalMedia
+DOMAIN-SUFFIX,ameba.jp,GloabalMedia
+DOMAIN-SUFFIX,hayabusa.io,GloabalMedia
+DOMAIN-KEYWORD,abematv.akamaized.net,GloabalMedia
+# > All 4
+USER-AGENT,All4*,GloabalMedia
+DOMAIN-SUFFIX,c4assets.com,GloabalMedia
+DOMAIN-SUFFIX,channel4.com,GloabalMedia
 # > Amazon Prime Video
-user-agent, InstantVideo.US*, GlobalMedia
-user-agent, Prime%20Video*, GlobalMedia
-host-suffix, aiv-cdn.net, GlobalMedia
-host-suffix, aiv-delivery.net, GlobalMedia
-host-suffix, amazonvideo.com, GlobalMedia
-host-suffix, primevideo.com, GlobalMedia
-host, avodmp4s3ww-a.akamaihd.net, GlobalMedia
-host, d25xi40x97liuc.cloudfront.net, GlobalMedia
-host, dmqdd6hw24ucf.cloudfront.net, GlobalMedia
-host, d22qjgkvxw22r6.cloudfront.net, GlobalMedia
-host, d1v5ir2lpwr8os.cloudfront.net, GlobalMedia
-host-keyword, avoddashs, GlobalMedia
+USER-AGENT,InstantVideo.US*,GloabalMedia
+USER-AGENT,Prime%20Video*,GloabalMedia
+DOMAIN-SUFFIX,aiv-cdn.net,GloabalMedia
+DOMAIN-SUFFIX,aiv-delivery.net,GloabalMedia
+DOMAIN-SUFFIX,amazonvideo.com,GloabalMedia
+DOMAIN-SUFFIX,primevideo.com,GloabalMedia
+DOMAIN,avodmp4s3ww-a.akamaihd.net,GloabalMedia
+DOMAIN,d25xi40x97liuc.cloudfront.net,GloabalMedia
+DOMAIN,dmqdd6hw24ucf.cloudfront.net,GloabalMedia
+DOMAIN,dmqdd6hw24ucf.cloudfront.net,GloabalMedia
+DOMAIN,d22qjgkvxw22r6.cloudfront.net,GloabalMedia
+DOMAIN,d1v5ir2lpwr8os.cloudfront.net,GloabalMedia
+DOMAIN-KEYWORD,avoddashs,GloabalMedia
+# > Apple TV
+DOMAIN-SUFFIX,tv.apple.com,GloabalMedia
+DOMAIN,hls.itunes.apple.com,GloabalMedia
+DOMAIN,hls-amt.itunes.apple.com,GloabalMedia
+DOMAIN,play-edge.itunes.apple.com,GloabalMedia
 # > Bahamut
-user-agent, Anime*, GlobalMedia
-host-suffix, bahamut.com.tw, GlobalMedia
-host-suffix, gamer.com.tw, GlobalMedia
-host, gamer-cds.cdn.hinet.net, GlobalMedia
-host, gamer2-cds.cdn.hinet.net, GlobalMedia
+USER-AGENT,Anime*,GloabalMedia
+DOMAIN-SUFFIX,bahamut.com.tw,GloabalMedia
+DOMAIN-SUFFIX,gamer.com.tw,GloabalMedia
+DOMAIN,gamer-cds.cdn.hinet.net,GloabalMedia
+DOMAIN,gamer2-cds.cdn.hinet.net,GloabalMedia
 # > BBC iPlayer
-user-agent, BBCiPlayer*, GlobalMedia
-host-suffix, bbc.co.uk, GlobalMedia
-host-suffix, bbci.co.uk, GlobalMedia
-host-keyword, bbcfmt, GlobalMedia
-host-keyword, uk-live, GlobalMedia
+USER-AGENT,BBCiPlayer*,GloabalMedia
+DOMAIN-SUFFIX,bbc.co.uk,GloabalMedia
+DOMAIN-SUFFIX,bbci.co.uk,GloabalMedia
+DOMAIN-KEYWORD,bbcfmt,GloabalMedia
+DOMAIN-KEYWORD,uk-live,GloabalMedia
 # > DAZN
-user-agent, DAZN*, GlobalMedia
-host-suffix, dazn.com, GlobalMedia
-host-suffix, dazn-api.com, GlobalMedia
-host, d151l6v8er5bdm.cloudfront.net, GlobalMedia
-host-keyword, voddazn, GlobalMedia
+USER-AGENT,DAZN*,GloabalMedia
+DOMAIN-SUFFIX,dazn.com,GloabalMedia
+DOMAIN-SUFFIX,dazn-api.com,GloabalMedia
+DOMAIN,d151l6v8er5bdm.cloudfront.net,GloabalMedia
+DOMAIN-KEYWORD,voddazn,GloabalMedia
 # > Disney+
-user-agent, Disney+*, GlobalMedia
-host-suffix, bamgrid.com, GlobalMedia
-host-suffix, disney-plus.net, GlobalMedia
-host-suffix, disneyplus.com, GlobalMedia
-host-suffix, dssott.com, GlobalMedia
-host, cdn.registerdisney.go.com, GlobalMedia
+USER-AGENT,Disney+*,GloabalMedia
+DOMAIN-SUFFIX,disney-plus.net,GloabalMedia
+DOMAIN-SUFFIX,disneyplus.com,GloabalMedia
+DOMAIN-SUFFIX,dssott.com,GloabalMedia
+DOMAIN,cdn.registerdisney.go.com,GloabalMedia
+DOMAIN,global.edge.bamgrid.com,GloabalMedia
+# > DMM
+DOMAIN-SUFFIX,dmm.co.jp,GloabalMedia
+DOMAIN-SUFFIX,dmm.com,GloabalMedia
+DOMAIN-SUFFIX,dmm-extension.com,GloabalMedia
 # > encoreTVB
-user-agent, encoreTVB*, GlobalMedia
-host-suffix, encoretvb.com, GlobalMedia
-host, edge.api.brightcove.com, GlobalMedia
-host, bcbolt446c5271-a.akamaihd.net, GlobalMedia
+USER-AGENT,encoreTVB*,GloabalMedia
+DOMAIN-SUFFIX,encoretvb.com,GloabalMedia
+DOMAIN,edge.api.brightcove.com,GloabalMedia
+DOMAIN,bcbolt446c5271-a.akamaihd.net,GloabalMedia
 # > FOX NOW
-user-agent, FOX%20NOW*, GlobalMedia
-host-suffix, fox.com, GlobalMedia
-host-suffix, foxdcg.com, GlobalMedia
-host-suffix, theplatform.com, GlobalMedia
-host-suffix, uplynk.com, GlobalMedia
-# > HBO NOW
-user-agent, HBO%20NOW*, GlobalMedia
-host-suffix, hbo.com, GlobalMedia
-host-suffix, hbogo.com, GlobalMedia
-host-suffix, hbonow.com, GlobalMedia
+USER-AGENT,FOX%20NOW*,GloabalMedia
+DOMAIN-SUFFIX,fox.com,GloabalMedia
+DOMAIN-SUFFIX,foxdcg.com,GloabalMedia
+DOMAIN-SUFFIX,theplatform.com,GloabalMedia
+DOMAIN-SUFFIX,uplynk.com,GloabalMedia
+# > FOX+
+DOMAIN-SUFFIX,foxplus.com,GloabalMedia
+# DOMAIN-SUFFIX,theplatform.com,GloabalMedia
+DOMAIN,cdn-fox-networks-group-green.akamaized.net,GloabalMedia
+DOMAIN,d3cv4a9a9wh0bt.cloudfront.net,GloabalMedia
+DOMAIN,foxsports01-i.akamaihd.net,GloabalMedia
+DOMAIN,foxsports02-i.akamaihd.net,GloabalMedia
+DOMAIN,foxsports03-i.akamaihd.net,GloabalMedia
+DOMAIN,staticasiafox.akamaized.net,GloabalMedia
+# > HBO NOW & Max
+USER-AGENT,HBO%20NOW*,GloabalMedia
+DOMAIN-SUFFIX,hbo.com,GloabalMedia
+DOMAIN-SUFFIX,hbogo.com,GloabalMedia
+DOMAIN-SUFFIX,hbonow.com,GloabalMedia
+USER-AGENT,HBOMAX*,GloabalMedia
+DOMAIN-SUFFIX,hbomax.com,GloabalMedia
 # > HBO GO HKG
-user-agent, HBO%20GO%20PROD%20HKG*, GlobalMedia
-host-suffix, hbogoasia.com, GlobalMedia
-host-suffix, hbogoasia.hk, GlobalMedia
-host, bcbolthboa-a.akamaihd.net, GlobalMedia
-host, players.brightcove.net, GlobalMedia
-host, s3-ap-southeast-1.amazonaws.com, GlobalMedia
-host, dai3fd1oh325y.cloudfront.net, GlobalMedia
-host, 44wilhpljf.execute-api.ap-southeast-1.amazonaws.com, GlobalMedia
-host, hboasia1-i.akamaihd.net, GlobalMedia
-host, hboasia2-i.akamaihd.net, GlobalMedia
-host, hboasia3-i.akamaihd.net, GlobalMedia
-host, hboasia4-i.akamaihd.net, GlobalMedia
-host, hboasia5-i.akamaihd.net, GlobalMedia
-host, cf-images.ap-southeast-1.prod.boltdns.net, GlobalMedia
+USER-AGENT,HBO%20GO%20PROD%20HKG*,GloabalMedia
+DOMAIN-SUFFIX,hbogoasia.com,GloabalMedia
+DOMAIN-SUFFIX,hbogoasia.hk,GloabalMedia
+DOMAIN,bcbolthboa-a.akamaihd.net,GloabalMedia
+DOMAIN,players.brightcove.net,GloabalMedia
+DOMAIN,s3-ap-southeast-1.amazonaws.com,GloabalMedia
+DOMAIN,dai3fd1oh325y.cloudfront.net,GloabalMedia
+DOMAIN,44wilhpljf.execute-api.ap-southeast-1.amazonaws.com,GloabalMedia
+DOMAIN,hboasia1-i.akamaihd.net,GloabalMedia
+DOMAIN,hboasia2-i.akamaihd.net,GloabalMedia
+DOMAIN,hboasia3-i.akamaihd.net,GloabalMedia
+DOMAIN,hboasia4-i.akamaihd.net,GloabalMedia
+DOMAIN,hboasia5-i.akamaihd.net,GloabalMedia
+DOMAIN,cf-images.ap-southeast-1.prod.boltdns.net,GloabalMedia
 # > 华文电视
-user-agent, HWTVMobile*, GlobalMedia
-host-suffix, 5itv.tv, GlobalMedia
-host-suffix, ocnttv.com, GlobalMedia
+USER-AGENT,HWTVMobile*,GloabalMedia
+DOMAIN-SUFFIX,5itv.tv,GloabalMedia
+DOMAIN-SUFFIX,ocnttv.com,GloabalMedia
 # > Hulu
-host-suffix, hulu.com, GlobalMedia
-host-suffix, huluim.com, GlobalMedia
-host-suffix, hulustream.com, GlobalMedia
-# > Hulu(フールー)
-host-suffix, happyon.jp, GlobalMedia
-host-suffix, hulu.jp, GlobalMedia
+DOMAIN-SUFFIX,hulu.com,GloabalMedia
+DOMAIN-SUFFIX,huluim.com,GloabalMedia
+DOMAIN-SUFFIX,hulustream.com,GloabalMedia
+# > Hulu / フールー
+DOMAIN-SUFFIX,happyon.jp,GloabalMedia
+DOMAIN-SUFFIX,hjholdings.jp,GloabalMedia
+DOMAIN-SUFFIX,hulu.jp,GloabalMedia
 # > ITV
-user-agent, ITV_Player*, GlobalMedia
-host-suffix, itv.com, GlobalMedia
-host-suffix, itvstatic.com, GlobalMedia
-host, itvpnpmobile-a.akamaihd.net, GlobalMedia
+USER-AGENT,ITV_Player*,GloabalMedia
+DOMAIN-SUFFIX,itv.com,GloabalMedia
+DOMAIN-SUFFIX,itvstatic.com,GloabalMedia
+DOMAIN,itvpnpmobile-a.akamaihd.net,GloabalMedia
 # > KKTV
-user-agent, KKTV*, GlobalMedia
-user-agent, com.kktv.ios.kktv*, GlobalMedia
-host-suffix, kktv.com.tw, GlobalMedia
-host-suffix, kktv.me, GlobalMedia
-host, kktv-theater.kk.stream, GlobalMedia
-# > Line TV
-user-agent, LINE%20TV*, GlobalMedia
-host-suffix, linetv.tw, GlobalMedia
-host, d3c7rimkq79yfu.cloudfront.net, GlobalMedia
+USER-AGENT,KKTV*,GloabalMedia
+USER-AGENT,com.kktv.ios.kktv*,GloabalMedia
+DOMAIN-SUFFIX,kktv.com.tw,GloabalMedia
+DOMAIN-SUFFIX,kktv.me,GloabalMedia
+DOMAIN,kktv-theater.kk.stream,GloabalMedia
+# > LINE TV
+USER-AGENT,LINE%20TV*,GloabalMedia
+DOMAIN-SUFFIX,linetv.tw,GloabalMedia
+DOMAIN,d3c7rimkq79yfu.cloudfront.net,GloabalMedia
 # > LiTV
-host-suffix, litv.tv, GlobalMedia
-host, litvfreemobile-hichannel.cdn.hinet.net, GlobalMedia
+DOMAIN-SUFFIX,litv.tv,GloabalMedia
+DOMAIN,litvfreemobile-hichannel.cdn.hinet.net,GloabalMedia
 # > My5
-user-agent, My5*, GlobalMedia
-host-suffix, channel5.com, GlobalMedia
-host-suffix, my5.tv, GlobalMedia
-host, d349g9zuie06uo.cloudfront.net, GlobalMedia
+USER-AGENT,My5*,GloabalMedia
+DOMAIN-SUFFIX,channel5.com,GloabalMedia
+DOMAIN-SUFFIX,my5.tv,GloabalMedia
+DOMAIN,d349g9zuie06uo.cloudfront.net,GloabalMedia
 # > myTV SUPER
-user-agent, mytv*, GlobalMedia
-host-suffix, mytvsuper.com, GlobalMedia
-host-suffix, tvb.com, GlobalMedia
+USER-AGENT,mytv*,GloabalMedia
+DOMAIN-SUFFIX,mytvsuper.com,GloabalMedia
+DOMAIN-SUFFIX,tvb.com,GloabalMedia
 # > Netflix
-user-agent, Argo*, GlobalMedia
-host-suffix, netflix.com, GlobalMedia
-host-suffix, netflix.net, GlobalMedia
-host-suffix, nflxext.com, GlobalMedia
-host-suffix, nflximg.com, GlobalMedia
-host-suffix, nflximg.net, GlobalMedia
-host-suffix, nflxso.net, GlobalMedia
-host-suffix, nflxvideo.net, GlobalMedia
-ip-cidr, 8.41.4.0/24, GlobalMedia
-ip-cidr, 23.246.0.0/18, GlobalMedia
-ip-cidr, 37.77.184.0/21, GlobalMedia
-ip-cidr, 45.57.0.0/17, GlobalMedia
-ip-cidr, 64.120.128.0/17, GlobalMedia
-ip-cidr, 66.197.128.0/17, GlobalMedia
-ip-cidr, 69.53.224.0/19, GlobalMedia
-ip-cidr, 108.175.32.0/20, GlobalMedia
-ip-cidr, 185.2.220.0/22, GlobalMedia
-ip-cidr, 185.9.188.0/22, GlobalMedia
-ip-cidr, 192.173.64.0/18, GlobalMedia
-ip-cidr, 198.38.96.0/19, GlobalMedia
-ip-cidr, 198.45.48.0/20, GlobalMedia
-ip-cidr, 207.45.72.0/22, GlobalMedia
-ip-cidr, 208.75.76.0/22, GlobalMedia
-# >> Fast
-host-suffix, fast.com, GlobalMedia
+USER-AGENT,Argo*,GloabalMedia
+DOMAIN-SUFFIX,netflix.com,GloabalMedia
+DOMAIN-SUFFIX,netflix.net,GloabalMedia
+DOMAIN-SUFFIX,nflxext.com,GloabalMedia
+DOMAIN-SUFFIX,nflximg.com,GloabalMedia
+DOMAIN-SUFFIX,nflximg.net,GloabalMedia
+DOMAIN-SUFFIX,nflxso.net,GloabalMedia
+DOMAIN-SUFFIX,nflxvideo.net,GloabalMedia
+DOMAIN-SUFFIX,netflixdnstest0.com,GloabalMedia
+DOMAIN-SUFFIX,netflixdnstest1.com,GloabalMedia
+DOMAIN-SUFFIX,netflixdnstest2.com,GloabalMedia
+DOMAIN-SUFFIX,netflixdnstest3.com,GloabalMedia
+DOMAIN-SUFFIX,netflixdnstest4.com,GloabalMedia
+DOMAIN-SUFFIX,netflixdnstest5.com,GloabalMedia
+DOMAIN-SUFFIX,netflixdnstest6.com,GloabalMedia
+DOMAIN-SUFFIX,netflixdnstest7.com,GloabalMedia
+DOMAIN-SUFFIX,netflixdnstest8.com,GloabalMedia
+DOMAIN-SUFFIX,netflixdnstest9.com,GloabalMedia
+IP-CIDR,23.246.0.0/18,GloabalMedia
+IP-CIDR,37.77.184.0/21,GloabalMedia
+IP-CIDR,45.57.0.0/17,GloabalMedia
+IP-CIDR,64.120.128.0/17,GloabalMedia
+IP-CIDR,66.197.128.0/17,GloabalMedia
+IP-CIDR,108.175.32.0/20,GloabalMedia
+IP-CIDR,192.173.64.0/18,GloabalMedia
+IP-CIDR,198.38.96.0/19,GloabalMedia
+IP-CIDR,198.45.48.0/20,GloabalMedia
+IP-CIDR,34.210.42.111/32,GloabalMedia
+IP-CIDR,52.89.124.203/32,GloabalMedia
+IP-CIDR,54.148.37.5/32,GloabalMedia
 # > niconico
-user-agent, Niconico*, GlobalMedia
-host-suffix, dmc.nico, GlobalMedia
-host-suffix, nicovideo.jp, GlobalMedia
-host-suffix, nimg.jp, GlobalMedia
-host-suffix, socdm.com, GlobalMedia
+USER-AGENT,Niconico*,GloabalMedia
+DOMAIN-SUFFIX,dmc.nico,GloabalMedia
+DOMAIN-SUFFIX,nicovideo.jp,GloabalMedia
+DOMAIN-SUFFIX,nimg.jp,GloabalMedia
+DOMAIN-SUFFIX,socdm.com,GloabalMedia
+# > Now E
+DOMAIN-SUFFIX,nowe.com,GloabalMedia
+DOMAIN-SUFFIX,nowestatic.com,GloabalMedia
 # > PBS
-user-agent, PBS*, GlobalMedia
-host-suffix, pbs.org, GlobalMedia
+USER-AGENT,PBS*,GloabalMedia
+DOMAIN-SUFFIX,pbs.org,GloabalMedia
 # > Pornhub
-host-suffix, phncdn.com, GlobalMedia
-host-suffix, phprcdn.com, GlobalMedia
-host-suffix, pornhub.com, GlobalMedia
-host-suffix, pornhubpremium.com, GlobalMedia
+DOMAIN-SUFFIX,phncdn.com,GloabalMedia
+DOMAIN-SUFFIX,phprcdn.com,GloabalMedia
+DOMAIN-SUFFIX,pornhub.com,GloabalMedia
+DOMAIN-SUFFIX,pornhubpremium.com,GloabalMedia
 # > 台湾好
-user-agent, TaiwanGood*, GlobalMedia
-host-suffix, skyking.com.tw, GlobalMedia
-host, hamifans.emome.net, GlobalMedia
+USER-AGENT,TaiwanGood*,GloabalMedia
+DOMAIN-SUFFIX,skyking.com.tw,GloabalMedia
+DOMAIN,hamifans.emome.net,GloabalMedia
+# > TikTok
+USER-AGENT,TikTok*,GloabalMedia
+DOMAIN-SUFFIX,byteoversea.com,GloabalMedia
+DOMAIN-SUFFIX,ibytedtos.com,GloabalMedia
+DOMAIN-SUFFIX,ipstatp.com,GloabalMedia
+DOMAIN-SUFFIX,muscdn.com,GloabalMedia
+DOMAIN-SUFFIX,musical.ly,GloabalMedia
+DOMAIN-SUFFIX,tiktok.com,GloabalMedia
+DOMAIN-SUFFIX,tiktokcdn.com,GloabalMedia
+DOMAIN-SUFFIX,tiktokv.com,GloabalMedia
+DOMAIN-KEYWORD,-tiktokcdn-com,GloabalMedia
 # > Twitch
-host-suffix, twitch.tv, GlobalMedia
-host-suffix, twitchcdn.net, GlobalMedia
-host-suffix, ttvnw.net, GlobalMedia
-host-suffix, jtvnw.net, GlobalMedia
+DOMAIN-SUFFIX,jtvnw.net,GloabalMedia
+DOMAIN-SUFFIX,ttvnw.net,GloabalMedia
+DOMAIN-SUFFIX,twitch.tv,GloabalMedia
+DOMAIN-SUFFIX,twitchcdn.net,GloabalMedia
 # > ViuTV
-user-agent, Viu*, GlobalMedia
-user-agent, ViuTV*, GlobalMedia
-host-suffix, viu.com, GlobalMedia
-host-suffix, viu.tv, GlobalMedia
-host, api.viu.now.com, GlobalMedia
-host, d1k2us671qcoau.cloudfront.net, GlobalMedia
-host, d2anahhhmp1ffz.cloudfront.net, GlobalMedia
-host, dfp6rglgjqszk.cloudfront.net, GlobalMedia
+USER-AGENT,Viu*,GloabalMedia
+DOMAIN-SUFFIX,viu.com,GloabalMedia
+DOMAIN-SUFFIX,viu.tv,GloabalMedia
+DOMAIN,api.viu.now.com,GloabalMedia
+DOMAIN,d1k2us671qcoau.cloudfront.net,GloabalMedia
+DOMAIN,d2anahhhmp1ffz.cloudfront.net,GloabalMedia
+DOMAIN,dfp6rglgjqszk.cloudfront.net,GloabalMedia
 # > YouTube
-user-agent, com.google.ios.youtube*, GlobalMedia
-user-agent, YouTube*, GlobalMedia
-host-suffix, googlevideo.com, GlobalMedia
-host-suffix, youtube.com, GlobalMedia
-host, youtubei.googleapis.com, GlobalMedia
+USER-AGENT,com.google.ios.youtube*,GloabalMedia
+USER-AGENT,YouTube*,GloabalMedia
+DOMAIN-SUFFIX,googlevideo.com,GloabalMedia
+DOMAIN-SUFFIX,youtube.com,GloabalMedia
+DOMAIN,youtubei.googleapis.com,GloabalMedia
