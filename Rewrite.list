@@ -300,6 +300,13 @@ hostname = clientaccess.10086.cn,mlife.jf365.boc.cn,pcauto.com.cn,mrobot.pconlin
 ^https?:\/\/img01\.10101111cdn\.com\/adpos\/ url reject
 
 # T
+# >Tiktok
+^https?:\/\/.+?\.amemv\.com\/(api|motor)\/ad\/ url reject
+^https?:\/\/.+?\.musical\.ly\/(api|motor)\/ad\/ url reject
+^https?:\/\/.+?\.snssdk\..com\/(api|motor)\/ad\/ url reject
+^https?:\/\/.+?\.snssdk\.com\/motor\/operation\/activity\/display\/config\/V2\/ url reject
+^https?:\/\/.+?\.tiktokv\..com\/(api|motor)\/ad\/ url reject
+
 # > 腾讯QQ
 ^https?://sqimg.qq.com/ url 302 https://sqimg.qq.com/
 ^https?:\/\/.+?.mp4\?cdncode=.+?&sdtfrom=v3004 - reject
@@ -422,9 +429,7 @@ hostname = clientaccess.10086.cn,mlife.jf365.boc.cn,pcauto.com.cn,mrobot.pconlin
 ^https?:\/\/www\.zybang\.com\/adx\/ url reject
 # > 字节跳动
 ^https?:\/\/.+?\.pstatp\.com\/img\/ad url reject
-^https?:\/\/.+?\.(amemv|musical|snssdk|tiktokv)\.(com|ly)\/(api|motor)\/ad\/ url reject
 ^https?:\/\/dsp\.toutiao\.com\/api\/xunfei\/ads\/ url reject
-^https?:\/\/.+?\.snssdk\.com\/motor\/operation\/activity\/display\/config\/V2\/ url reject
 ^https?:\/\/.+?/img\/ad\.union\.api\/ url reject
 # > 中国银行
 ^https?:\/\/mlife\.jf365\.boc\.cn\/AppPrj\/FirstPic\.do\? url reject
