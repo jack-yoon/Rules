@@ -35,7 +35,7 @@ hostname = clientaccess.10086.cn,mlife.jf365.boc.cn,pcauto.com.cn,mrobot.pconlin
 (?<=_region=)CN(?=&) url 307 JP
 (?<=&app_version=)1[6-9]..(?=.?.?&) url 307 1
 (?<=\?version_code=)1[6-9]..(?=.?.?&) url 307 1
-(.*video_id=\w{32})(.*watermark=)(.*) url 302 $1
+
 
 # Redirect Google Search Service
 ^https?:\/\/(www.)?(g|google)\.cn url 302 https://www.google.com
