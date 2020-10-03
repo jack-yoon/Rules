@@ -31,12 +31,13 @@ hostname = clientaccess.10086.cn,mlife.jf365.boc.cn,*.googlevideo.com,pcauto.com
 #微信
 ^(http|https):\/\/mp\.weixin\.qq\.com\/mp\/getappmsgad url response-body "advertisement_num":\d,"advertisement_info":\[.+\], response-body "advertisement_num":0,"advertisement_info":[],
 
+
+
 # TikTok解锁
 (?<=_region=)CN(?=&) url 307 JP
 (?<=&app_version=)1[6-9]..(?=.?.?&) url 307 17..
 (?<=\?version_code=)1[6-9]..(?=.?.?&) url 307 17..
 ^https://api[\w-]*?.tiktokv.com/aweme/v\d/policy/notice/? url reject
-
 
 # Redirect Google Search Service
 ^https?:\/\/(www.)?(g|google)\.cn url 302 https://www.google.com
@@ -100,12 +101,14 @@ hostname = clientaccess.10086.cn,mlife.jf365.boc.cn,*.googlevideo.com,pcauto.com
 ^(http|https):\/\/(www.)?yuanchengxiezuo\.com\/ url 302 https://www.teamviewer.com/
 ^(http|https):\/\/(www.)?zbrushcn.com/ url 302 https://pixologic.com/
 
+
+
+# Advertising Block
+
 #广告联盟
 ^https?:\/\/sf.*?-ttcdn-tos\.pstatp\.com\/obj\/ad url reject
 ^https?:\/\/oset-api\.open-adx\.com\/ad\/ url reject
 
-
-# Advertising Block
 # 0~9
 # A
 # > 阿里巴巴
