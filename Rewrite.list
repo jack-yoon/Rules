@@ -1,4 +1,4 @@
-hostname = clientaccess.10086.cn,mlife.jf365.boc.cn,pcauto.com.cn,mrobot.pconline.com.cn,mapi.mafengwo.cn,api.weibo.cn,ios.wps.cn,interface.music.163.com,you.163.com,m.client.10010.com,img*.10101111cdn.com,gw.alicdn.com,heic.alicdn.com,render.alipay.com,m*.amap.com,*.amemv.com,ss0.bdstatic.com,app.bilibili.com,manga.bilibili.com,*.byteoversea.com,pic1cdn.cmbchina.com,e.dangdang.com,api.douban.com,elemecdn.com,www.google.cn,api.abema.io,youtubei.googleapis.com,api.gotokeep.com,app.gtja.com,app.api-mifit*.huami.com,iface.iqiyi.com,vip.iqiyi.com,jr.jd.com,ms.m.jd.com,app.static1.keepcdn.com,*.kingsoft-office-service.com,jr.mi.com,api.cognitive.microsofttranslator.com,api.offline.microsofttranslator.com,oset-api.open-adx.com,g.*.pstatp.com,sf*ttcdn-tos.pstatp.com,mage.if.qidian.com,gdt.qq.com,mi.helper.qq.com,api2.inews.qq.com,r.kohsocialapp.qq.com,ssl.l.qq.com,lives.map.qq.com,map.qq.com,newsso.ssp.qq.com,news.weixin.qq.com,mp.weread.qq.com,i.media.qyer.com,open.qyer.com,*.snssdk.com,shouji.sogou.com,business-cdn.k.sohu.com,*.tv.sohu.com,*.m.taobao.com,acs.m.taobao.com,*.tiktokv.com,mapi.weibo.com,*.uve.weibo.com,uve.weibo.com,sdkapp.wax.weibo.com,api.yangkeduo.com,*.ydstatic.com,app.yinxiang.com,m.youtube.com,s.youtube.com,www.youtube.com,api.zhihu.com,www.zhihu.com,www.zybang.com,*.musical.ly,music.126.net,4gimg.*.meituan.net,static.vuevideo.net
+hostname = clientaccess.10086.cn,mlife.jf365.boc.cn,*.googlevideo.com,pcauto.com.cn,mrobot.pconline.com.cn,mapi.mafengwo.cn,api.weibo.cn,ios.wps.cn,interface.music.163.com,you.163.com,m.client.10010.com,img*.10101111cdn.com,gw.alicdn.com,heic.alicdn.com,render.alipay.com,m*.amap.com,*.amemv.com,ss0.bdstatic.com,app.bilibili.com,manga.bilibili.com,*.byteoversea.com,pic1cdn.cmbchina.com,e.dangdang.com,api.douban.com,elemecdn.com,www.google.cn,api.abema.io,youtubei.googleapis.com,api.gotokeep.com,app.gtja.com,app.api-mifit*.huami.com,iface.iqiyi.com,vip.iqiyi.com,jr.jd.com,ms.m.jd.com,app.static1.keepcdn.com,*.kingsoft-office-service.com,jr.mi.com,api.cognitive.microsofttranslator.com,api.offline.microsofttranslator.com,oset-api.open-adx.com,g.*.pstatp.com,sf*ttcdn-tos.pstatp.com,mage.if.qidian.com,gdt.qq.com,mi.helper.qq.com,api2.inews.qq.com,r.kohsocialapp.qq.com,ssl.l.qq.com,lives.map.qq.com,map.qq.com,newsso.ssp.qq.com,news.weixin.qq.com,mp.weread.qq.com,i.media.qyer.com,open.qyer.com,*.snssdk.com,shouji.sogou.com,business-cdn.k.sohu.com,*.tv.sohu.com,*.m.taobao.com,acs.m.taobao.com,*.tiktokv.com,mapi.weibo.com,*.uve.weibo.com,uve.weibo.com,sdkapp.wax.weibo.com,api.yangkeduo.com,*.ydstatic.com,app.yinxiang.com,m.youtube.com,s.youtube.com,www.youtube.com,api.zhihu.com,www.zhihu.com,www.zybang.com,*.musical.ly,music.126.net,4gimg.*.meituan.net,static.vuevideo.net
 
 
 #脚本Script
@@ -211,10 +211,10 @@ hostname = clientaccess.10086.cn,mlife.jf365.boc.cn,pcauto.com.cn,mrobot.pconlin
 # F
 # G
 # > Google
-^https?:\/\/.+?\.googlevideo\.com\/.+?(&oad|ctier) url reject
-^https?:\/\/youtubei\.googleapis\.com\/youtubei\/.+?ad_ url reject
-^https?:\/\/\w+\.youtube\.com\/api\/stats\/(ads|.+?adformat) url reject
-^https?:\/\/\w+\.youtube\.com\/(pagead|ptracking) url reject
+^https?:\/\/[\w-]+\.googlevideo\.com\/.+(&oad|ctier) url reject
+^https?:\/\/(www|s)\.youtube\.com\/api\/stats\/ads url reject
+^https?:\/\/(www|s)\.youtube\.com\/(pagead|ptracking) url reject
+^https?:\/\/\s.youtube.com/api/stats/qoe?.*adformat= url reject
 # > 国泰君安
 ^https?:\/\/dl\.app\.gtja\.com\/dzswem\/kvController\/.+?\.jpg$ url reject
 
