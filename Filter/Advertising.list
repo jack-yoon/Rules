@@ -1,4 +1,47 @@
-# 屏蔽.list
+## ##
+# Privacy
+host, track.tiara.daum.net, AdBlock
+host, track.tiara.kakao.com, AdBlock
+host, zgsdk.zhugeio.com, AdBlock
+
+# > 51.LA
+host, js.users.51.la, AdBlock
+host, mc.51.la, AdBlock
+host, wc.51.la, AdBlock
+# > 58
+host, track.58.com, AdBlock
+host, tracklog.58.com, AdBlock
+# > Baidu
+host, hm.baidu.com, AdBlock
+host, hmma.baidu.com, AdBlock
+# > ByteDance
+host, log.byteoversea.com, AdBlock
+host, log.tiktokv.com, AdBlock
+host, log-hl-ipv6.snssdk.com, AdBlock
+host, log-lq.snssdk.com, AdBlock
+host, log-va.tiktokv.com, AdBlock
+host, xlog.snssdk.com, AdBlock
+# > Google
+host-suffix, googletagmanager.com, AdBlock
+host-suffix, google-analytics.com, AdBlock
+host, safebrowsing.googleapis.com, AdBlock
+# > MI
+host-suffix, tracking.miui.com, AdBlock
+host, data.mistat.xiaomi.com, AdBlock
+host, tracking.intl.miui.com, AdBlock
+# > Tencent
+host, btrace.qq.com, AdBlock
+host, mtrace.qq.com, AdBlock
+host, safebrowsing.urlsec.qq.com, AdBlock
+# > Umeng
+host-keyword, log.umeng.com, AdBlock
+host-keyword, logs.umeng.com, AdBlock
+host-keyword, logs.umengcloud.com, AdBlock
+#
+#
+#
+#
+#
 # Internet Service Providers Hijacking 运营商劫持
 host-suffix, 17gouwuba.com, AdBlock
 host-suffix, 186078.com, AdBlock
@@ -153,8 +196,16 @@ ip-cidr, 180.166.52.24/32, AdBlock
 ip-cidr, 211.161.101.106/32, AdBlock
 ip-cidr, 220.115.251.25/32, AdBlock
 ip-cidr, 222.73.156.235/32, AdBlock
-
-
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
 # Advertising 广告
 # > General
 host-keyword, adservice, AdBlock
@@ -295,6 +346,11 @@ host, nativeadv.dftoutiao.com, AdBlock
 host, oset-api.open-adx.com, AdBlock
 host, sdkauth.hpplay.cn, AdBlock
 # (0~9)
+# > 51wnl
+host, ad.51wnl-cq.com, AdBlock
+host, adextra.51wnl-cq.com, AdBlock
+host, log.51wnl-cq.com, AdBlock
+host, r.51wnl-cq.com, AdBlock
 # (A)
 # > Alibaba
 host, optimus-ads.amap.com, AdBlock
@@ -552,6 +608,10 @@ host, iyes.youku.com, AdBlock
 # > YouTube++
 host, ehg-youtube.hitbox.com, AdBlock
 # (Z)
+# > Zhihu
+user-agent, AVOS*, AdBlock
+host, sugar.zhihu.com, AdBlock
+ip-cidr, 118.89.204.198/32, AdBlock
 # > ZOL
 host, apppv.zol.com.cn, AdBlock
 host, pvnapp.zol.com.cn, AdBlock
