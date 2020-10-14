@@ -1,14 +1,11 @@
 # Domestic.list
+geoip, cn, Domestic
 # China Area Network
 # > 360
 host-suffix, qhres.com, Domestic
 host-suffix, qhimg.com, Domestic
 # > Akamai
 host-suffix, akadns.net, Domestic
-# host-suffix, akamai.net
-# host-suffix, akamaiedge.net
-# host-suffix, akamaihd.net
-# host-suffix, akamaistream.net
 host-suffix, akamaized.net, Domestic
 # > Alibaba
 user-agent, %E4%BC%98%E9%85%B7*, Domestic
