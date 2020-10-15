@@ -3,9 +3,14 @@ hostname = clientaccess.10086.cn,mlife.jf365.boc.cn,*.googlevideo.com,pcauto.com
 
 #脚本Script
 #zhihu
-^https?://api\.zhihu\.com/v4/questions url script-response-body https://raw.githubusercontent.com/jack-yoon/Rules/master/JS/zhihu_answer.js
-^https?://api\.zhihu\.com/moments/recommend url script-response-body https://raw.githubusercontent.com/jack-yoon/Rules/master/JS/zhihu_feed.js
-^https?://api\.zhihu\.com/topstory/recommend url script-response-body https://raw.githubusercontent.com/jack-yoon/Rules/master/JS/zhihu_recommend.js
+#^https?://api\.zhihu\.com/v4/questions url script-response-body https://raw.githubusercontent.com/jack-yoon/Rules/master/JS/zhihu_answer.js
+#^https?://api\.zhihu\.com/moments/recommend url script-response-body https://raw.githubusercontent.com/jack-yoon/Rules/master/JS/zhihu_feed.js
+#^https?://api\.zhihu\.com/topstory/recommend url script-response-body https://raw.githubusercontent.com/jack-yoon/Rules/master/JS/zhihu_recommend.js
+^https?:\/\/api\.zhihu\.com\/v4\/questions url script-response-body https://raw.githubusercontent.com/jack-yoon/Rules/master/JS/zhihu.js
+^https?:\/\/api\.zhihu\.com\/moments(\/|\?)?(recommend|action=|feed_type=)(?!\/people) url script-response-body https://raw.githubusercontent.com/jack-yoon/Rules/master/JS/zhihu.js
+^https?:\/\/api\.zhihu\.com\/topstory(\/|\?)?(recommend|action=|feed_type=)(?!\/people) url script-response-body https://raw.githubusercontent.com/jack-yoon/Rules/master/JS/zhihu.js
+
+
 #weibo
 ^https?://m?api.weibo.c(n|om)/2/(cardlist|page|searchall|service/picfeed) url script-response-body https://raw.githubusercontent.com/jack-yoon/Rules/master/JS/wb_launch.js 
 ^https?://m?api.weibo.c(n|om)/2/comments/build_comments|photo/recommend_list url script-response-body https://raw.githubusercontent.com/jack-yoon/Rules/master/JS/wb_launch.js 
@@ -358,7 +363,11 @@ hostname = clientaccess.10086.cn,mlife.jf365.boc.cn,*.googlevideo.com,pcauto.com
 # >> 腾讯体育
 ^https?:\/\/news\.ssp\.qq\.com\/app url reject
 # >> 微信
-^https?:\/\/mp\.weixin\.qq\.com\/mp\/(ad_|advertisement|getappmsgad) url reject
+^https?:\/\/mp\.weixin\.qq.com\/mp\/ad_complaint url reject
+^https?:\/\/mp\.weixin\.qq.com\/mp\/ad_video url reject
+^https?:\/\/mp\.weixin\.qq.com\/mp\/advertisement_report url reject
+^https?:\/\/mp\.weixin\.qq\.com\/(s|mp)\/(ad_|advertisement|getappmsgad|report|appmsgreport|appmsgpicreport) url reject
+^https?:\/\/mp\.weixin\.qq\.com\/mp\/(?>ad_|advertisement|getappmsgad) url reject
 # > 太平洋
 ^https?:\/\/agent-count\.pconline\.com\.cn\/counter\/adAnalyse\/ url reject
 ^https?:\/\/mrobot\.pconline\.com\.cn\/v\d\/ad2p url reject
