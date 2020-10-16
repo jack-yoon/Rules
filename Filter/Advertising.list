@@ -611,7 +611,11 @@ host, ehg-youtube.hitbox.com, AdBlock
 # > Zhihu
 user-agent, AVOS*, AdBlock
 host, sugar.zhihu.com, AdBlock
+host, appcloud2.in.zhihu.com, AdBlock
+host, appcloud2.zhihu.com, AdBlock
+host-keyword, 118.89.204.198, AdBlock
 ip-cidr, 118.89.204.198/32, AdBlock
+
 # > ZOL
 host, apppv.zol.com.cn, AdBlock
 host, pvnapp.zol.com.cn, AdBlock
