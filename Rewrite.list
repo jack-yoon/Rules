@@ -243,7 +243,7 @@ hostname = 59.111.181.*,clientaccess.10086.cn,mlife.jf365.boc.cn,*.googlevideo.c
 ^https?://so.m.jd.com/ url 302 https://so.m.jd.com/
 ^https?://www.jd.com/ url 302 https://www.jd.com/
 
-# > 金山WPS
+# > 金山WPS - ios.wps.cn,*.kingsoft-office-service.com
 ^https?:\/\/ios\.wps\.cn\/ad-statistics-service url reject
 ^https?:\/\/mobile-pic\.cache\.iciba\.com\/feeds_ad\/ url reject
 ^https?:\/\/\w+\.kingsoft-office-service\.com\/ad url reject
