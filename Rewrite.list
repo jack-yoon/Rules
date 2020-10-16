@@ -1,14 +1,14 @@
-hostname = 59.111.181.*,clientaccess.10086.cn,mlife.jf365.boc.cn,*.googlevideo.com,pcauto.com.cn,mrobot.pconline.com.cn,mapi.mafengwo.cn,api.weibo.cn,ios.wps.cn,interface*.music.163.com,you.163.com,m.client.10010.com,img*.10101111cdn.com,gw.alicdn.com,heic.alicdn.com,render.alipay.com,m*.amap.com,*.amemv.com,ss0.bdstatic.com,app.bilibili.com,manga.bilibili.com,*.byteoversea.com,pic1cdn.cmbchina.com,e.dangdang.com,api.douban.com,elemecdn.com,www.google.cn,api.abema.io,youtubei.googleapis.com,api.gotokeep.com,app.gtja.com,app.api-mifit*.huami.com,iface.iqiyi.com,vip.iqiyi.com,jr.jd.com,ms.m.jd.com,app.static1.keepcdn.com,*.kingsoft-office-service.com,jr.mi.com,api.cognitive.microsofttranslator.com,api.offline.microsofttranslator.com,oset-api.open-adx.com,g.*.pstatp.com,sf*ttcdn-tos.pstatp.com,mage.if.qidian.com,gdt.qq.com,mi.helper.qq.com,api2.inews.qq.com,r.kohsocialapp.qq.com,ssl.l.qq.com,lives.map.qq.com,map.qq.com,newsso.ssp.qq.com,news.weixin.qq.com,mp.weread.qq.com,i.media.qyer.com,open.qyer.com,*.snssdk.com,shouji.sogou.com,business-cdn.k.sohu.com,*.tv.sohu.com,*.m.taobao.com,acs.m.taobao.com,*.tiktokv.com,mapi.weibo.com,*.uve.weibo.com,uve.weibo.com,sdkapp.wax.weibo.com,api.yangkeduo.com,*.ydstatic.com,app.yinxiang.com,m.youtube.com,s.youtube.com,www.youtube.com,api.zhihu.com,www.zhihu.com,www.zybang.com,*.musical.ly,music.126.net,4gimg.*.meituan.net,static.vuevideo.net
+hostname = 59.111.181.*,clientaccess.10086.cn,mlife.jf365.boc.cn,*.googlevideo.com,pcauto.com.cn,mrobot.pconline.com.cn,mapi.mafengwo.cn,api.weibo.cn,ios.wps.cn,interface*.music.163.com,you.163.com,m.client.10010.com,img*.10101111cdn.com,gw.alicdn.com,heic.alicdn.com,render.alipay.com,m*.amap.com,*.amemv.com,ss0.bdstatic.com,app.bilibili.com,manga.bilibili.com,*.byteoversea.com,pic1cdn.cmbchina.com,e.dangdang.com,api.douban.com,elemecdn.com,www.google.cn,api.abema.io,youtubei.googleapis.com,api.gotokeep.com,app.gtja.com,app.api-mifit*.huami.com,iface.iqiyi.com,vip.iqiyi.com,jr.jd.com,ms.m.jd.com,app.static1.keepcdn.com,*.kingsoft-office-service.com,jr.mi.com,api.cognitive.microsofttranslator.com,api.offline.microsofttranslator.com,oset-api.open-adx.com,g.*.pstatp.com,sf*ttcdn-tos.pstatp.com,mage.if.qidian.com,gdt.qq.com,mi.helper.qq.com,api2.inews.qq.com,r.kohsocialapp.qq.com,ssl.l.qq.com,lives.map.qq.com,map.qq.com,newsso.ssp.qq.com,news.weixin.qq.com,mp.weread.qq.com,i.media.qyer.com,open.qyer.com,*.snssdk.com,shouji.sogou.com,business-cdn.k.sohu.com,*.tv.sohu.com,*.m.taobao.com,acs.m.taobao.com,*.tiktokv.com,mapi.weibo.com,*.uve.weibo.com,uve.weibo.com,sdkapp.wax.weibo.com,api.yangkeduo.com,*.ydstatic.com,app.yinxiang.com,m.youtube.com,s.youtube.com,www.youtube.com,api.zhihu.com,www.zhihu.com,www.zybang.com,*.musical.ly,4gimg.*.meituan.net,static.vuevideo.net
+#music.126.net,
 
-
-#脚本Script
-#zhihu
+# 脚本Script
+# zhihu - api.zhuhu.com
 ^https?:\/\/api\.zhihu\.com\/v4\/questions url script-response-body https://raw.githubusercontent.com/jack-yoon/Rules/master/JS/zhihu.js
 ^https?:\/\/api\.zhihu\.com\/moments(\/|\?)?(recommend|action=|feed_type=)(?!\/people) url script-response-body https://raw.githubusercontent.com/jack-yoon/Rules/master/JS/zhihu.js
 ^https?:\/\/api\.zhihu\.com\/topstory(\/|\?)?(recommend|action=|feed_type=)(?!\/people) url script-response-body https://raw.githubusercontent.com/jack-yoon/Rules/master/JS/zhihu.js
 
 
-#weibo
+# weibo - m.api.weibo.cn,m.api.weibo.com,uve.weibo.com
 ^https?://m?api.weibo.c(n|om)/2/(cardlist|page|searchall|service/picfeed) url script-response-body https://raw.githubusercontent.com/jack-yoon/Rules/master/JS/wb_launch.js 
 ^https?://m?api.weibo.c(n|om)/2/comments/build_comments|photo/recommend_list url script-response-body https://raw.githubusercontent.com/jack-yoon/Rules/master/JS/wb_launch.js 
 ^https?://m?api.weibo.c(n|om)/2/(groups|fangle)/timeline|profile/statuses url script-response-body https://raw.githubusercontent.com/jack-yoon/Rules/master/JS/wb_launch.js
@@ -30,7 +30,7 @@ hostname = 59.111.181.*,clientaccess.10086.cn,mlife.jf365.boc.cn,*.googlevideo.c
 ^https?:\/\/zhidao\.baidu\.com url request-header (\r\n)User-Agent:.+ request-header $1User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.4 Safari/605.1.15
 # 知乎
 ^https?:\/\/www\.zhihu\.com\/question url request-header (\r\n)User-Agent:.+ request-header $1User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.4 Safari/605.1.15
-#微信
+# 微信
 ^(http|https):\/\/mp\.weixin\.qq\.com\/mp\/getappmsgad url response-body "advertisement_num":\d,"advertisement_info":\[.+\], response-body "advertisement_num":0,"advertisement_info":[],
 
 
@@ -124,9 +124,9 @@ hostname = 59.111.181.*,clientaccess.10086.cn,mlife.jf365.boc.cn,*.googlevideo.c
 ^https?:\/\/acs\.m\.taobao\.com\/gw\/mtop\.alibaba\.advertisementservice\.getadv url reject
 # >> 飞猪 - acs.m.taobao.com
 ^https?:\/\/acs\.m\.taobao\.com\/gw\/mtop\.trip\.activity\.querytmsresources\/ url reject
-# > 咸鱼 - acs.m.taobao.com
+# >> 咸鱼 - acs.m.taobao.com
 ^https?:\/\/acs\.m\.taobao\.com\/gw\/mtop\.taobao\.idle\.home\.welcome\/ url reject
-# > 淘宝 - gw.alicdn.com,heic.alicdn.com
+# >> 淘宝 - gw.alicdn.com,heic.alicdn.com
 ^https?:\/\/(gw|heic)\.alicdn\.com\/\w{2}s\/[\w\/.-]+\.jpg_(9\d{2}|\d{4}) url reject
 ^https?:\/\/(?>heic|gw)\.alicdn\.com\/tfs\/TB1.+?-\d{4}-\d{4}\.jpg_1200x1200q90\.jpg_\.\w{3,4}+ url reject
 ^https?:\/\/heic\.alicdn\.com\/tps\/i4\/.+?\.jpg_1200x1200q90\.jpg_\.heic url reject
@@ -173,7 +173,7 @@ hostname = 59.111.181.*,clientaccess.10086.cn,mlife.jf365.boc.cn,*.googlevideo.c
 # >> 百度地图 - newclient.map.baidu.com
 ^https?:\/\/newclient\.map\.baidu\.com\/client\/phpui2\/\?qt=ads url reject
 
-# >> 爱奇艺 - act.vip.iqiyi.com
+# > 爱奇艺 - act.vip.iqiyi.com
 ^https?:\/\/.+?\/(mixer|track2)\? url reject
 ^https?:\/\/act\.vip\.iqiyi\.com\/interact\/api\/show.do url reject
 ^https?:\/\/act\.vip\.iqiyi\.com\/interact\/api\/v2\/show url reject
@@ -255,7 +255,7 @@ hostname = 59.111.181.*,clientaccess.10086.cn,mlife.jf365.boc.cn,*.googlevideo.c
 # L
 
 # M
-#Microsoft
+# > Microsoft
 ^https?:\/\/api\.cognitive\.microsofttranslator\.com\/languages\?scope=compact,transliteration&api-version= url request-header (\r\n)If-None-Match:.+(\r\n) request-header $1
 ^https?:\/\/offline\.microsofttranslator\.com\/translatorresources\.svc\/GetMetadata\?platform=ios&version= url request-header (\r\n)If-None-Match:.+(\r\n) request-header $1
 # > 小米 - api.jr.mi.com,api-mifit*.huami.com
@@ -291,7 +291,7 @@ hostname = 59.111.181.*,clientaccess.10086.cn,mlife.jf365.boc.cn,*.googlevideo.c
 ^https?:\/\/open\.qyer\.com\/qyer\/startpage\/ url reject
 ^https?:\/\/open\.qyer\.com\/qyer\/config\/get url reject
 ^https?:\/\/media\.qyer\.com\/ad\/ url reject
-#起点
+# > 起点
 ^https?:\/\/mage\.if\.qidian\.com\/argus\/api\/v\d\/client\/getsplashscreen url reject
 #^https?:\/\/mage\.if\.qidian\.com\/Atom\.axd\/Api\/Client\/GetConfIOS url reject
 
@@ -308,7 +308,7 @@ hostname = 59.111.181.*,clientaccess.10086.cn,mlife.jf365.boc.cn,*.googlevideo.c
 ^https?:\/\/img01\.10101111cdn\.com\/adpos\/ url reject
 
 # T
-# >Tiktok
+# > Tiktok
 ^https?:\/\/.+?\.amemv\.com\/(api|motor)\/ad\/ url reject
 ^https?:\/\/.+?\.musical\.ly\/(api|motor)\/ad\/ url reject
 ^https?:\/\/.+?\.snssdk\..com\/(api|motor)\/ad\/ url reject
@@ -337,7 +337,7 @@ hostname = 59.111.181.*,clientaccess.10086.cn,mlife.jf365.boc.cn,*.googlevideo.c
 ^https?:\/\/mmgr\.gtimg\.com\/gjsmall\/qqpim\/public\/ios\/splash\/.+?\/\d{4}_\d{4} url reject
 ^https?:\/\/[\s\S]*\/.+?\.tc\.qq\.com/.*?p201.1\.mp4 url reject
 
-# > 腾讯新闻 - r.inews.qq.com
+# >> 腾讯新闻 - r.inews.qq.com
 ^https?:\/\/r\.inews\.qq\.com\/adsBlacklist url reject
 ^https?:\/\/r\.inews\.qq\.com\/getBannerAds url reject
 ^https?:\/\/r\.inews\.qq\.com\/getFullScreenPic url reject
@@ -345,7 +345,7 @@ hostname = 59.111.181.*,clientaccess.10086.cn,mlife.jf365.boc.cn,*.googlevideo.c
 ^https?:\/\/r\.inews\.qq\.com\/getSplash\?apptype=ios&startarticleid=&__qnr= url reject
 ^https?:\/\/r\.inews\.qq\.com\/searchHotCatList url reject
 ^https?:\/\/r\.inews\.qq\.com\/upLoadLoc url reject
-# > QQ音乐
+# >> QQ音乐
 ^https?://y.gtimg.cn/music/common/upload/targeted_ads - reject
 ^https?:\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/music\/common\/upload\/t_splash_info\/ url reject
 # >> 腾讯游戏 - ssl.kohsocialapp.qq.com
