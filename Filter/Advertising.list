@@ -437,6 +437,11 @@ ip-cidr, 101.227.97.240/32, AdBlock
 ip-cidr, 101.227.200.11/32, AdBlock
 ip-cidr, 101.227.200.28/32, AdBlock
 ip-cidr, 124.192.153.42/32, AdBlock
+# > Instagram
+host, badges.instagram.com, AdBlock
+host, graph.instagram.com, AdBlock
+host-suffix, badges.instagram.com, AdBlock
+
 # (K)
 # > Kingsoft
 host, ad-stat.ksosoft.com, AdBlock
