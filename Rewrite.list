@@ -427,6 +427,7 @@ hostname = 59.111.181.*,music.126.net,clientaccess.10086.cn,mlife.jf365.boc.cn,*
 ^https?:\/\/api\.zhihu\.com\/answers\/\d+\/comments\/featured-comment-ad url reject
 ^https?:\/\/api\.zhihu\.com\/api\/v4\/community-ad url reject
 ^https?:\/\/api\.zhihu\.com\/appview\/api\/v\d\/answers\/\d+\/recommendations url reject
+^https?:\/\/www\.zhihu\.com\/appview\/(p|v2\/answer|zvideo)\/.*entry=(preload-topstory|preload-search|preload-subscription) url reject
 ^https?:\/\/api\.zhihu\.com\/commercial_api\/(launch|real_time) url reject
 ^https?:\/\/api\.zhihu\.com\/market\/popover url reject
 ^https?:\/\/www\.zhihu\.com\/terms\/privacy\/confirm url reject

@@ -618,6 +618,8 @@ user-agent, AVOS*, AdBlock
 host, sugar.zhihu.com, AdBlock
 host, appcloud2.in.zhihu.com, AdBlock
 host, appcloud2.zhihu.com, AdBlock
+host, 118.89.204.198, AdBlock
+host-suffix, 118.89.204.198, AdBlock
 host-keyword, 118.89.204.198, AdBlock
 ip-cidr, 118.89.204.198/32, AdBlock
 
