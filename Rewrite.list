@@ -314,6 +314,7 @@ hostname = 59.111.181.*,music.126.net,clientaccess.10086.cn,mlife.jf365.boc.cn,*
 ^https?:\/\/.+?\.snssdk\..com\/(api|motor)\/ad\/ url reject
 ^https?:\/\/.+?\.snssdk\.com\/motor\/operation\/activity\/display\/config\/V2\/ url reject
 ^https?:\/\/.+?\.tiktokv\..com\/(api|motor)\/ad\/ url reject
+^https://api[\w-]*?.tiktokv.com/aweme/v\d/policy/notice/? url reject
 
 # > 腾讯
 ^https?://sqimg.qq.com/ url 302 https://sqimg.qq.com/
