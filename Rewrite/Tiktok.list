@@ -1,0 +1,15 @@
+hostname = *.tiktokv.com, *.byteoversea.com, *.musical.ly, *.snssdk.com, *.amemv.com
+
+# TikTok解锁
+(?<=_region=)CN(?=&) url 307 JP
+(?<=&app_version=)1[6-9]..(?=.?.?&) url 307 17..
+(?<=\?version_code=)1[6-9]..(?=.?.?&) url 307 17..
+
+
+
+# > Tiktok
+^https://api[\w-]*?.tiktokv.com/aweme/v\d/policy/notice/? url reject
+^https?:\/\/[\w-]+\.(amemv|musical|snssdk|tiktokv)\.(com|ly)\/(api|motor)\/ad\/ url reject
+^https?:\/\/[\w-]+\.snssdk\.com\/.+_ad\/ url reject
+^https?:\/\/[\w-]+\.snssdk\.com\/motor\/operation\/activity\/display\/config\/V2\/ url reject
+^https?:\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/img\/ad\.union\.api\/ url reject
