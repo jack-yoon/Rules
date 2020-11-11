@@ -1332,7 +1332,7 @@ function emoji_handle(servers, Pemoji) {
                 var nname = get_emoji(aa, nname)
             } else if (Pemoji == 2) {
                 str1 = JSON.stringify(Lmoji)
-                bb = JSON.parse(str1.replace(/🇹🇼/g, " 🇨🇳"))
+                bb = JSON.parse(str1.replace(/🇹🇼/g, " 🇭🇰 "))
                 var nname = get_emoji(bb, nname)
             } else if (Pemoji == -1) {
                 nname = emoji_del(oname);
