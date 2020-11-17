@@ -27,6 +27,8 @@ host-suffix, xiami.net, Domestic
 # > Baidu
 host-suffix, baidu.com, Domestic
 host-suffix, baidubcr.com, Domestic
+host-suffix, baidupcs.com, Domestic
+host-suffix, baidupan.com, Domestic
 host-suffix, bdstatic.com, Domestic
 host-suffix, yunjiasu-cdn.net, Domestic
 # > bilibili
@@ -56,14 +58,6 @@ host-suffix, 21cn.com, Domestic
 host-suffix, didialift.com, Domestic
 host-suffix, didiglobal.com, Domestic
 host-suffix, udache.com, Domestic
-# > 蛋蛋赞
-host-suffix, 343480.com, Domestic
-host-suffix, baduziyuan.com, Domestic
-host-suffix, com-hs-hkdy.com, Domestic
-host-suffix, czybjz.com, Domestic
-host-suffix, dandanzan.com, Domestic
-host-suffix, fjhps.com, Domestic
-host-suffix, kuyunbo.club, Domestic
 # > Gameloft
 host-suffix, gameloft.com, Domestic
 # > Google
@@ -86,9 +80,11 @@ host-suffix, 360buyimg.com, Domestic
 # > Kingsoft
 host-suffix, iciba.com, Domestic
 host-suffix, ksosoft.com, Domestic
-# > 漫画柜
-host-suffix, hamreus.com, Domestic
-host-suffix, manhuagui.com, Domestic
+# > Meituan
+host-suffix, dianping.com, Domestic
+host-suffix, dpfile.com, Domestic
+host-suffix, meituan.com, Domestic
+host-suffix, meituan.net, Domestic
 # > Meitu
 host-suffix, meitu.com, Domestic
 host-suffix, meitudata.com, Domestic
@@ -148,6 +144,7 @@ host-suffix, tencent.com, Domestic
 host-suffix, tencent-cloud.net, Domestic
 host-suffix, tenpay.com, Domestic
 host, file-igamecj.akamaized.net, Domestic
+host, fairplay.l.qq.com, Domestic
 # > ulike
 host-suffix, byteoversea.com, Domestic
 host-suffix, faceu.mobi, Domestic
@@ -175,16 +172,21 @@ host-suffix, ipip.net, Domestic
 host-suffix, ip.la, Domestic
 host-suffix, ip-cdn.com, Domestic
 host-suffix, ipv6-test.com, Domestic
+host-suffix, myip.la, Domestic
 host-suffix, test-ipv6.com, Domestic
 host-suffix, whatismyip.com, Domestic
+host-suffix, ip.istatmenus.app, Domestic
+host-suffix, sms.imagetasks.com, Domestic
 # > SpeedTest
 host-keyword, speedtest, Domestic
 host-suffix, ooklaserver.net, Domestic
 # > Private Tracker
+host-suffix, acg.rip, Domestic
 host-suffix, awesome-hd.me, Domestic
 host-suffix, broadcasthe.net, Domestic
 host-suffix, chdbits.co, Domestic
 host-suffix, classix-unlimited.co.uk, Domestic
+host-suffix, comicat.org, Domestic
 host-suffix, empornium.me, Domestic
 host-suffix, gazellegames.net, Domestic
 host-suffix, hdbits.org, Domestic
@@ -208,6 +210,21 @@ host-suffix, redacted.ch, Domestic
 host-suffix, springsunday.net, Domestic
 host-suffix, tjupt.org, Domestic
 host-suffix, totheglory.im, Domestic
+# > 
+host-suffix, 343480.com, Domestic
+host-suffix, agefans.tv, Domestic
+host-suffix, baduziyuan.com, Domestic
+host-suffix, cdn9-okzy.com, Domestic
+host-suffix, com-hs-hkdy.com, Domestic
+host-suffix, czybjz.com, Domestic
+host-suffix, dandanzan.com, Domestic
+host-suffix, fjhps.com, Domestic
+host-suffix, kuyunbo.club, Domestic
+host-suffix, nfmovies.com, Domestic
+host-suffix, okokbo.com, Domestic
+host-suffix, sd-dykj.com, Domestic
+host-suffix, yhdm.tv, Domestic
+host-suffix, youkutv.cc, Domestic
 # > Other
 host-suffix, 17jita.com, Domestic
 host-suffix, 360in.com, Domestic
@@ -237,6 +254,7 @@ host-suffix, cmbchina.com, Domestic
 host-suffix, cmbimg.com, Domestic
 host-suffix, ctrip.com, Domestic
 host-suffix, dfcfw.com, Domestic
+host-suffix, dji.net, Domestic
 host-suffix, docschina.org, Domestic
 host-suffix, douban.com, Domestic
 host-suffix, doubanio.com, Domestic
@@ -275,8 +293,6 @@ host-suffix, loli.net, Domestic
 host-suffix, luojilab.com, Domestic
 host-suffix, maoyan.com, Domestic
 host-suffix, maoyun.tv, Domestic
-host-suffix, meituan.com, Domestic
-host-suffix, meituan.net, Domestic
 host-suffix, mobike.com, Domestic
 host-suffix, moke.com, Domestic
 host-suffix, mubu.com, Domestic
