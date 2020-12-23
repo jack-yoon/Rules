@@ -4,7 +4,7 @@ hostname = m.api.weibo.cn, m.api.weibo.com, uve.weibo.com, *.uve.weibo.com, weib
 ^https?://m?api.weibo.c(n|om)/2/(cardlist|page|searchall|service/picfeed) url script-response-body https://raw.githubusercontent.com/jack-yoon/Rules/master/JS/wb_launch.js 
 ^https?://m?api.weibo.c(n|om)/2/comments/build_comments|photo/recommend_list url script-response-body https://raw.githubusercontent.com/jack-yoon/Rules/master/JS/wb_launch.js 
 ^https?://m?api.weibo.c(n|om)/2/(groups|fangle)/timeline|profile/statuses url script-response-body https://raw.githubusercontent.com/jack-yoon/Rules/master/JS/wb_launch.js
-^https?://m?api.weibo.c(n|om)/2/!/photos/pic_recommend_status url script-response-body https://raw.githubusercontent.com/jack-yoon/Rules/master/JS/wb_launch.js
+^https?://m?api.weibo.c(n|om)/2/(photos/pic_recommend_status|live/media_homelist) url script-response-body https://raw.githubusercontent.com/jack-yoon/Rules/master/JS/wb_launch.js
 ^https?://m?api.weibo.c(n|om)/2/statuses/(extend|unread|positives/get|(friends|video)(/|_)(mix)?timeline) url script-response-body https://raw.githubusercontent.com/jack-yoon/Rules/master/JS/wb_launch.js
 ^https?://m?api.weibo.c(n|om)/2/stories/(video_stream|home_list) url script-response-body https://raw.githubusercontent.com/jack-yoon/Rules/master/JS/wb_launch.js
 ^https?://m?api.weibo.c(n|om)/2/video/tiny_stream_video_list url script-response-body https://raw.githubusercontent.com/jack-yoon/Rules/master/JS/wb_launch.js
