@@ -7,10 +7,6 @@ hostname = r.inews.qq.com, api2.inews.qq.com, 4gimg.map.qq.com, gdt.qq.com, mi.h
 
 # > 腾讯
 ^https?://sqimg.qq.com/ url 302 https://sqimg.qq.com/
-^https?:\/\/.+?.mp4\?cdncode=.+?&sdtfrom=v3004 - reject
-^https?:\/\/.+?/hls.cache.p4p/ - reject
-^https?:\/\/.+?/music/common/upload/t_splash_info - reject
-^https?:\/\/.+?/tips/fcgi-bin/fcg_get_advert - reject
 ^https?:\/\/.+?\.beacon\.qq\.com url reject
 ^https?:\/\/.+?\.gdt\.qq\.com url reject
 ^https?:\/\/.+?\.l\.qq\.com url reject
@@ -36,7 +32,6 @@ hostname = r.inews.qq.com, api2.inews.qq.com, 4gimg.map.qq.com, gdt.qq.com, mi.h
 ^https?:\/\/r\.inews\.qq\.com\/searchHotCatList url reject
 ^https?:\/\/r\.inews\.qq\.com\/upLoadLoc url reject
 # >> QQ音乐
-^https?://y.gtimg.cn/music/common/upload/targeted_ads - reject
 ^https?:\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/music\/common\/upload\/t_splash_info\/ url reject
 # >> 腾讯游戏 - ssl.kohsocialapp.qq.com
 ^https?:\/\/ssl\.kohsocialapp\.qq\.com:10001\/game\/buttons url reject
