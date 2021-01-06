@@ -39,21 +39,19 @@ let magicJS = MagicJS(scriptName, 'INFO');
       case /^https?:\/\/app\.bilibili\.com\/x\/v2\/splash\/list/.test(magicJS.request.url):
         try{
           let obj = JSON.parse(magicJS.response.body);
-          if (obj['data'].hasOwnProperty('max_time') && obj['data'].hasOwnProperty('show')){
-            obj['data']['max_time'] = 0;
-            obj['data']['min_interval'] = 31536000;
-            obj['data']['pull_interval'] = 31536000;
-            obj['data']['show']['stime'] = 1915027200;
-            obj['data']['show']['etime'] = 1924272000;
+          obj['data']['max_time'] = 0;
+          obj['data']['min_interval'] = 31536000;
+          obj['data']['pull_interval'] = 31536000;
+          for(let i=0;i<obj['data']['list'].length;i++){
+            obj['data']['list'][i]['duration'] = 0;
+            obj['data']['list'][i]['begin_time'] = 1915027200;
+            obj['data']['list'][i]['end_time'] = 1924272000;
           }
-          if (obj.hasOwnProperty('data') && obj['data']['list']){
-            for(let i=0;i<obj['data']['list'].length;i++){
-              obj['data']['list'][i]['duration'] = 0;
-              obj['data']['list'][i]['begin_time'] = 1915027200;
-              obj['data']['list'][i]['end_time'] = 1924272000;
-            }
-            body = JSON.stringify(obj);
+          for(let i=0;i<obj['data']['show'].length;i++){
+            obj['data']['show'][i]['stime'] = 1915027200;
+            obj['data']['show'][i]['etime'] = 1924272000;
           }
+          body = JSON.stringify(obj);
         }
         catch (err){
           magicJS.logError(`开屏广告处理出现异常：${err}`);
@@ -135,10 +133,20 @@ let magicJS = MagicJS(scriptName, 'INFO');
         }
         break;
       // 动态去广告
-      case /https?:\/\/api\.bilibili\.com\/pgc\/season\/app\/related\/recommend\?/.test(magicJS.request.url):
+      case (/^https?:\/\/api\.vc\.bilibili\.com\/dynamic_svr\/v1\/dynamic_svr\/dynamic_new\?/.test(magicJS.request.url)):
         try{
           let obj = JSON.parse(magicJS.response.body);
-          let cards = obj.data.cards.filter(e => {return true? e.hasOwnProperty('display'): false});
+          let cards = [];
+          obj.data.cards.forEach(element => {
+            if (element.hasOwnProperty('display') && element.card.indexOf('ad_ctx') <= 0){
+              // 解决number类型精度问题导致B站动态中图片无法打开的问题
+              element['desc']['dynamic_id'] = element['desc']['dynamic_id_str'];
+              element['desc']['pre_dy_id'] = element['desc']['pre_dy_id_str'];
+              element['desc']['orig_dy_id'] = element['desc']['orig_dy_id_str'];
+              element['desc']['rid'] = element['desc']['rid_str'];
+              cards.push(element);
+            }
+          });
           obj.data.cards = cards;
           body = JSON.stringify(obj);
         }
@@ -146,7 +154,6 @@ let magicJS = MagicJS(scriptName, 'INFO');
           magicJS.logError(`动态去广告出现异常：${err}`);
         }
         break;
-        
       default:
         magicJS.logWarning('触发意外的请求处理，请确认脚本或复写配置正常。');
         break;
