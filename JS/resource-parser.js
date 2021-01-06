@@ -1048,3 +1048,52 @@ function Base64Code() {
     };
 }
 
+/***********************************************************************************************/
+function Tools() {
+  const filter = (src, ...regex) => {
+      const initial = [...Array(src.length).keys()].map(() => false);
+      return regex.reduce((a, expr) => OR(a, src.map(item => expr.test(item))), initial)
+  }
+
+  const rename = {
+      replace: (src, old, now) => {
+          return src.map(item => item.replace(old, now));
+      },
+
+      delete: (src, ...args) => {
+          return src.map(item => args.reduce((now, expr) => now.replace(expr, ''), item));
+      },
+
+      trim: (src) => {
+          return src.map(item => item.trim().replace(/[^\S\r\n]{2,}/g, ' '));
+      }
+  }
+
+  const getNodeInfo = servers => {
+      const nodes = {
+          names: servers.map(s => s.split("tag=")[1]),
+          types: servers.map(s => {
+              const type = s.match(/^(vmess|trojan|shadowsocks|http)=/);
+              return type ? type[1] : 'unknown';
+          })
+      };
+      return nodes;
+  }
+
+
+  return {
+      filter, rename, getNodeInfo
+  }
+}
+
+function AND(...args) {
+  return args.reduce((a, b) => a.map((c, i) => b[i] && c));
+}
+
+function OR(...args) {
+  return args.reduce((a, b) => a.map((c, i) => b[i] || c))
+}
+
+function NOT(array) {
+  return array.map(c => !c);
+}
