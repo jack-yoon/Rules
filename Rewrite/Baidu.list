@@ -34,6 +34,5 @@ hostname = bdstatic.com, issuecdn.baidupcs.com, tieba.baidu.com,c.tieba.baidu.co
 ^https?:\/\/c\.tieba\.baidu\.com\/c\/f\/forum\/getAdInfo url reject
 ^https?:\/\/c\.tieba\.baidu\.com\/c\/p\/img\?src= url reject
 ^https?:\/\/c\.tieba\.baidu\.com\/\w+?\/\w+?\/(?>sync|newRnSync|mlog) url reject
-^https?:\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/\w+\/\w+\/(sync|newRnSync|mlog) url reject
 # >> 百度地图 - c.tieba.baidu.com
 ^https?:\/\/newclient\.map\.baidu\.com\/client\/phpui2\/\?qt=ads url reject
