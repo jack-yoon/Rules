@@ -295,6 +295,7 @@ host-suffix, shuzilm.cn, AdBlock
 host-suffix, smaato.net, AdBlock
 host-suffix, smartadserver.com, AdBlock
 host-suffix, smartnews-ads.com, AdBlock
+host-suffix, socdm.com, AdBlock
 host-suffix, supersonic.com, AdBlock
 host-suffix, supersonicads.com, AdBlock
 host-suffix, tagtic.cn, AdBlock
@@ -463,17 +464,6 @@ host, mobilead.kuwo.cn, AdBlock
 host, mobilelog.kugou.com, AdBlock
 host, rich.kuwo.cn, AdBlock
 # (L)
-# > Le
-host-suffix, webp2p.letv.com, AdBlock
-host, ark.letv.com, AdBlock
-host, emma-414870e223.huodonghezi.com, AdBlock
-host, g3.letv.com, AdBlock
-host, n.mark.letv.com, AdBlock
-# > 乐播投屏
-host, ad.hpplay.cn, AdBlock
-host, adcdn.hpplay.cn, AdBlock
-host, adeng.hpplay.cn, AdBlock
-host, rp.hpplay.cn, AdBlock
 # (M)
 # > 美团
 host, flowplus.meituan.net, AdBlock
@@ -587,10 +577,6 @@ host, imgad0.pcauto.com.cn, AdBlock
 host, imgad0.pconline.com.cn, AdBlock
 host, ivy.pchouse.com.cn, AdBlock
 # (W)
-# > WiFi 万能钥匙
-host, a.wkanx.com, AdBlock
-host, c1wx.lianwangtech.com, AdBlock
-host, cwx.lianwangtech.com, AdBlock
 # (X)
 # > 喜马拉雅
 host, ad.ximalaya.com, AdBlock
@@ -610,8 +596,6 @@ host, www8.xitek.com, AdBlock
 host-suffix, atm.youku.com, AdBlock
 host, ad.mobile.youku.com, AdBlock
 host, iyes.youku.com, AdBlock
-# > YouTube++
-host, ehg-youtube.hitbox.com, AdBlock
 # (Z)
 # > Zhihu
 user-agent, AVOS*, AdBlock
@@ -623,9 +607,3 @@ host-suffix, 118.89.204.198, AdBlock
 host-keyword, 118.89.204.198, AdBlock
 ip-cidr, 118.89.204.198/32, AdBlock
 
-# > ZOL
-host, apppv.zol.com.cn, AdBlock
-host, pvnapp.zol.com.cn, AdBlock
-
-# > 知到
-host, app-advertise.zhihuishu.com, AdBlock

@@ -216,7 +216,6 @@ user-agent, Niconico*, GlobalMedia
 host-suffix, dmc.nico, GlobalMedia
 host-suffix, nicovideo.jp, GlobalMedia
 host-suffix, nimg.jp, GlobalMedia
-host-suffix, socdm.com, GlobalMedia
 # > Now E
 host-suffix, nowe.com, GlobalMedia
 host-suffix, nowestatic.com, GlobalMedia
