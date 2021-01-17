@@ -14,6 +14,7 @@ host, tracklog.58.com, AdBlock
 # > Baidu
 host, hm.baidu.com, AdBlock
 host, hmma.baidu.com, AdBlock
+host, bcebos.com, AdBlock
 # > ByteDance
 host, log.byteoversea.com, AdBlock
 host, log.tiktokv.com, AdBlock
