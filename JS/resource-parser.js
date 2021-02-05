@@ -1,5 +1,5 @@
 /** 
-☑️ 资源解析器 ©𝐒𝐡𝐚𝐰𝐧  ⟦2021-02-05 22:59⟧
+☑️ 资源解析器 ©𝐒𝐡𝐚𝐰𝐧  ⟦2021-02-05 23:00⟧
 ----------------------------------------------------------
 0️⃣ ⟦原始链接⟧ 后加 "#" 使用, 不同参数用 "&" 连接: 
 ⚠️ ☞ 𝐡𝐭𝐭𝐩𝐬://𝐦𝐲𝐬𝐮𝐛.𝐜𝐨𝐦#𝙚𝙢𝙤𝙟𝙞=1&𝙩𝙛𝙤=1&𝙞𝙣=香港+台湾
@@ -84,7 +84,7 @@ var PTls13 = mark0 && para1.indexOf("tls13=") != -1 ? para1.split("tls13=")[1].s
 var Pntf0 = mark0 && para1.indexOf("ntf=") != -1 ? para1.split("ntf=")[1].split("&")[0] : 2;
 var Phide = mark0 && para1.indexOf("hide=") != -1 ? para1.split("hide=")[1].split("&")[0] : 0;
 var Pb64 = mark0 && para1.indexOf("b64=") != -1 ? para1.split("b64=")[1].split("&")[0] : 0;
-var emojino = [" 0️⃣ ", " 1⃣️ ", " 2⃣️ ", " 3⃣️ ", " 4⃣️ ", " 5⃣️ ", " 6⃣️ ", " 7⃣️ ", " 8⃣️ ", " 9⃣️ ", " 🔟 "]
+var emojino = [" 0️⃣ ", " 1️⃣ ", " 2️⃣ ", " 3️⃣ ", " 4️⃣ ", " 5️⃣ ", " 6️⃣ ", " 7️⃣ ", " 8️⃣ ", " 9️⃣ ", " 🔟 "]
 var pfi = Pin0 ? "in=" + Pin0.join(", ") + ",  " : ""
 var pfo = Pout0 ? "out=" + Pout0.join(", ") : ""
 var pfihn = Phin0 ? "inhn=" + Phin0.join(", ") + ",  " : ""
@@ -1454,7 +1454,7 @@ function get_emoji(emojip, sname) {
     var Lmoji = { "🏳️‍🌈": ["流量", "时间", "应急", "过期", "Bandwidth", "expire"], "🇦🇹": ["奥地利", "Austria", "维也纳"], "🇦🇺": ["AU", "Australia", "Sydney", "澳大利亚", "澳洲", "墨尔本", "悉尼" ,"土澳"], "🇧🇪": ["BE", "比利时"], "🇧🇬": ["保加利亚", "Bulgaria"], "🇧🇷": ["BR", "Brazil", "巴西", "圣保罗"], "🇨🇦": ["Canada","CANADA", "Waterloo", "加拿大", "蒙特利尔", "温哥华", "楓葉", "枫叶", "滑铁卢", "多伦多"], "🇨🇭": ["瑞士", "苏黎世", "Switzerland"], "🇨🇿": ["Czechia", "捷克"], "🇩🇪": ["DE", "German", "GERMAN", "德国", "德國", "法兰克福","京德"], "🇩🇰": ["丹麦"], "🇪🇸": ["ES", "西班牙", "Spain"], "🇪🇺": ["EU", "欧盟", "欧罗巴"], "🇫🇮": ["Finland", "芬兰", "赫尔辛基"], "🇫🇷": ["FR", "France", "法国", "法國", "巴黎"], "🇬🇧": ["UK", "GB", "England", "United Kingdom", "英国", "伦敦", "英"], "🇲🇴": ["MO", "Macao", "澳门", "澳門", "CTM"], "🇰🇿": ["哈萨克斯坦"], "🇭🇺": ["匈牙利", "Hungary"], "🇭🇰": ["HK", "Hongkong", "Hong Kong", "HongKong", "HONG KONG","香港", "深港", "沪港", "呼港", "HKT", "HKBN", "HGC", "WTT", "CMI", "穗港", "京港", "港"], "🇮🇩": ["Indonesia", "印尼", "印度尼西亚", "雅加达"], "🇮🇪": ["Ireland", "IRELAND", "爱尔兰", "愛爾蘭", "都柏林"], "🇮🇱": ["Israel", "以色列"], "🇮🇳": ["India", "INDIA","印度", "孟买", "Mumbai"], "🇰🇵": ["KP", "朝鲜"], "🇰🇷": ["KR", "Korea", "KOR", "韩国", "首尔", "韩", "韓"], "🇱🇻": ["Latvia", "Latvija", "拉脱维亚"], "🇲🇽️": ["MEX", "MX", "墨西哥"], "🇲🇾": ["MY", "Malaysia","MALAYSIA", "马来西亚", "馬來西亞", "吉隆坡"], "🇳🇱": ["NL", "Netherlands", "荷兰", "荷蘭", "尼德蘭", "阿姆斯特丹"], "🇵🇭": ["PH", "Philippines", "菲律宾", "菲律賓"], "🇷🇴": ["RO", "罗马尼亚"], "🇷🇺": ["RU", "Russia", "俄罗斯", "俄国", "俄羅斯", "伯力", "莫斯科", "圣彼得堡", "西伯利亚", "新西伯利亚", "京俄", "杭俄"], "🇸🇦": ["沙特", "迪拜"], "🇸🇪": ["SE", "Sweden"], "🇸🇬": ["SG", "Singapore","SINGAPORE", "新加坡", "狮城", "沪新", "京新", "泉新", "穗新", "深新", "杭新", "广新"], "🇹🇭": ["TH", "Thailand", "泰国", "泰國", "曼谷"], "🇹🇷": ["TR", "Turkey", "土耳其", "伊斯坦布尔"], "🇹🇼": ["TW", "Taiwan","TAIWAN", "台湾", "台北", "台中", "新北", "彰化", "CHT", "台", "HINET"], "🇺🇸": ["US", "USA", "America", "United States", "美国", "美", "京美", "波特兰", "达拉斯", "俄勒冈", "凤凰城", "费利蒙", "硅谷", "矽谷", "拉斯维加斯", "洛杉矶", "圣何塞", "圣克拉拉", "西雅图", "芝加哥", "沪美", "哥伦布", "纽约"], "🇻🇳": ["VN", "越南", "胡志明市"], "🇮🇹": ["Italy", "IT", "Nachash", "意大利", "米兰", "義大利"], "🇿🇦": ["South Africa", "南非"], "🇦🇪": ["United Arab Emirates", "阿联酋"], "🇯🇵": ["JP", "Japan","JAPAN", "日", "日本", "东京", "大阪", "埼玉", "沪日", "穗日", "川日", "中日", "泉日", "杭日", "深日", "辽日", "广日"], "🇦🇷": ["AR", "阿根廷"], "🇳🇴": ["Norway", "挪威", "NO"], "🇨🇳": ["CN", "China", "回国", "中国", "江苏", "北京", "上海", "广州", "深圳", "杭州", "徐州", "青岛", "宁波", "镇江", "back"] }
     str1 = JSON.stringify(Lmoji)
     aa = JSON.parse(str1)
-    bb = JSON.parse(str1.replace(/🇹🇼/g, " 🇨🇳"))
+    bb = JSON.parse(str1.replace(/🇹🇼/g, " 🇭🇰"))
     var cnt = emojip ==1? aa:bb;
     var flag = 0;
     for (var key in cnt) {
@@ -1645,6 +1645,196 @@ function Shttp2QX(content) {
   return nserver
 }
 
+function Loon2QX(cnt) {
+  var type = cnt.split("=")[1].split(",")[0].trim()
+  var node = ""
+  if (type == "Shadowsocks") { //ss 类型
+      node = LoonSS2QX(cnt)
+  } else if (type == "ShadowsocksR") { //ssr 类型
+      node = LoonSSR2QX(cnt)
+  }
+  return node
+}
+//Loon 的 ss 部分
+function LoonSS2QX(cnt) {
+  var node = "shadowsocks="
+  var ip = [cnt.split(",")[1].trim(), cnt.split(",")[2].trim()].join(":")
+  var mtd = "method=" + cnt.split(",")[3].trim()
+  var pwd = "password=" + cnt.split(",")[4].trim().split("\"")[1]
+  var obfs = cnt.split(",").length == 7 ? ", " + ["obfs=" + cnt.split(",")[5].trim(), "obfs-host=" + cnt.split(",")[6].trim()].join(",") : ""
+  var tag = ", tag=" + cnt.split("=")[0].trim()
+  node = node + [ip, mtd, pwd].join(", ") + obfs + tag
+  return node
+}
+
+//Loon 的 ssr 部分
+//# SSR 格式：名称=协议类型,地址,端口,加密方式,密码,协议类型,{协议参数},混淆类型,{混淆参数}
+//3 = ShadowsocksR, 1.2.3.4, 443, aes-256-cfb,"password",auth_aes128_md5,{},tls1.2_ticket_auth,{}
+function LoonSSR2QX(cnt) {
+  var node = "shadowsocks="
+  var ip = [cnt.split(",")[1].trim(), cnt.split(",")[2].trim()].join(":")
+  var mtd = "method=" + cnt.split(",")[3].trim()
+  var pwd = "password=" + cnt.split(",")[4].trim().split("\"")[1]
+  var ssrp = "ssr-protocol=" + cnt.split(",")[5].trim()
+  var ssrpara = "ssr-protocol-param=" + cnt.split(",")[6].replace(/\{|\}/g, "").trim()
+  var obfs = "obfs=" + cnt.split(",")[7].trim()
+  var obfshost = "obfs-host=" + cnt.split(",")[8].replace(/\{|\}/g, "").trim()
+  var tag = ", tag=" + cnt.split("=")[0].trim()
+  node = node + [ip, mtd, pwd, ssrp, ssrpara, obfs, obfshost].join(", ") + tag
+  return node
+}
+
+
+// fix yaml parse mistakes
+function YAMLFix(cnt){
+  if (cnt.indexOf("{") != -1){
+    cnt = cnt.replace(/\[/g,"yaml@bug1")
+      cnt = cnt.replace(/(^|\n)- /g, "$1  - ").replace(/    - /g,"  - ").replace(/:(?!\s)/g,": ").replace(/\,\"/g,", \"").replace(/: {/g, ": {,     ").replace(/, (host|path|tls|mux|skip)/g,",     $1")
+      //console.log(cnt)
+      cnt = cnt.replace(/{\s*name: /g,"{name: \"").replace(/, server:/g,"\", server:")
+      cnt = cnt.replace(/{|}/g,"").replace(/,/g,"\n   ")
+    }
+    cnt = cnt.replace(/  -\n.*name/g,"  - name").replace(/\$|\`/g,"").split("proxy-providers:")[0].split("proxy-groups:")[0].replace(/\"(name|type|server|port|cipher|password|)(\"*)/g,"$1")
+    //console.log(cnt)
+    cnt = cnt.indexOf("proxies:") == -1? "proxies:\n" + cnt :"proxies:"+cnt.split("proxies:")[1]
+    return cnt
+}
+
+// Clash parser
+function Clash2QX(cnt) {
+  const yaml = new YAML()
+  var aa = JSON.stringify(yaml.parse(YAMLFix(cnt))).replace(/yaml@bug1/g,"[")
+  var bb = JSON.parse(aa).proxies
+  //$notify("YAML Parse", "content", JSON.stringify(bb))
+  //console.log(bb)
+  var nl = bb.length
+  var nodelist=[]
+  var node=""
+  for (i=0; i<nl; i++){
+    node=bb[i]
+    typec = node.type
+    if (typec == "ss") {
+      node = CSS2QX(node)
+    } else if (typec == "ssr"){
+      node = CSSR2QX(node)
+    } else if (typec == "vmess"){
+      node = CV2QX(node)
+    } else if (typec == "trojan"){
+      node = CT2QX(node)
+    } else if (typec == "http"){
+      node = CH2QX(node)
+    }
+    node = Pudp0 != 0 ? XUDP(node,Pudp0) : node
+    node = Ptfo0 != 0 ? XTFO(node,Ptfo0) : node
+    nodelist.push(node)
+  }
+  return nodelist.join("\n")
+}
+
+//Clash ss type server
+function CSS2QX(cnt) {
+  tag = "tag="+cnt.name.replace(/\\U.+?\s{1}/gi,"")
+  ipt = cnt.server+":"+cnt.port
+  pwd = "password=" + cnt.password
+  mtd = "method="+ cnt.cipher
+  udp = cnt.udp ? "udp-relay=true" : "udp-relay=false"
+  tfo = cnt.tfo ? "fast-open=true" : "fast-open=false"
+  obfs = cnt["plugin-opts"] ? "obfs=" + cnt["plugin-opts"].mode : ""
+  ohost = cnt["plugin-opts"] ? "obfs-host=" + cnt["plugin-opts"].host : ""
+  ouri = ""
+  cert = ""
+  if (obfs.indexOf("websocket") != -1) {
+      obfs = cnt["plugin-opts"].tls? "obfs=wss" : "obfs=ws"
+      ohost = cnt["plugin-opts"].host? "obfs-host=" + cnt["plugin-opts"].host:""
+      ouri = cnt["plugin-opts"].path? "obfs-uri=" + cnt["plugin-opts"].path: ""
+    if (obfs == "obfs=wss") { // tls verification
+      cert = Pcert0 == 1? "" : "tls-verification =false"}
+  }
+  node = "shadowsocks="+[ipt, pwd, mtd, udp, tfo, obfs, ohost, ouri, cert, tag].filter(Boolean).join(", ")
+  return node
+}
+
+//Clash ssr type server
+function CSSR2QX(cnt) {
+  tag = "tag="+cnt.name.replace(/\\U.+?\s{1}/gi,"")
+  ipt = cnt.server+":"+cnt.port
+  pwd = "password=" + cnt.password
+  mtd = "method="+ cnt.cipher
+  udp = cnt.udp ? "udp-relay=true" : "udp-relay=false"
+  tfo = cnt.tfo ? "fast-open=true" : "fast-open=false"
+  prot = "ssr-protocol=" + cnt.protocol 
+  ppara = "ssr-protocol-param=" + cnt["protocol-param"]
+  obfs = "obfs=" + cnt.obfs
+  ohost = "obfs-host=" + cnt["obfs-param"]
+  node = "shadowsocks="+[ipt, pwd, mtd, udp, tfo, prot, ppara, obfs, ohost, tag].filter(Boolean).join(", ")
+  //console.log(node)
+  return node
+}
+
+//Clash vmess type server
+function CV2QX(cnt) {
+	tag = "tag="+cnt.name.replace(/\\U.+?\s{1}/gi," ")
+	ipt = cnt.server+":"+cnt.port
+	pwd = "password=" + cnt.uuid
+	mtd = "method="+ "aes-128-gcm" //cnt.cipher
+  udp = cnt.udp ? "udp-relay=true" : "udp-relay=false"
+  tfo = cnt.tfo ? "fast-open=true" : "fast-open=false"
+  obfs = ""
+  if (cnt.network == "ws" && cnt.tls) {
+      obfs = "obfs=wss"
+  } else if (cnt.network == "ws"){
+      obfs = "obfs=ws"
+  } else if (cnt.tls){
+      obfs = "obfs=over-tls"
+  }
+  ohost = cnt["ws-headers"]? "obfs-host=" + cnt["ws-headers"]["Host"] : ""
+  ouri = cnt["ws-path"]? "obfs-uri="+cnt["ws-path"] : ""
+  cert = cnt["skip-cert-verify"] && cnt.tls ? "tls-verification=false" : ""
+  //$notify(cert)
+  if (Pcert0 == 1 && cnt.tls) {
+    cert = "tls-verification=true"
+  } else if (Pcert0 == 1 && cnt.tls) {
+    cert = "tls-verification=false"
+  }
+  node = "vmess="+[ipt, pwd, mtd, udp, tfo, obfs, ohost, ouri, cert, tag].filter(Boolean).join(", ")
+  //console.log(node)
+  return node
+}
+
+//Clash Trojan
+function CT2QX(cnt) {
+  tag = "tag="+cnt.name.replace(/\\U.+?\s{1}/gi," ")
+  ipt = cnt.server+":"+cnt.port
+  pwd = "password=" + cnt.password
+  otls = "over-tls=true"
+  cert = cnt["skip-cert-verify"] ? "tls-verification=false" : "tls-verification=true"
+  cert = Pcert0 == 1 ? "tls-verification=true" : "tls-verification=false" 
+  udp = cnt.udp ? "udp-relay=true" : "udp-relay=false"
+  tfo = cnt.tfo ? "fast-open=true" : "fast-open=false"
+  node = "trojan="+[ipt, pwd, otls, cert, udp, tfo, tag].filter(Boolean).join(", ")
+  //console.log(node)
+  return node
+
+}
+
+// Clash http
+function CH2QX(cnt){
+    tag = "tag="+cnt.name.replace(/\\U.+?\s{1}/gi," ")
+    ipt = cnt.server+":"+cnt.port
+    uname = cnt.username ? "username=" + cnt.username : ""
+    pwd = cnt.password && typeof(cnt.password) == "string" ? "password=" + cnt.password : ""
+    tls = cnt.tls ? "over-tls=true" : ""
+    cert = cnt["skip-cert-verify"] && cnt.tls ? "tls-verification=false" : ""
+    if (Pcert0 == 1 && cnt.tls) {
+      cert = "tls-verification=true"
+    } else if (Pcert0 == 1 && cnt.tls) {
+      cert = "tls-verification=false"
+    }
+    node = "http="+[ipt, uname, pwd, tls, cert, tag].filter(Boolean).join(", ")
+    //console.log(node)
+    return node
+}
+
 // UDP/TFO 参数 (强制 surge/quanx 类型转换)
 function XUDP(cnt,pudp) {
     var udp = pudp == 1? "udp-relay=true, " : "udp-relay=false, "
@@ -1815,6 +2005,441 @@ function Base64Code() {
         ).replace(/&gt;/g, ">").replace(/&lt;/g, "<");
     };
 }
+
+
+/*
+YAML parser for Javascript
+Author: Diogo Costa
+
+This program is released under the MIT License as follows:
+
+Copyright (c) 2011 Diogo Costa (costa.h4evr@gmail.com)
+
+*/
+
+function YAML() {
+        var errors = [],
+                reference_blocks = [],
+                processing_time = 0,
+                regex =
+                {
+                        "regLevel" : new RegExp("^([\\s\\-]+)"),
+                        "invalidLine" : new RegExp("^\\-\\-\\-|^\\.\\.\\.|^\\s*#.*|^\\s*$"),
+                        "dashesString" : new RegExp("^\\s*\\\"([^\\\"]*)\\\"\\s*$"),
+                        "quotesString" : new RegExp("^\\s*\\\'([^\\\']*)\\\'\\s*$"),
+                        "float" : new RegExp("^[+-]?[0-9]+\\.[0-9]+(e[+-]?[0-9]+(\\.[0-9]+)?)?$"),
+                        "integer" : new RegExp("^[+-]?[0-9]+$"),
+                        "array" : new RegExp("\\[\\s*(.*)\\s*\\]"),
+                        "map" : new RegExp("\\{\\s*(.*)\\s*\\}"),
+                        "key_value" : new RegExp("([a-z0-9_-][ a-z0-9_-]*):( .+)", "i"),
+                        "single_key_value" : new RegExp("^([a-z0-9_-][ a-z0-9_-]*):( .+?)$", "i"),
+                        "key" : new RegExp("([a-z0-9_-][ a-z0-9_-]+):( .+)?", "i"),
+                        "item" : new RegExp("^-\\s+"),
+                        "trim" : new RegExp("^\\s+|\\s+$"),
+                        "comment" : new RegExp("([^\\\'\\\"#]+([\\\'\\\"][^\\\'\\\"]*[\\\'\\\"])*)*(#.*)?")
+                };
+ 
+         /**
+            * @class A block of lines of a given level.
+            * @param {int} lvl The block's level.
+            * @private
+            */
+        function Block(lvl) {
+                return {
+                        /* The block's parent */
+                        parent: null,
+                        /* Number of children */
+                        length: 0,
+                        /* Block's level */
+                        level: lvl,
+                        /* Lines of code to process */
+                        lines: [],
+                        /* Blocks with greater level */
+                        children : [],
+                        /* Add a block to the children collection */
+                        addChild : function(obj) {
+                                this.children.push(obj);
+                                obj.parent = this;
+                                ++this.length;
+                        }
+                };
+        }
+
+        // function to create an XMLHttpClient in a cross-browser manner
+
+        function fromURL(src, ondone) {
+                var client = createXMLHTTPRequest();
+                client.onreadystatechange = function() {
+                        if (this.readyState == 4 || this.status == 200) {
+                                var txt = this.responseText;
+                                ondone(YAML.eval0(txt));
+                        }
+                };
+                client.open('GET', src);
+                client.send();
+        }
+
+        function parser(str) {
+                var regLevel = regex["regLevel"];
+                var invalidLine = regex["invalidLine"];
+                var lines = str.split("\n");
+                var m;
+                var level = 0, curLevel = 0;
+                
+                var blocks = [];
+                
+                var result = new Block(-1);
+                var currentBlock = new Block(0);
+                result.addChild(currentBlock);
+                var levels = [];
+                var line = "";
+                
+                blocks.push(currentBlock);
+                levels.push(level);
+                
+                for(var i = 0, len = lines.length; i < len; ++i) {
+                        line = lines[i];
+                        
+                        if(line.match(invalidLine)) {
+                                continue;
+                        }
+                
+                        if(m = regLevel.exec(line)) {
+                                level = m[1].length;
+                        } else
+                                level = 0;
+                        
+                        if(level > curLevel) {
+                                var oldBlock = currentBlock;
+                                currentBlock = new Block(level);
+                                oldBlock.addChild(currentBlock);
+                                blocks.push(currentBlock);
+                                levels.push(level);
+                        } else if(level < curLevel) {                
+                                var added = false;
+
+                                var k = levels.length - 1;
+                                for(; k >= 0; --k) {
+                                        if(levels[k] == level) {
+                                                currentBlock = new Block(level);
+                                                blocks.push(currentBlock);
+                                                levels.push(level);
+                                                if(blocks[k].parent!= null)
+                                                        blocks[k].parent.addChild(currentBlock);
+                                                added = true;
+                                                break;
+                                        }
+                                }
+                                
+                                if(!added) {
+                                        errors.push("Error: Invalid indentation at line " + i + ": " + line);
+                                        return;
+                                }
+                        }
+                        
+                        currentBlock.lines.push(line.replace(regex["trim"], ""));
+                        curLevel = level;
+                }
+                
+                return result;
+        }
+        
+        function processValue(val) {
+                val = val.replace(regex["trim"], "");
+                var m = null;
+
+                if(val == 'true') {
+                        return true;
+                } else if(val == 'false') {
+                        return false;
+                } else if(val == '.NaN') {
+                        return Number.NaN;
+                } else if(val == 'null') {
+                        return null;
+                } else if(val == '.inf') {
+                        return Number.POSITIVE_INFINITY;
+                } else if(val == '-.inf') {
+                        return Number.NEGATIVE_INFINITY;
+                } else if(m = val.match(regex["dashesString"])) {
+                        return m[1];
+                } else if(m = val.match(regex["quotesString"])) {
+                        return m[1];
+                } else if(m = val.match(regex["float"])) {
+                        return parseFloat(m[0]);
+                } else if(m = val.match(regex["integer"])) {
+                        return parseInt(m[0]);
+                } else if( !isNaN(m = Date.parse(val))) {
+                        return new Date(m);
+                } else if(m = val.match(regex["single_key_value"])) {
+                        var res = {};
+                        res[m[1]] = processValue(m[2]);
+                        return res;
+                } else if(m = val.match(regex["array"])){
+                        var count = 0, c = ' ';
+                        var res = [];
+                        var content = "";
+                        var str = false;
+                        for(var j = 0, lenJ = m[1].length; j < lenJ; ++j) {
+                                c = m[1][j];
+                                if(c == '\'' || c == '"') {
+                                        if(str === false) {
+                                                str = c;
+                                                content += c;
+                                                continue;
+                                        } else if((c == '\'' && str == '\'') || (c == '"' && str == '"')) {
+                                                str = false;
+                                                content += c;
+                                                continue;
+                                        }
+                                } else if(str === false && (c == '[' || c == '{')) {
+                                        ++count;
+                                } else if(str === false && (c == ']' || c == '}')) {
+                                        --count;
+                                } else if(str === false && count == 0 && c == ',') {
+                                        res.push(processValue(content));
+                                        content = "";
+                                        continue;
+                                }
+                                
+                                content += c;
+                        }
+                        
+                        if(content.length > 0)
+                                res.push(processValue(content));
+                        return res;
+                } else if(m = val.match(regex["map"])){
+                        var count = 0, c = ' ';
+                        var res = [];
+                        var content = "";
+                        var str = false;
+                        for(var j = 0, lenJ = m[1].length; j < lenJ; ++j) {
+                                c = m[1][j];
+                                if(c == '\'' || c == '"') {
+                                        if(str === false) {
+                                                str = c;
+                                                content += c;
+                                                continue;
+                                        } else if((c == '\'' && str == '\'') || (c == '"' && str == '"')) {
+                                                str = false;
+                                                content += c;
+                                                continue;
+                                        }
+                                } else if(str === false && (c == '[' || c == '{')) {
+                                        ++count;
+                                } else if(str === false && (c == ']' || c == '}')) {
+                                        --count;
+                                } else if(str === false && count == 0 && c == ',') {
+                                        res.push(content);
+                                        content = "";
+                                        continue;
+                                }
+                                
+                                content += c;
+                        }
+                        
+                        if(content.length > 0)
+                                res.push(content);
+                                
+                        var newRes = {};
+                        for(var j = 0, lenJ = res.length; j < lenJ; ++j) {
+                                if(m = res[j].match(regex["key_value"])) {
+                                        newRes[m[1]] = processValue(m[2]);
+                                }
+                        }
+                        
+                        return newRes;
+                } else 
+                        return val;
+        }
+        
+        function processFoldedBlock(block) {
+                var lines = block.lines;
+                var children = block.children;
+                var str = lines.join(" ");
+                var chunks = [str];
+                for(var i = 0, len = children.length; i < len; ++i) {
+                        chunks.push(processFoldedBlock(children[i]));
+                }
+                return chunks.join("\n");
+        }
+        
+        function processLiteralBlock(block) {
+                var lines = block.lines;
+                var children = block.children;
+                var str = lines.join("\n");
+                for(var i = 0, len = children.length; i < len; ++i) {
+                        str += processLiteralBlock(children[i]);
+                }
+                return str;
+        }
+        
+        function processBlock(blocks) {
+                var m = null;
+                var res = {};
+                var lines = null;
+                var children = null;
+                var currentObj = null;
+                
+                var level = -1;
+                
+                var processedBlocks = [];
+                
+                var isMap = true;
+                
+                for(var j = 0, lenJ = blocks.length; j < lenJ; ++j) {
+                        
+                        if(level != -1 && level != blocks[j].level)
+                                continue;
+                
+                        processedBlocks.push(j);
+                
+                        level = blocks[j].level;
+                        lines = blocks[j].lines;
+                        children = blocks[j].children;
+                        currentObj = null;
+                
+                        for(var i = 0, len = lines.length; i < len; ++i) {
+                                var line = lines[i];
+
+                                if(m = line.match(regex["key"])) {
+                                        var key = m[1];
+                                        
+                                        if(key[0] == '-') {
+                                                key = key.replace(regex["item"], "");
+                                                if (isMap) { 
+                                                        isMap = false;
+                                                        if (typeof(res.length) === "undefined") {
+                                                                res = [];
+                                                        } 
+                                                }
+                                                if(currentObj != null) res.push(currentObj);
+                                                currentObj = {};
+                                                isMap = true;
+                                        }
+                                        
+                                        if(typeof m[2] != "undefined") {
+                                                var value = m[2].replace(regex["trim"], "");
+                                                if(value[0] == '&') {
+                                                        var nb = processBlock(children);
+                                                        if(currentObj != null) currentObj[key] = nb;
+                                                        else res[key] = nb;
+                                                        reference_blocks[value.substr(1)] = nb;
+                                                } else if(value[0] == '|') {
+                                                        if(currentObj != null) currentObj[key] = processLiteralBlock(children.shift());
+                                                        else res[key] = processLiteralBlock(children.shift());
+                                                } else if(value[0] == '*') {
+                                                        var v = value.substr(1);
+                                                        var no = {};
+                                                        
+                                                        if(typeof reference_blocks[v] == "undefined") {
+                                                                errors.push("Reference '" + v + "' not found!");
+                                                        } else {
+                                                                for(var k in reference_blocks[v]) {
+                                                                        no[k] = reference_blocks[v][k];
+                                                                }
+                                                                
+                                                                if(currentObj != null) currentObj[key] = no;
+                                                                else res[key] = no;
+                                                        }
+                                                } else if(value[0] == '>') {
+                                                        if(currentObj != null) currentObj[key] = processFoldedBlock(children.shift());
+                                                        else res[key] = processFoldedBlock(children.shift());
+                                                } else {
+                                                        if(currentObj != null) currentObj[key] = processValue(value);
+                                                        else res[key] = processValue(value);
+                                                }
+                                        } else {
+                                                if(currentObj != null) currentObj[key] = processBlock(children);
+                                                else res[key] = processBlock(children);                        
+                                        }
+                                } else if(line.match(/^-\s*$/)) {
+                                        if (isMap) { 
+                                                isMap = false;
+                                                if (typeof(res.length) === "undefined") {
+                                                        res = [];
+                                                } 
+                                        }
+                                        if(currentObj != null) res.push(currentObj);
+                                        currentObj = {};
+                                        isMap = true;
+                                        continue;
+                                } else if(m = line.match(/^-\s*(.*)/)) {
+                                        if(currentObj != null) 
+                                                currentObj.push(processValue(m[1]));
+                                        else {
+                                                if (isMap) { 
+                                                        isMap = false;
+                                                        if (typeof(res.length) === "undefined") {
+                                                                res = [];
+                                                        } 
+                                                }
+                                                res.push(processValue(m[1]));
+                                        }
+                                        continue;
+                                }
+                        }
+                        
+                        if(currentObj != null) {
+                                if (isMap) { 
+                                        isMap = false;
+                                        if (typeof(res.length) === "undefined") {
+                                                res = [];
+                                        } 
+                                }
+                                res.push(currentObj);
+                        }
+                }
+                
+                for(var j = processedBlocks.length - 1; j >= 0; --j) {
+                        blocks.splice.call(blocks, processedBlocks[j], 1);
+                }
+
+                return res;
+        }
+                
+        function semanticAnalysis(blocks) {
+                var res = processBlock(blocks.children);
+                return res;
+        }
+        
+        function preProcess(src) {
+                var m;
+                var lines = src.split("\n");
+                
+                var r = regex["comment"];
+                
+                for(var i in lines) {
+                        if(m = lines[i].match(r)) {
+/*                var cmt = "";
+                                if(typeof m[3] != "undefined")
+                                        lines[i] = m[1];
+                                else if(typeof m[3] != "undefined")
+                                        lines[i] = m[3]; 
+                                else
+                                        lines[i] = "";
+                                        */
+                                if(typeof m[3] !== "undefined") {
+                                        lines[i] = m[0].substr(0, m[0].length - m[3].length);
+                                }
+                        }
+                }
+                
+                return lines.join("\n");
+        }
+        
+        this.parse = function eval0(str) {
+                errors = [];
+                reference_blocks = [];
+                processing_time = (new Date()).getTime();
+                var pre = preProcess(str)
+                var doc = parser(pre);
+                var res = semanticAnalysis(doc);
+                processing_time = (new Date()).getTime() - processing_time;
+                
+                return res;
+        }
+
+};
 
 
 /***********************************************************************************************/
