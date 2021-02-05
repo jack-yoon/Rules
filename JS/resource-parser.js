@@ -35,7 +35,13 @@
 ----------------------------------------------------------
 */
 
+//beginning 解析器正常使用，調試註釋此部分
 
+let [link0, content0, subinfo] = [$resource.link, $resource.content, $resource.info]
+const subtag = $resource.tag != undefined ? $resource.tag : "";
+////// 非 raw 链接的沙雕情形
+content0 = content0.indexOf("DOCTYPE html") != -1 && link0.indexOf("github.com") != -1 ? ToRaw(content0) : content0 ;
+//ends 正常使用部分，調試註釋此部分
 
 var para = /^(http|https)\:\/\//.test(link0) ? link0 : content0.split("\n")[0];
 var para1 = para.slice(para.indexOf("#") + 1).replace(/\$type/g,"node_type_para_prefix").replace(/\$emoji/g,"node_emoji_flag_prefix") //防止参数中其它位置也存在"#"
