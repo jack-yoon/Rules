@@ -48,6 +48,9 @@ resource_parser_url = https://raw.githubusercontent.com/KOP-XIAO/QuantumultX/mas
 */
 
 
+
+
+
 //beginning 解析器正常使用，調試註釋此部分
 
 let [link0, content0, subinfo] = [$resource.link, $resource.content, $resource.info]
@@ -104,14 +107,14 @@ var PTls13 = mark0 && para1.indexOf("tls13=") != -1 ? para1.split("tls13=")[1].s
 var Pntf0 = mark0 && para1.indexOf("ntf=") != -1 ? para1.split("ntf=")[1].split("&")[0] : 2;
 var Phide = mark0 && para1.indexOf("hide=") != -1 ? para1.split("hide=")[1].split("&")[0] : 0;
 var Pb64 = mark0 && para1.indexOf("b64=") != -1 ? para1.split("b64=")[1].split("&")[0] : 0;
-var emojino = [" 0️⃣ ", " 1️⃣ ", " 2️⃣ ", " 3️⃣ ", " 4️⃣ ", " 5️⃣ ", " 6️⃣ ", " 7️⃣ ", " 8️⃣ ", " 9️⃣ ", " 🔟 "]
+var emojino = [" 0️⃣ ", " 1⃣️ ", " 2⃣️ ", " 3⃣️ ", " 4⃣️ ", " 5⃣️ ", " 6⃣️ ", " 7⃣️ ", " 8⃣️ ", " 9⃣️ ", " 🔟 "]
 var pfi = Pin0 ? "in=" + Pin0.join(", ") + ",  " : ""
 var pfo = Pout0 ? "out=" + Pout0.join(", ") : ""
 var pfihn = Phin0 ? "inhn=" + Phin0.join(", ") + ",  " : ""
 var pfohn = Phout0 ? "outhn=" + Phout0.join(", ") : ""
 var Pcnt =  para1.indexOf("cnt=") != -1 ? para1.split("cnt=")[1].split("&")[0] : 0;
 let [flow, exptime, errornode, total] = "";
-
+var Pdel = mark0 && para1.indexOf("del=") != -1 ? para1.split("del=")[1].split("&")[0] : 1; //删除重复节点
 var typeU = para1.indexOf("type=") != -1 ? para1.split("type=")[1].split("&")[0] : "";
 
 
@@ -165,8 +168,7 @@ function ResourceParse() {
   } else if (type0 == "Subs") {
     total = Subs2QX(content0, Pudp0, Ptfo0, Pcert0, PTls13);
   } else if (type0 == "QuanX" || type0 == "Clash" || type0 == "Surge") {
-    total = isQuanX(content0);
-    total = Subs2QX(total.join("\n"), Pudp0, Ptfo0, Pcert0, PTls13);
+    total = Subs2QX(isQuanX(content0).join("\n"), Pudp0, Ptfo0, Pcert0, PTls13);
   } else if (type0 == "sgmodule") { // surge module 模块/含 url-regex 的 rule-set
     flag = 2 
     total = SGMD2QX(content0) // 转换 
@@ -281,7 +283,7 @@ function flowcheck(cnt) {
         var nm = nl.slice(nl.indexOf("=") + 1)
         if (item.indexOf("剩余流量") != -1) {
             flow = nm
-        } else if (item.indexOf("过期时间") != -1) {
+        } else if (item.indexOf("期时间") != -1) {
             exptime = nm
         }
     }
@@ -379,15 +381,17 @@ function TagCheck_QX(content) {
                 nulllist.push(nm.replace("shadowsocks", "ss"))
             }
             var ni = 0
-            while (nmlist.indexOf(nm) != -1) { //重名
+            while (nmlist.indexOf(nm) != -1) { //重名情形
                 nm = ni <= 10 ? nm.split(" ⌘")[0] + " ⌘" + emojino[ni] : nm.split(" ⌘")[0] + " ⌘" + ni
-                item = item.split("tag")[0] + "tag=" + nm
+                item = Pdel == 0 ? item.split("tag")[0] + "tag=" + nm : ""
                 ni = ni + 1
             }
             if (ni != 0) { duplist.push(nm) }
             nmlist.push(nm)
             ni = 0
+            if (item) {
             Nlist.push(item)
+          }
         }// if "tag="
     } // for
     if (nulllist.length >= 1) {
@@ -396,7 +400,11 @@ function TagCheck_QX(content) {
     }
     if (duplist.length >= 1) {
         no = duplist.length <= 10 ? emojino[duplist.length] : duplist.length;
+      if (Pdel==0){
         $notify("⚠️ 引用" + "⟦" + subtag + "⟧" + " 内有" + no + "个重复节点名 ", "✅ 已添加⌘符号作为区分:", " ⨁ " + duplist.join("\n ⨁ "), nan_link)
+      } else {
+        $notify("⚠️ 引用" + "⟦" + subtag + "⟧" + " 内有" + no + "个重复节点名 ", "✅ 已全部删除:", " ⨁ " + duplist.join("\n ⨁ "), nan_link)
+      }
     }
     return Nlist
 }
@@ -1471,24 +1479,23 @@ function emoji_del(str) {
 
 //为节点名添加 emoji
 function get_emoji(emojip, sname) {
-    var Lmoji = { "🇦🇪": ["United Arab Emirates", "阿联酋"], "🇦🇷": ["AR", "阿根廷"], "🇦🇹": ["奥地利", "Austria", "维也纳"], "🇦🇺": ["AU", "Australia", "Sydney", "澳大利亚", "澳洲", "墨尔本", "悉尼" ,"土澳"], "🇧🇪": ["BE", "比利时"], "🇧🇬": ["保加利亚", "Bulgaria"], "🇧🇷": ["BR", "Brazil", "巴西", "圣保罗"], "🇨🇦": ["Canada","CANADA", "Waterloo", "加拿大", "蒙特利尔", "温哥华", "楓葉", "枫叶", "滑铁卢", "多伦多"], "🇨🇭": ["瑞士", "苏黎世", "Switzerland"], "🇨🇿": ["Czechia", "捷克"], "🇩🇪": ["DE", "German", "GERMAN", "德国", "德國", "法兰克福","京德"], "🇩🇰": ["丹麦"], "🇪🇸": ["ES", "西班牙", "Spain"], "🇪🇺": ["EU", "欧盟", "欧罗巴"], "🇫🇮": ["Finland", "芬兰", "赫尔辛基"], "🇫🇷": ["FR", "France", "法国", "法國", "巴黎"], "🇬🇧": ["UK", "GB", "England", "United Kingdom", "英国", "伦敦", "英"], "🇯🇵": ["JP", "Japan", "JAPAN", "TOKYO", "日", "日本", "东京", "大阪", "埼玉", "沪日", "穗日", "川日", "中日", "泉日", "杭日", "深日", "辽日", "广日"], "🇲🇴": ["MO", "Macao", "澳门", "澳門", "CTM"], "🇰🇿": ["哈萨克斯坦"], "🇭🇺": ["匈牙利", "Hungary"], "🇭🇰": ["HK", "Hongkong", "Hong Kong", "HongKong", "HONG KONG","香港", "深港", "沪港", "呼港", "HKT", "HKBN", "HGC", "WTT", "CMI", "穗港", "京港", "港"], "🇮🇩": ["Indonesia", "印尼", "印度尼西亚", "雅加达"], "🇮🇪": ["Ireland", "IRELAND", "爱尔兰", "愛爾蘭", "都柏林"], "🇮🇱": ["Israel", "以色列"], "🇮🇳": ["India", "INDIA","印度", "孟买", "Mumbai"], "🇰🇵": ["KP", "朝鲜"], "🇰🇷": ["KR", "Korea", "KOR", "韩国", "首尔", "韩", "韓"], "🇱🇻": ["Latvia", "Latvija", "拉脱维亚"], "🇲🇽️": ["MEX", "MX", "墨西哥"], "🇲🇾": ["MY", "Malaysia","MALAYSIA", "马来西亚", "馬來西亞", "吉隆坡"], "🇳🇱": ["NL", "Netherlands", "荷兰", "荷蘭", "尼德蘭", "阿姆斯特丹"],  "🇳🇴": ["Norway", "挪威", "NO"], "🇵🇭": ["PH", "Philippines", "菲律宾", "菲律賓"], "🇷🇴": ["RO", "罗马尼亚"], "🇷🇺": ["RU", "Russia", "俄罗斯", "俄国", "俄羅斯", "伯力", "莫斯科", "圣彼得堡", "西伯利亚", "新西伯利亚", "京俄", "杭俄"], "🇸🇦": ["沙特", "迪拜"], "🇸🇪": ["SE", "Sweden"], "🇸🇬": ["SG", "Singapore","SINGAPORE", "新加坡", "狮城", "沪新", "京新", "泉新", "穗新", "深新", "杭新", "广新"], "🇹🇭": ["TH", "Thailand", "泰国", "泰國", "曼谷"], "🇹🇷": ["TR", "Turkey", "土耳其", "伊斯坦布尔"], "🇹🇼": ["TW", "Taiwan","TAIWAN", "台湾", "台北", "台中", "新北", "彰化", "CHT", "台", "HINET"], "🇺🇸": ["US", "USA", "America", "United States", "LOS", "美国", "美", "京美", "波特兰", "达拉斯", "俄勒冈", "凤凰城", "费利蒙", "硅谷", "矽谷", "拉斯维加斯", "洛杉矶", "圣何塞", "圣克拉拉", "西雅图", "芝加哥", "沪美", "哥伦布", "纽约"], "🇻🇳": ["VN", "越南", "胡志明市"], "🇮🇹": ["Italy", "IT", "Nachash", "意大利", "米兰", "義大利"], "🇿🇦": ["South Africa", "南非"], "🇨🇳": ["CN", "China", "回国", "中国", "江苏", "北京", "上海", "广州", "深圳", "杭州", "徐州", "青岛", "宁波", "镇江", "back"] ,"🏳️‍🌈": ["流量", "时间", "应急", "过期", "Bandwidth", "expire"]}
-    
-    str1 = JSON.stringify(Lmoji)
-    aa = JSON.parse(str1)
-    bb = JSON.parse(str1.replace(/🇹🇼/g, " 🇭🇰"))
-    var cnt = emojip ==1? aa:bb;
-    var flag = 0;
-    for (var key in cnt) {
-        dd = cnt[key]
-        for (i in dd) {
-            if (sname.indexOf(dd[i]) != -1) {
-                flag = 1;
-                nname = key + " " + sname.replace(/[\uD83C][\uDDE6-\uDDFF][\uD83C][\uDDE6-\uDDFF]/g, "").trim(); // use regex to remove the original flag
-                return [nname,key]
-            }
-        }
-    }
-    if (flag == 0) { return ["🏴‍☠️ " + sname.replace(/[\uD83C][\uDDE6-\uDDFF][\uD83C][\uDDE6-\uDDFF]/g, "").trim(), "🏴‍☠️"] }
+  var Lmoji = { "🇦🇪": ["United Arab Emirates", "阿联酋"], "🇦🇷": ["AR", "阿根廷"], "🇦🇹": ["奥地利", "Austria", "维也纳"], "🇦🇺": ["AU", "Australia", "Sydney", "澳大利亚", "澳洲", "墨尔本", "悉尼" ,"土澳"], "🇧🇪": ["BE", "比利时"], "🇧🇬": ["保加利亚", "Bulgaria"], "🇧🇷": ["BR", "Brazil", "巴西", "圣保罗"], "🇨🇦": ["Canada","CANADA", "Waterloo", "加拿大", "蒙特利尔", "温哥华", "楓葉", "枫叶", "滑铁卢", "多伦多"], "🇨🇭": ["瑞士", "苏黎世", "Switzerland"], "🇨🇿": ["Czechia", "捷克"], "🇩🇪": ["DE", "German", "GERMAN", "德国", "德國", "法兰克福","京德"], "🇩🇰": ["丹麦"], "🇪🇸": ["ES", "西班牙", "Spain"], "🇪🇺": ["EU", "欧盟", "欧罗巴"], "🇫🇮": ["Finland", "芬兰", "赫尔辛基"], "🇫🇷": ["FR", "France", "法国", "法國", "巴黎"], "🇬🇧": ["UK", "GB", "England", "United Kingdom", "英国", "伦敦", "英"], "🇯🇵": ["JP", "Japan", "JAPAN", "TOKYO", "日", "日本", "东京", "大阪", "埼玉", "沪日", "穗日", "川日", "中日", "泉日", "杭日", "深日", "辽日", "广日"], "🇲🇴": ["MO", "Macao", "澳门", "澳門", "CTM"], "🇰🇿": ["哈萨克斯坦"], "🇭🇺": ["匈牙利", "Hungary"], "🇭🇰": ["HK", "Hongkong", "Hong Kong", "HongKong", "HONG KONG","香港", "深港", "沪港", "呼港", "HKT", "HKBN", "HGC", "WTT", "CMI", "穗港", "京港", "港"], "🇮🇩": ["Indonesia", "印尼", "印度尼西亚", "雅加达"], "🇮🇪": ["Ireland", "IRELAND", "爱尔兰", "愛爾蘭", "都柏林"], "🇮🇱": ["Israel", "以色列"], "🇮🇳": ["India", "INDIA","印度", "孟买", "Mumbai"], "🇰🇵": ["KP", "朝鲜"], "🇰🇷": ["KR", "Korea", "KOR", "韩国", "首尔", "韩", "韓"], "🇱🇻": ["Latvia", "Latvija", "拉脱维亚"], "🇲🇽️": ["MEX", "MX", "墨西哥"], "🇲🇾": ["MY", "Malaysia","MALAYSIA", "马来西亚", "馬來西亞", "吉隆坡"], "🇳🇱": ["NL", "Netherlands", "荷兰", "荷蘭", "尼德蘭", "阿姆斯特丹"],  "🇳🇴": ["Norway", "挪威", "NO"], "🇵🇭": ["PH", "Philippines", "菲律宾", "菲律賓"], "🇷🇴": ["RO", "罗马尼亚"], "🇷🇺": ["RU", "Russia", "俄罗斯", "俄国", "俄羅斯", "伯力", "莫斯科", "圣彼得堡", "西伯利亚", "新西伯利亚", "京俄", "杭俄"], "🇸🇦": ["沙特", "迪拜"], "🇸🇪": ["SE", "Sweden"], "🇸🇬": ["SG", "Singapore","SINGAPORE", "新加坡", "狮城", "沪新", "京新", "泉新", "穗新", "深新", "杭新", "广新"], "🇹🇭": ["TH", "Thailand", "泰国", "泰國", "曼谷"], "🇹🇷": ["TR", "Turkey", "土耳其", "伊斯坦布尔"], "🇹🇼": ["TW", "Taiwan","TAIWAN", "台湾", "台北", "台中", "新北", "彰化", "CHT", "台", "HINET"], "🇺🇸": ["US", "USA", "America", "United States", "LOS", "美国", "美", "京美", "波特兰", "达拉斯", "俄勒冈", "凤凰城", "费利蒙", "硅谷", "矽谷", "拉斯维加斯", "洛杉矶", "圣何塞", "圣克拉拉", "西雅图", "芝加哥", "沪美", "哥伦布", "纽约"], "🇻🇳": ["VN", "越南", "胡志明市"], "🇮🇹": ["Italy", "IT", "Nachash", "意大利", "米兰", "義大利"], "🇿🇦": ["South Africa", "南非"], "🇨🇳": ["CN", "China", "回国", "中国", "江苏", "北京", "上海", "广州", "深圳", "杭州", "徐州", "青岛", "宁波", "镇江", "back"] ,"🏳️‍🌈": ["流量", "时间", "应急", "过期", "Bandwidth", "expire"]}
+  str1 = JSON.stringify(Lmoji)
+  aa = JSON.parse(str1)
+  bb = JSON.parse(str1.replace(/🇹🇼/g, " 🇭🇰"))
+  var cnt = emojip ==1? aa:bb;
+  var flag = 0;
+  for (var key in cnt) {
+      dd = cnt[key]
+      for (i in dd) {
+          if (sname.indexOf(dd[i]) != -1) {
+              flag = 1;
+              nname = key + " " + sname.replace(/[\uD83C][\uDDE6-\uDDFF][\uD83C][\uDDE6-\uDDFF]/g, "").trim(); // use regex to remove the original flag
+              return [nname,key]
+          }
+      }
+  }
+  if (flag == 0) { return ["🏴‍☠️ " + sname.replace(/[\uD83C][\uDDE6-\uDDFF][\uD83C][\uDDE6-\uDDFF]/g, "").trim(), "🏴‍☠️"] }
 }
 
 //emoji 处理
