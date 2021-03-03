@@ -24,8 +24,11 @@ hostname =api.zhihu.com, www.zhihu.com
 ^https?:\/\/www\.zhihu\.com\/api\/v4\/hot_recommendation url reject-200
 ^https?:\/\/www\.zhihu\.com\/api\/v\d\/answers/\d+/recommendations url reject
 ^https?:\/\/api\.zhihu\.com\/appview\/api\/v\d\/answers\/\d+\/recommendations url reject
+^https?:\/\/www\.zhihu\.com\/api\/v\d+\/brand\/question/\d+/card\? url reject-dict
+^https?:\/\/api\.zhihu\.com\/brand\/question\/\d+/card\? url reject-dict
 ^https?:\/\/api\.zhihu\.com\/commercial_api\/(launch|real_time) url reject
 ^https?:\/\/www\.zhihu\.com\/commercial_api\/banners_v3\/mobile_banner url reject-200
 ^https?:\/\/api\.zhihu\.com\/notifications\/v3\/count url reject
 ^https?:\/\/api\.zhihu\.com\/market\/popover url reject
 ^https?:\/\/www\.zhihu\.com\/terms\/privacy\/confirm url reject
+
