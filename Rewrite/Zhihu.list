@@ -1,4 +1,4 @@
-hostname =api.zhihu.com, www.zhihu.com
+hostname =*.zhihu.com
 
 
 # 知乎回答列表去广告
