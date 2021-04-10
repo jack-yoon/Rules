@@ -1,4 +1,4 @@
-hostname =api.zhihu.com
+hostname =www.zhihu.com,api.zhihu.com
 
 
 # 知乎回答列表去广告
@@ -7,7 +7,7 @@ hostname =api.zhihu.com
 ^https?:\/\/api\.zhihu\.com\/moments(\/|\?)?(recommend|action=|feed_type=)(?!\/people) url script-response-body https://raw.githubusercontent.com/jack-yoon/Rules/master/JS/zhihu.js
 ^https?:\/\/api\.zhihu\.com\/topstory(\/|\?)?(recommend|action=|feed_type=)(?!\/people) url script-response-body https://raw.githubusercontent.com/jack-yoon/Rules/master/JS/zhihu.js
 # 知乎评论去广告
-^https?:\/\/api\.zhihu\.com\/comment_v5\/answers\/\d+\/root_comment url script-response-body https://raw.githubusercontent.com/jack-yoon/Rules/master/JS/zhihu.js
+^https?:\/\/api\.zhihu\.com\/(comment_v5\/)?(answers|comments?|articles|pins)\/\d+\/(root_|child_)?comments? url script-response-body https://raw.githubusercontent.com/jack-yoon/Rules/master/JS/zhihu.js
 # 知乎热搜去广告
 ^https?:\/\/api\.zhihu\.com\/search\/top_search\/tabs\/hot\/items url script-response-body https://raw.githubusercontent.com/jack-yoon/Rules/master/JS/zhihu.js
 # 知乎热榜去广告
