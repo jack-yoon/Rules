@@ -1,0 +1,7 @@
+hostname = *.tiktokv.com, *.tik-tokapi.com, *.byteoversea.com
+
+# TikTok解锁
+(?<=_region=)CN(?=&) url 307 JP   
+(?<=&mcc_mnc=)4 url 307 2
+^(https?:\/\/[\w-]+\.tiktokv.com\/.+&.+\d{2})(\.4)(\.\d.+) url 302 $1$3
+

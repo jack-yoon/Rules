@@ -1,0 +1,55 @@
+hostname = r.inews.qq.com, api2.inews.qq.com, 4gimg.map.qq.com, gdt.qq.com, mi.helper.qq.com, r.kohsocialapp.qq.com, ssl.kohsocialapp.qq.com, ssl.l.qq.com, map.qq.com, newsso.ssp.qq.com, news.weixin.qq.com, mp.weixin.qq.com, mp.weread.qq.com,
+
+
+# 微信
+^(http|https):\/\/mp\.weixin\.qq\.com\/mp\/getappmsgad url response-body "advertisement_num":\d,"advertisement_info":\[.+\], response-body "advertisement_num":0,"advertisement_info":[],
+
+
+# > 腾讯
+^https?://sqimg.qq.com/ url 302 https://sqimg.qq.com/
+^https?:\/\/.+?\.beacon\.qq\.com url reject
+^https?:\/\/.+?\.gdt\.qq\.com url reject
+^https?:\/\/.+?\.l\.qq\.com url reject
+^https?:\/\/.+?\/variety.tc.qq.com\/ url reject
+^https?:\/\/.+?\/omts.tc.qq.com\/ url reject
+^https?:\/\/.+?\/variety.tc.qq.com\/ url reject
+^https?:\/\/api2\.helper\.qq\.com\/game\/buttons url reject
+^https?:\/\/bla\.gtimg\.com\/qqlive\/\d{6}.+?\.png url reject
+^https?:\/\/imgcache\.qq\.com\/qqlive\/ url reject
+^https?:\/\/lives\.l\.qq\.com\/livemsg\?sdtfrom= url reject
+^https?:\/\/mtteve\.beacon\.qq\.com\/analytics url reject
+^https?:\/\/szextshort\.weixin\.qq\.com\/cgi-bin\/mmoc-bin\/ad\/ url reject
+^https?:\/\/mi\.gdt\.qq\.com\/gdt_mview\.fcg url reject
+^https?:\/\/mmgr\.gtimg\.com\/gjsmall\/qqpim\/public\/ios\/splash\/.+?\/\d{4}_\d{4} url reject
+^https?:\/\/[\s\S]*\/.+?\.tc\.qq\.com/.*?p201.1\.mp4 url reject
+
+# >> 腾讯新闻 - r.inews.qq.com
+^https?:\/\/r\.inews\.qq\.com\/adsBlacklist url reject
+^https?:\/\/r\.inews\.qq\.com\/getBannerAds url reject
+^https?:\/\/r\.inews\.qq\.com\/getFullScreenPic url reject
+^https?:\/\/r\.inews\.qq\.com\/getNewsRemoteConfig url reject
+^https?:\/\/r\.inews\.qq\.com\/getSplash\?apptype=ios&startarticleid=&__qnr= url reject
+^https?:\/\/r\.inews\.qq\.com\/searchHotCatList url reject
+^https?:\/\/r\.inews\.qq\.com\/upLoadLoc url reject
+# >> QQ音乐
+^https?:\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/music\/common\/upload\/t_splash_info\/ url reject
+# >> 腾讯游戏 - ssl.kohsocialapp.qq.com
+^https?:\/\/ssl\.kohsocialapp\.qq\.com:10001\/game\/buttons url reject
+^https?:\/\/qt\.qq\.com\/lua\/mengyou\/get_splash_screen_info url reject
+# >> 腾讯地图 - 4gimg.map.qq.com
+^https?:\/\/3gimg\.qq\.com\/tencentMapTouch\/app\/activity\/ url reject
+^https?:\/\/3gimg\.qq\.com\/tencentMapTouch\/splash\/ url reject
+^https?:\/\/4gimg\.map\.qq\.com\/mwaSplash\/ url reject
+# >> 腾讯视频
+^https?:\/\/btrace.qq.com url reject
+^https?:\/\/vv\.video\.qq\.com\/getvmind\? url reject
+^https?:\/\/.+?\.mp4.+?&sdtfrom=v3004 url reject
+^https?:\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/.+\.tc\.qq\.com\/.+p201\.1\.mp4\? url reject
+# >> 腾讯体育
+^https?:\/\/news\.ssp\.qq\.com\/app url reject
+# >> 微信 - mp.weixin.qq.com
+^https?:\/\/mp\.weixin\.qq.com\/mp\/ad_complaint url reject
+^https?:\/\/mp\.weixin\.qq.com\/mp\/ad_video url reject
+^https?:\/\/mp\.weixin\.qq.com\/mp\/advertisement_report url reject
+^https?:\/\/mp\.weixin\.qq\.com\/mp\/(?>ad_|advertisement|getappmsgad) url reject
+^https?:\/\/mp\.weixin\.qq\.com\/(s|mp)\/(ad_|advertisement|getappmsgad|author|report|appmsgreport|appmsgpicreport) url reject

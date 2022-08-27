@@ -1,0 +1,37 @@
+hostname = m.api.weibo.cn, m.api.weibo.com, uve.weibo.com, *.uve.weibo.com, weibointl.api.weibo.cn, api.weibo.cn, mapi.weibo.com
+
+# weibo
+^https?://m?api.weibo.c(n|om)/2/(cardlist|page|searchall|service/picfeed) url script-response-body https://raw.githubusercontent.com/jack-yoon/Rules/master/JS/wb_launch.js 
+^https?://m?api.weibo.c(n|om)/2/comments/build_comments|photo/recommend_list url script-response-body https://raw.githubusercontent.com/jack-yoon/Rules/master/JS/wb_launch.js 
+^https?://m?api.weibo.c(n|om)/2/(groups|fangle)/timeline|profile/statuses url script-response-body https://raw.githubusercontent.com/jack-yoon/Rules/master/JS/wb_launch.js
+^https?://m?api.weibo.c(n|om)/2/(photos/pic_recommend_status|live/media_homelist) url script-response-body https://raw.githubusercontent.com/jack-yoon/Rules/master/JS/wb_launch.js
+^https?://m?api.weibo.c(n|om)/2/statuses/(extend|unread|positives/get|(friends|video)(/|_)(mix)?timeline) url script-response-body https://raw.githubusercontent.com/jack-yoon/Rules/master/JS/wb_launch.js
+^https?://m?api.weibo.c(n|om)/2/stories/(video_stream|home_list) url script-response-body https://raw.githubusercontent.com/jack-yoon/Rules/master/JS/wb_launch.js
+^https?://m?api.weibo.c(n|om)/2/video/tiny_stream_video_list url script-response-body https://raw.githubusercontent.com/jack-yoon/Rules/master/JS/wb_launch.js
+^https?://(sdk|wb)app.uve.weibo.com(/interface/sdk/sdkad.php|/wbapplua/wbpullad.lua) url script-response-body https://raw.githubusercontent.com/jack-yoon/Rules/master/JS/wb_launch.js
+
+# Weibo短链
+^http:\/\/t\.cn url 302 https://sinaurl.cn
+
+# > 新浪
+^https?:\/\/edit\.sinaapp\.com\/ua\?t=adv url reject
+# >> 新浪微博 
+^https?:\/\/ad\d\.sina\.com url reject
+^https?:\/\/ad\d\.sina\.com.cn url reject
+^https?:\/\/api.weibo.cn/2/statuses/extend\?gsid= url reject
+^https?:\/\/d\d\.sina\.com\.cn url reject
+^https?:\/\/d\d\.sinaimg\.cn url reject
+^https?:\/\/free.sinaimg.cn/u1.img.mobile.sina.cn url reject
+^https?:\/\/sax\d\.sina\.com\.cn url reject
+^https?:\/\/sax\d\.sina\.com\.cn url reject
+^https?:\/\/sax\w?\.sina\.cn url reject
+^https?:\/\/sax\w?\.sina\.com\.cn url reject
+^https?:\/\/sdkapp\.uve\.weibo\.com\/interface\/sdk\/(actionad|sdkad)\.php url reject
+^https?:\/\/simg\.s\.weibo\.com\/.+?_ios\d{2}\.gif url reject
+^https?:\/\/storage\.wax\.weibo\.com\/\w+\.(png|jpg|mp4) url reject
+^https?:\/\/u1\.img\.mobile\.sina\.cn\/public\/files\/image\/\d{3}x\d{2,4}.+?(png|jpg|mp4) url reject
+^https?:\/\/weibointl.api.weibo.cn/portal.php\?a=get_coopen_ads url reject
+^https?:\/\/wbapp\.uve\.weibo\.com\/wbapplua\/wbpullad\.lua url reject
+^https?:\/\/weibointl\.api\.weibo\.cn\/portal\.php\?a=get_coopen_ads url reject
+^https?:\/\/weibointl.api.weibo.cn/portal.php\?a=get_coopen_ads url reject
+
