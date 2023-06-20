@@ -5,23 +5,30 @@ README：https://github.com/yichahucha/surge/tree/master
 const path1 = "/interface/sdk/sdkad.php";
 const path2 = "/wbapplua/wbpullad.lua";
 
-const url = $request.url;
+function modifyMain(url, data) {
+	if(url.indexOf(launchAdUrl1) > -1) {
+		let temp = data.match(/\{.*\}/);
+		if(!temp) return data;
+		data = JSON.parse(temp);
+		if (data.ads) data.ads = [];
+		if (data.background_delay_display_time) data.background_delay_display_time = 60 * 60 * 24 * 1000;
+		if (data.show_push_splash_ad) data.show_push_splash_ad = false;
+		return JSON.stringify(data) + 'OK';
+	}
+	if(url.indexOf(launchAdUrl2) > -1) {
+		data = JSON.parse(data);
+		if (data.cached_ad && data.cached_ad.ads) {
+			data.cached_ad.ads = [];
+		}
+		return JSON.stringify(data);
+	}
+	return data;
+}
+
 var body = $response.body;
+var url = $request.url;
+// if(needModify(url)) {
+body = modifyMain(url, body);
+// }
 
-if (url.indexOf(path1) != -1) {
-    let re = /\{.*\}/;
-    body = body.match(re);
-    var obj = JSON.parse(body);
-    if (obj.background_delay_display_time) obj.background_delay_display_time = 60*60*24*365;
-    if (obj.show_push_splash_ad) obj.show_push_splash_ad = false;
-    if (obj.ads) obj.ads = [];
-    body = JSON.stringify(obj) + 'OK';
-}
-
-if (url.indexOf(path2) != -1) {
-    var obj = JSON.parse(body);
-    if (obj.cached_ad && obj.cached_ad.ads) obj.cached_ad.ads = [];
-    body = JSON.stringify(obj);
-}
-
-$done({body});
+$done({ body });

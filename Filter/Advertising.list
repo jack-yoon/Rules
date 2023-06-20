@@ -1,54 +1,4 @@
 ## ##
-# > Zhihu
-IP-CIDR,118.89.204.198/32,REJECT
-IP6-CIDR,2402:4e00:1200:ed00:0:9089:6dac:96b6/128,REJECT
-HOST,appcloud2.in.zhihu.com,REJECT
-HOST,mqtt.zhihu.com,reject
-HOST,sugar.zhihu.com,reject
-USER-AGENT,AVOS*,REJECT
-
-# Privacy
-host, track.tiara.daum.net, AdBlock
-host, track.tiara.kakao.com, AdBlock
-host, zgsdk.zhugeio.com, AdBlock
-
-# > 51.LA
-host, js.users.51.la, AdBlock
-host, mc.51.la, AdBlock
-host, wc.51.la, AdBlock
-# > 58
-host, track.58.com, AdBlock
-host, tracklog.58.com, AdBlock
-# > Baidu
-host, hm.baidu.com, AdBlock
-host, hmma.baidu.com, AdBlock
-host, bcebos.com, AdBlock
-# > ByteDance
-host, log.byteoversea.com, AdBlock
-host, log.tiktokv.com, AdBlock
-host, log-hl-ipv6.snssdk.com, AdBlock
-host, log-lq.snssdk.com, AdBlock
-host, log-va.tiktokv.com, AdBlock
-host, xlog.snssdk.com, AdBlock
-# > Google
-host-suffix, googletagmanager.com, AdBlock
-host-suffix, google-analytics.com, AdBlock
-host, safebrowsing.googleapis.com, AdBlock
-# > MI
-host-suffix, tracking.miui.com, AdBlock
-host, data.mistat.xiaomi.com, AdBlock
-host, tracking.intl.miui.com, AdBlock
-# > Tencent
-host, btrace.qq.com, AdBlock
-host, mtrace.qq.com, AdBlock
-host, safebrowsing.urlsec.qq.com, AdBlock
-# > Umeng
-host-keyword, log.umeng.com, AdBlock
-host-keyword, logs.umeng.com, AdBlock
-host-keyword, logs.umengcloud.com, AdBlock
-#
-#
-#
 #
 #
 # Internet Service Providers Hijacking 运营商劫持
@@ -355,12 +305,26 @@ host, mopnativeadv.037201.com, AdBlock
 host, nativeadv.dftoutiao.com, AdBlock
 host, oset-api.open-adx.com, AdBlock
 host, sdkauth.hpplay.cn, AdBlock
+
+# Privacy
+host, track.tiara.daum.net, AdBlock
+host, track.tiara.kakao.com, AdBlock
+host, zgsdk.zhugeio.com, AdBlock
+
 # (0~9)
 # > 51wnl
 host, ad.51wnl-cq.com, AdBlock
 host, adextra.51wnl-cq.com, AdBlock
 host, log.51wnl-cq.com, AdBlock
 host, r.51wnl-cq.com, AdBlock
+# > 51.LA
+host, js.users.51.la, AdBlock
+host, mc.51.la, AdBlock
+host, wc.51.la, AdBlock
+# > 58
+host, track.58.com, AdBlock
+host, tracklog.58.com, AdBlock
+
 # (A)
 # > Alibaba
 host, optimus-ads.amap.com, AdBlock
@@ -381,7 +345,14 @@ host, applogapi.autohome.com.cn, AdBlock
 host, rd.autohome.com.cn, AdBlock
 ip-cidr, 103.75.152.210/32, AdBlock
 ip-cidr, 103.75.153.3/32, AdBlock
+
 # (B)
+# > bika
+host, ad-display.wikawika.xyz, AdBlock
+host, ads.wakamoment.tk, AdBlock
+# > BitAuto
+host, adx.yiche.com, AdBlock
+host, log.ycapp.yiche.com, AdBlock
 # > Baidu
 host-suffix, cpro.baidu.com, AdBlock
 host, afd.baidu.com, AdBlock
@@ -390,44 +361,58 @@ host, duclick.baidu.com, AdBlock
 host, mobads-logs.baidu.com, AdBlock
 host, mobads.baidu.com, AdBlock
 host, nsclick.baidu.com, AdBlock
-# > bika
-host, ad-display.wikawika.xyz, AdBlock
-host, ads.wakamoment.tk, AdBlock
-# > BitAuto
-host, adx.yiche.com, AdBlock
-host, log.ycapp.yiche.com, AdBlock
+host, hm.baidu.com, AdBlock
+host, hmma.baidu.com, AdBlock
+ip-cidr,180.76.76.200/32, AdBlock
 # > ByteDance
 host, ad.toutiao.com, AdBlock
+host, log.byteoversea.com, AdBlock
+host, log.tiktokv.com, AdBlock
+host, log-hl-ipv6.snssdk.com, AdBlock
+host, log-lq.snssdk.com, AdBlock
+host, log-va.tiktokv.com, AdBlock
+host, xlog.snssdk.com, AdBlock
 # > 百词斩
 host, advertise.baicizhan.com, AdBlock
 host, advertise.baicizhan.org, AdBlock
+
 # (C)
 # > ChinaTelecom
 host, ad.21cn.com, AdBlock
 host, ad.k.21cn.com, AdBlock
 host, admarket.21cn.com, AdBlock
 host, adshows.21cn.com, AdBlock
+
 # > CNTV
 host, galaxy.bjcathay.com, AdBlock
 host, mdrecv.app.cntvwb.cn, AdBlock
 host, sdapprecv.app.cntvwb.cn, AdBlock
 host, vdapprecv.app.cntvwb.cn, AdBlock
+
 # > 车来了
 host, atrace.chelaile.net.cn, AdBlock
 host, logs.chelaile.net.cn, AdBlock
+
 # (D)
 # > 懂球帝
 host, ap.dongqiudi.com, AdBlock
+
 # (G)
+# > Google
 # > Google
 host-suffix, doubleclick.net, AdBlock
 host-suffix, googleadservices.com, AdBlock
 host-suffix, googleadsserving.cn, AdBlock
 host-suffix, googlesyndication.com, AdBlock
+host-suffix, googletagmanager.com, AdBlock
+host-suffix, google-analytics.com, AdBlock
+host, safebrowsing.googleapis.com, AdBlock
+
 # (J)
 # 京东
 host, dns.jd.com, AdBlock
 ip-cidr, 101.124.19.122/32, AdBlock
+
 # (H)
 # > HunanTV
 host-suffix, da.hunantv.com, AdBlock
@@ -436,6 +421,7 @@ host-suffix, da.mgtv.com, AdBlock
 host, adx-api.hupu.com, AdBlock
 host, adx.hupu.com, AdBlock
 host, goblin.hupu.com, AdBlock
+
 # (I)
 # > Ifeng
 host-suffix, deliver.ifeng.com, AdBlock
@@ -472,6 +458,7 @@ host, kgmobilestatbak.kugou.com, AdBlock
 host, mobilead.kuwo.cn, AdBlock
 host, mobilelog.kugou.com, AdBlock
 host, rich.kuwo.cn, AdBlock
+
 # (L)
 # (M)
 # > 美团
@@ -481,11 +468,15 @@ host-suffix, ad.intl.xiaomi.com, AdBlock
 host-suffix, ad.xiaomi.com, AdBlock
 host-suffix, admob.xiaomi.com, AdBlock
 host, adv.sec.intl.miui.com, AdBlock
+host-suffix, tracking.miui.com, AdBlock
+host, data.mistat.xiaomi.com, AdBlock
+host, tracking.intl.miui.com, AdBlock
 # > 墨迹天气
 host, ad.api.moji.com, AdBlock
 host, adlaunch.moji.com, AdBlock
 host, ads.mojicdn.com, AdBlock
 host, v1.log.moji.com, AdBlock
+
 # (N)
 # > NetEase
 host, ad.bn.netease.com, AdBlock
@@ -503,6 +494,7 @@ host, n.3g.163.com, AdBlock
 host, nex.163.com, AdBlock
 host, yt-adp.nosdn.127.net, AdBlock
 host, yt-adp.ws.126.net, AdBlock
+
 # (P)
 # > PeanutWiFiMpass
 host, adfile.wifi8.com, AdBlock
@@ -519,10 +511,12 @@ host, de.as.pptv.com, AdBlock
 host-suffix, cj.qidian.com,AdBlock
 host-suffix, game.qidian.com,AdBlock
 host-suffix, o.if.qidian.com,AdBlock
+
 # (R)
 # > 人人影视字幕组
 host, tj.playcvn.com, AdBlock
 host, tu.cvnad.com, AdBlock
+
 # (S)
 # > Sina
 host-suffix, beacon.sina.com.cn, AdBlock
@@ -539,6 +533,7 @@ host, hui.sohu.com, AdBlock
 host, imp.optaim.com, AdBlock
 host, track.sohu.com, AdBlock
 host, v2.reachmax.cn, AdBlock
+
 # (T)
 # > Tencent
 host-suffix, e.qq.com, AdBlock
@@ -547,6 +542,7 @@ host, adsmind.apdcdn.tc.qq.com, AdBlock
 host, adsmind.gdtimg.com, AdBlock
 host, adsmind.tc.qq.com, AdBlock
 host, btrace.qq.com, AdBlock
+host, mtrace.qq.com, AdBlock
 host, c.gdt.qq.com, AdBlock
 host, c.gdt.qq.com, AdBlock
 host, canvas.gdt.qq.com, AdBlock
@@ -559,15 +555,15 @@ host, pgdt.ugdtimg.com, AdBlock
 host, q.i.gdt.qq.com, AdBlock
 host, rm.gdt.qq.com, AdBlock
 host, s.gdt.qq.com, AdBlock
+host, safebrowsing.urlsec.qq.com, AdBlock
 host, splashqqlive.gtimg.com, AdBlock
 host, wa.gtimg.com, AdBlock
 host, win.gdt.qq.com, AdBlock
 host, wxsnsdy.wxs.qq.com, AdBlock
 host, wxsnsdythumb.wxs.qq.com, AdBlock
 host, xc.gdt.qq.com, AdBlock
-# >> 体育
-host, dp3.qq.com, AdBlock
-host, lives.l.qq.com, AdBlock
+
+# (T)
 # > The Paper
 host, admonitor.thepaper.cn, AdBlock
 host, adpai.thepaper.cn, AdBlock
@@ -585,6 +581,13 @@ host, iad0ssl.pconline.com.cn, AdBlock
 host, imgad0.pcauto.com.cn, AdBlock
 host, imgad0.pconline.com.cn, AdBlock
 host, ivy.pchouse.com.cn, AdBlock
+
+# (U)
+# > Umeng
+host-keyword, log.umeng.com, AdBlock
+host-keyword, logs.umeng.com, AdBlock
+host-keyword, logs.umengcloud.com, AdBlock
+
 # (W)
 # (X)
 # > 喜马拉雅
@@ -600,6 +603,7 @@ host, ads-video-qc.xhscdn.com, AdBlock
 host, t-ads.xiaohongshu.com, AdBlock
 # > 无忌
 host, www8.xitek.com, AdBlock
+
 # (Y)
 # > Youku
 host-suffix, atm.youku.com, AdBlock

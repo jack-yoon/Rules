@@ -1,12 +1,8 @@
-hostname = fd.baidu.com, als.baidu.com, bdstatic.com, issuecdn.baidupcs.com, map.baidu.com
-# tieba.baidu.com,
+hostname = fd.baidu.com, als.baidu.com, bdstatic.com, issuecdn.baidupcs.com, map.baidu.com, tieba.baidu.com,
 
-# 百度贴吧
-#^https?:\/\/(?:c\.)?+tieba\.baidu\.com\/(?>f|p) url request-header (\r\n)User-Agent:.+ request-header $1User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.4 Safari/605.1.15
-#^https?:\/\/jump2\.bdimg\.com\/(?>f|p) url request-header (\r\n)User-Agent:.+ request-header $1User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.4 Safari/605.1.15
-# 百度知道
-^https?:\/\/zhidao\.baidu\.com url request-header (\r\n)User-Agent:.+ request-header $1User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.4 Safari/605.1.15
-
+# >> 百度贴吧 - tieba.baidu.com
+^http(s:\/\/tiebac|:\/\/c\.tieba)\.baidu\.com\/(c\/f\/(frs\/(page|threadlist|generalTabList)|pb\/page|excellent\/personalized)$|tiebaads\/commonbatch|c\/s\/sync$) url script-response-body https://raw.githubusercontent.com/jack-yoon/Rules/master/JS/tieba.js
+^http(s:\/\/tiebac|:\/\/c\.tieba)\.baidu\.com\/c\/f\/(frs\/(page|threadlist|generalTabList)|pb\/page|excellent\/personalized)\?cmd url script-response-body https://raw.githubusercontent.com/jack-yoon/Rules/master/JS/tieba-proto.js
 
 # > 百度
 ^https?:\/\/api\d\.tuisong\.baidu\.com url reject
@@ -28,12 +24,6 @@ hostname = fd.baidu.com, als.baidu.com, bdstatic.com, issuecdn.baidupcs.com, map
 ^https?:\/\/issuecdn\.baidupcs\.com\/issue\/netdisk\/guanggao\/ url reject
 ^https?:\/\/pan\.baidu\.com\/rest\/2\.0\/pcs\/adx url reject
 ^https?:\/\/pan\.baidu\.com\/act\/api\/activityentry url reject
-# >> 百度贴吧 - c.tieba.baidu.com
-#^https?:\/\/c\.tieba\.baidu\.com\/c\/s\/splashSchedule url reject
-#^https?:\/\/c\.tieba\.baidu\.com\/c\/s\/logtogether\?cmd= url reject
-#^https?:\/\/c\.tieba\.baidu\.com\/c\/f\/forum\/getAdInfo url reject
-#^https?:\/\/c\.tieba\.baidu\.com\/c\/p\/img\?src= url reject
-#^https?:\/\/c\.tieba\.baidu\.com\/\w+?\/\w+?\/(?>sync|newRnSync|mlog) url reject
 # >> 百度地图 - map.baidu.com
 ^https?:\/\/newclient\.map\.baidu\.com\/client\/phpui2\/\?qt=ads url reject
 
