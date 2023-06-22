@@ -1,6 +1,38 @@
 hostname =  *.uve.weibo.com,  api.weibo.cn, mapi.weibo.com, new.vip.weibo.cn,
 
-# weibo
+
+
+# > 微博_每日一次的开屏广告请求
+^https?:\/\/boot.*weibo\.com\/v\d\/ad\/realtime url reject-200
+# > 微博_用户推荐弹窗
+^https?:\/\/api\.weibo\.cn\/\d\/profile\/recommend_popuser url reject-dict
+# > 微博_去除底部超话栏表层浮icon及tips
+^https?:\/\/api\.weibo\.cn\/\d\/!\/huati\/discovery_home_bottom_getdotinfo url reject-dict
+# > 微博_屏蔽首页左上角每日的弹窗tips
+^https?:\/\/m?api\.weibo\.c(n|om)\/\d/push/daily url reject-dict
+# > 微博_应用内弹窗广告
+^https?:\/\/(preload-click|preload-impression)\.uve\.weibo\.com\/(interface\/wbpullad\/wbpullad_click\.php|wbapplua\/get_wbpullad_log\.lua) url reject
+# > 微博_屏蔽sdkconfig请求
+^https?:\/\/sdkapp\.uve\.weibo\.com\/interface\/sdk\/sdkconfig\.php url reject
+# > 微博_Spotlight
+^https?:\/\/m?api\.weibo\.c(n|om)\/\d\/hot\/hours_spotlight url reject-dict
+
+
+#weibo开屏广告
+^https?://(sdk|wb)app.uve.weibo.com/(interface/sdk/sdkad.php|wbapplua/wbpullad.lua) url script-response-body https://raw.githubusercontent.com/jack-yoon/Rules/master/JS/wb_launch.js
+# > 微博_开屏广告预加载处理
+^https?:\/\/boot.*weibo\.com\/v\d\/ad\/preload url script-response-body https://raw.githubusercontent.com/jack-yoon/Rules/master/JS/wb_launch.js
+# > 微博_屏蔽发现页面搜索框热词
+^https?:\/\/m?api\.weibo\.c(n|om)\/\d\/\w{5}\/cardlist url script-response-body https://raw.githubusercontent.com/jack-yoon/Rules/master/JS/wb_ad.js 
+# > 微博_自定义tab皮肤
+^https://api.weibo.cn/2/!/client/light_skin url script-response-body https://raw.githubusercontent.com/jack-yoon/Rules/master/JS/wb_ad.js 
+# > 微博_非会员设置tab皮肤
+^https://new.vip.weibo.cn/littleskin/preview url script-response-body https://raw.githubusercontent.com/jack-yoon/Rules/master/JS/wb_ad.js 
+
+
+# > 微博_未登陆状态下首页信息流处理
+^https?:\/\/api\.weibo\.cn\/\d\/\w{5}\/(statuses_unread_hot_timeline) url script-response-body https://raw.githubusercontent.com/jack-yoon/Rules/master/JS/wb_ad.js 
+# 微博去广告以及去除各部分推广模块 - cherish
 ^https?://m?api\.weibo\.c(n|om)/2/(cardlist|searchall|page|messageflow|) url script-response-body https://raw.githubusercontent.com/jack-yoon/Rules/master/JS/wb_ad.js 
 ^https?://m?api\.weibo\.c(n|om)/2/(statuses/(unread_)?friends(/|_)timeline|groups/timeline) url script-response-body https://raw.githubusercontent.com/jack-yoon/Rules/master/JS/wb_ad.js 
 ^https?://m?api\.weibo\.c(n|om)/2/(statuses/(container_timeline|unread_hot_timeline|extend|video_mixtimeline|unread_topic_timeline)) url script-response-body https://raw.githubusercontent.com/jack-yoon/Rules/master/JS/wb_ad.js 
@@ -8,47 +40,9 @@ hostname =  *.uve.weibo.com,  api.weibo.cn, mapi.weibo.com, new.vip.weibo.cn,
 ^https?://m?api\.weibo\.c(n|om)/2/(checkin/show|\!/live/media_homelist|comments/build_comments|container/get_item) url script-response-body https://raw.githubusercontent.com/jack-yoon/Rules/master/JS/wb_ad.js 
 ^https?://m?api\.weibo\.c(n|om)/2/(search/(finder|container_timeline|container_discover)) url script-response-body https://raw.githubusercontent.com/jack-yoon/Rules/master/JS/wb_ad.js 
 
-#weibo开屏广告
-^https?://(sdk|wb)app.uve.weibo.com(/interface/sdk/sdkad.php|/wbapplua/wbpullad.lua) url script-response-body https://raw.githubusercontent.com/jack-yoon/Rules/master/JS/wb_launch.js
-# > 微博_去除底部超话栏表层浮icon及tips
-^https?:\/\/api\.weibo\.cn\/\d\/!\/huati\/discovery_home_bottom_getdotinfo url reject-dict
-# > 微博_屏蔽首页左上角每日的弹窗tips
-^https?:\/\/m?api\.weibo\.c(n|om)\/\d/push/daily url reject-dict
-# > 微博_屏蔽发现页面搜索框热词
-^https?:\/\/m?api\.weibo\.c(n|om)\/\d\/\w{5}\/cardlist url script-response-body https://raw.githubusercontent.com/jack-yoon/Rules/master/JS/wb_ad.js 
-# > 微博_应用内弹窗广告
-^https?:\/\/(preload-click|preload-impression)\.uve\.weibo\.com\/(interface\/wbpullad\/wbpullad_click\.php|wbapplua\/get_wbpullad_log\.lua) url reject
-# > 微博_屏蔽sdkconfig请求
-^https?:\/\/sdkapp\.uve\.weibo\.com\/interface\/sdk\/sdkconfig\.php url reject
-# > 微博_Spotlight
-^https?:\/\/m?api\.weibo\.c(n|om)\/\d\/hot\/hours_spotlight url reject-dict
-# > 微博_自定义tab皮肤
-^https://api.weibo.cn/2/!/client/light_skin url script-response-body https://raw.githubusercontent.com/jack-yoon/Rules/master/JS/wb_ad.js 
-# > 微博_非会员设置tab皮肤
-^https://new.vip.weibo.cn/littleskin/preview url script-response-body https://raw.githubusercontent.com/jack-yoon/Rules/master/JS/wb_ad.js 
 
-# Weibo短链
-^http:\/\/t\.cn url 302 https://sinaurl.cn
 
-# > 新浪
-^https?:\/\/edit\.sinaapp\.com\/ua\?t=adv url reject
-# >> 新浪微博 
-^https?:\/\/ad\d\.sina\.com url reject
-^https?:\/\/ad\d\.sina\.com.cn url reject
-^https?:\/\/api.weibo.cn/2/statuses/extend\?gsid= url reject
-^https?:\/\/d\d\.sina\.com\.cn url reject
-^https?:\/\/d\d\.sinaimg\.cn url reject
-^https?:\/\/free.sinaimg.cn/u1.img.mobile.sina.cn url reject
-^https?:\/\/sax\d\.sina\.com\.cn url reject
-^https?:\/\/sax\d\.sina\.com\.cn url reject
-^https?:\/\/sax\w?\.sina\.cn url reject
-^https?:\/\/sax\w?\.sina\.com\.cn url reject
-^https?:\/\/sdkapp\.uve\.weibo\.com\/interface\/sdk\/(actionad|sdkad)\.php url reject
-^https?:\/\/simg\.s\.weibo\.com\/.+?_ios\d{2}\.gif url reject
-^https?:\/\/storage\.wax\.weibo\.com\/\w+\.(png|jpg|mp4) url reject
-^https?:\/\/u1\.img\.mobile\.sina\.cn\/public\/files\/image\/\d{3}x\d{2,4}.+?(png|jpg|mp4) url reject
-^https?:\/\/weibointl.api.weibo.cn/portal.php\?a=get_coopen_ads url reject
-^https?:\/\/wbapp\.uve\.weibo\.com\/wbapplua\/wbpullad\.lua url reject
-^https?:\/\/weibointl\.api\.weibo\.cn\/portal\.php\?a=get_coopen_ads url reject
-^https?:\/\/weibointl.api.weibo.cn/portal.php\?a=get_coopen_ads url reject
+
+
+
 

@@ -20,16 +20,16 @@ const mainConfig = storeMainConfig ? JSON.parse(storeMainConfig) : {
 	removeRecommendItem: true,	//评论区推荐内容
 	removeRewardItem: false,	//微博详情页打赏模块
 
-	removeLiveMedia: true,		//首页顶部直播
+	removeLiveMedia: true,					//首页顶部直播
 	removeNextVideo: false,					//关闭自动播放下一个视频
 
-	removePinedTrending: true,		//删除热搜列表置顶条目
+	removePinedTrending: true,				//删除热搜列表置顶条目
 
 	removeInterestFriendInTopic: false,		//超话：超话里的好友
 	removeInterestTopic: false,				//超话：可能感兴趣的超话 + 好友关注
 	removeInterestUser: false,				//用户页：可能感兴趣的人
 
-	removeLvZhou: true,					//绿洲模块
+	removeLvZhou: true,						//绿洲模块
 
 	profileSkin1: null,						//用户页：自定义图标1
 	profileSkin2: null,						//用户页：自定义图标2
@@ -40,44 +40,49 @@ const mainConfig = storeMainConfig ? JSON.parse(storeMainConfig) : {
 
 //菜单配置
 const itemMenusConfig = storeItemMenusConfig ? JSON.parse(storeItemMenusConfig) : {
-	creator_task:false,					//转发任务
+	creator_task:false,						//转发任务
 	mblog_menus_custom:false,				//寄微博
 	mblog_menus_video_later:true,			//可能是稍后再看？没出现过
 	mblog_menus_comment_manager:true,		//评论管理
 	mblog_menus_avatar_widget:false,		//头像挂件
-	mblog_menus_card_bg: false,			//卡片背景
-	mblog_menus_long_picture:true,		//生成长图
+	mblog_menus_card_bg: false,				//卡片背景
+	mblog_menus_long_picture:true,			//生成长图
 	mblog_menus_delete:true,				//删除
-	mblog_menus_edit:true,				//编辑
-	mblog_menus_edit_history:true,		//编辑记录
+	mblog_menus_edit:true,					//编辑
+	mblog_menus_edit_history:true,			//编辑记录
 	mblog_menus_edit_video:true,			//编辑视频
-	mblog_menus_sticking:true,			//置顶
+	mblog_menus_sticking:true,				//置顶
 	mblog_menus_open_reward:true,			//赞赏
-	mblog_menus_novelty:false,			//新鲜事投稿
-	mblog_menus_favorite:true,			//收藏
+	mblog_menus_novelty:false,				//新鲜事投稿
+	mblog_menus_favorite:true,				//收藏
 	mblog_menus_promote:true,				//推广
 	mblog_menus_modify_visible:true,		//设置分享范围
-	mblog_menus_copy_url:true,			//复制链接
+	mblog_menus_copy_url:true,				//复制链接
 	mblog_menus_follow:true,				//关注
 	mblog_menus_video_feedback:true,		//播放反馈
 	mblog_menus_shield:true,				//屏蔽
 	mblog_menus_report:true,				//投诉
-	mblog_menus_apeal:true,				//申诉
+	mblog_menus_apeal:true,					//申诉
 	mblog_menus_home:true					//返回首页
 }
 
 const modifyCardsUrls = ['/cardlist', 'video/community_tab', '/searchall'];
-const modifyStatusesUrls = ['statuses/friends/timeline', 'statuses/unread_friends_timeline', 'statuses/unread_hot_timeline', 'groups/timeline'];
+const modifyStatusesUrls = [
+	'statuses/friends/timeline',
+	'statuses/unread_friends_timeline',
+	'statuses/unread_hot_timeline',
+	"statuses_unread_hot_timeline",
+	'groups/timeline'];
 
 const otherUrls = {
-	'/profile/me': 'removeHome',						//个人页模块
-	'/statuses/extend': 'itemExtendHandler',					//微博详情页
-	'/video/remind_info': 'removeVideoRemind',			//tab2菜单上的假通知
-	'/checkin/show': 'removeCheckin',					//签到任务
-	'/live/media_homelist': 'removeMediaHomelist',		//首页直播
-	'/comments/build_comments': 'removeComments',		//微博详情页评论区相关内容
-	'/container/get_item': 'containerHandler',			//列表相关
-	'/profile/container_timeline': 'userHandler',					//用户主页
+	'/profile/me': 'removeHome',							//个人页模块
+	'/statuses/extend': 'itemExtendHandler',				//微博详情页
+	'/video/remind_info': 'removeVideoRemind',				//tab2菜单上的假通知
+	'/checkin/show': 'removeCheckin',						//签到任务
+	'/live/media_homelist': 'removeMediaHomelist',			//首页直播
+	'/comments/build_comments': 'removeComments',			//微博详情页评论区相关内容
+	'/container/get_item': 'containerHandler',				//列表相关
+	'/profile/container_timeline': 'userHandler',			//用户主页
 	'/video/tiny_stream_video_list': 'nextVideoHandler',	//取消自动播放下一个视频
 	'/2/statuses/video_mixtimeline': 'nextVideoHandler',	
 	'/!/client/light_skin': 'tabSkinHandler',
@@ -86,8 +91,8 @@ const otherUrls = {
 	'/search/container_timeline': 'removeSearch',
 	'/search/container_discover': 'removeSearch',
 	'/2/messageflow': 'removeMsgAd',
-	'/2/page?': 'removePage',	//超话签到的按钮 /2/page/button 加?区别
-	'/statuses/unread_topic_timeline': 'topicHandler',	//超话tab
+	'/2/page?': 'removePage',								//超话签到的按钮 /2/page/button 加?区别
+	'/statuses/unread_topic_timeline': 'topicHandler',		//超话tab
 	'/statuses/container_timeline': 'removeMain',
 }
 
