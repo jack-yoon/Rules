@@ -158,6 +158,28 @@ ip-cidr, 222.73.156.235/32, AdBlock
 #
 #
 #
+
+# 中国移动
+host-suffix, config.cmpassport.com, AdBlock
+host-suffix, www.cmpassport.com, AdBlock
+host-suffix, wap.cmpassport.com, AdBlock
+host-suffix, onekey1.cmpassport.com, AdBlock
+host-suffix, log1.cmpassport.com, AdBlock
+host-suffix, smsks1.cmpassport.com, AdBlock
+host-suffix, verify.cmpassport.com, AdBlock
+
+# 中国联通
+host-suffix, opencloud.wostore.cn, AdBlock
+host-suffix, auth.wosms.cn, AdBlock
+host-suffix, id.mail.wo.cn, AdBlock
+host-suffix, mdn.open.wo.cn, AdBlock
+host-suffix, hmrz.wo.cn, AdBlock
+host-suffix, nishub1.10010.com, AdBlock
+host-suffix, enrichgw.10010.com, AdBlock
+
+# 中国电信
+host-suffix, id6.me, AdBlock
+host-suffix, open.e.189.cn, AdBlock
 #
 #
 #
