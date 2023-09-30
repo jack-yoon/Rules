@@ -445,13 +445,13 @@ host, wego.here.com, Global
 host-suffix, go.dev, Global
 host-suffix, golang.org, Global
 # ---(Apple)---
-host-suffix, appsto.re // Apple URL Shortener, Global
-host-suffix, smoot.apple.com // Spotlight, Global
-host, amp-api.podcasts.apple.com // Podcasts, Global
-host, beta.music.apple.com // Apple Music Web, Global
-host, books.itunes.apple.com // iBooks Store download, Global
-host, lookup-api.apple.com // Look Up, Global
-host, radio.itunes.apple.com // Apple Music Radio, Global
+host-suffix, appsto.re, Global
+host-suffix, smoot.apple.com, Global
+host, amp-api.podcasts.apple.com, Global
+host, beta.music.apple.com, Global
+host, books.itunes.apple.com, Global
+host, lookup-api.apple.com, Global
+host, radio.itunes.apple.com, Global
 # > Web Preview
 host, apps.apple.com, Global
 host, books.apple.com, Global
