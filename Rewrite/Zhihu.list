@@ -64,6 +64,7 @@ hostname = 118.89.204.198,103.41.167.237,2402:4e00:1200:ed00:0:9089:6dac:96b6,ww
 # 优化软件配置 - 优化下发的配置文件来实现某些效果
 ^https?:\/\/m-cloud\.zhihu\.com\/api\/cloud\/config\/all\? url script-response-body https://raw.githubusercontent.com/jack-yoon/Rules/master/JS/zhihu.js
 ^https?:\/\/appcloud2\.zhihu\.com\/v\d+\/config url script-analyze-echo-response https://raw.githubusercontent.com/jack-yoon/Rules/master/JS/zhihu.js
+^https?:\/\/api\.zhihu\.com\/feed\/render\/tab\/config url script-analyze-echo-response https://raw.githubusercontent.com/jack-yoon/Rules/master/JS/zhihu.js
 
 # 用户信息 - 修改用户盐值
 ^https?:\/\/api\.zhihu\.com\/user-credit\/basis url script-response-body https://raw.githubusercontent.com/jack-yoon/Rules/master/JS/zhihu.js

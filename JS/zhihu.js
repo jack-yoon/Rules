@@ -67,6 +67,30 @@ function modifyAppConfig() {
   }
   return response;
 }
+function modifyAppTabConfig() {
+  let response = null;
+  try {
+    if (!!$.response.body) {
+      let obj = JSON.parse($.response.body);
+      if (obj.more_sections) {
+        let sectionsToRemove = $.data
+          .read("zheye_remove_feed_tabs", "")
+          .split(";");
+        obj.selected_sections = obj.selected_sections.filter(
+          (item) => !sectionsToRemove.includes(item["section_name"])
+        );
+        obj.selected_sections.forEach((item) => {
+          item["show_type"] = "adjustable";
+        });
+      }
+      $.logger.debug(JSON.stringify(obj));
+      response = { body: JSON.stringify(obj) };
+    }
+  } catch (err) {
+    $.logger.error(`优化软件配置出现异常：${err}`);
+  }
+  return response;
+}
 function modifyMCloudConfig() {
   let response = null;
   try {
@@ -1283,6 +1307,12 @@ function changeUserCredit() {
           $.request.url
         ):
         response = modifyMCloudConfig();
+        break;
+      case $.data.read("zhihu_settings_app_conf", false) === true &&
+        /^https?:\/\/api\.zhihu\.com\/feed\/render\/tab\/config/.test(
+          $.request.url
+        ):
+        response = modifyAppTabConfig();
         break;
       case /^https?:\/\/api\.zhihu\.com\/user-credit\/basis/.test(
         $.request.url
