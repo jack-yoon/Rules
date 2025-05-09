@@ -17,9 +17,10 @@ hostname =  sf*ttcdn-tos.pstatp.com,oset-api.open-adx.com,g.*.pstatp.com,iface.i
 
 # D
 # > 豆瓣- api.douban.com
-^https?:\/\/api\.douban\.com\/v\d\/app_ads\/ url reject
-^https?:\/\/api\.douban\.com\/v2\/app_ads\/common_ads url reject
-^https?:\/\/api\.douban\.com\/v2\/app_ads\/splash url reject
+^https?:\/\/api\.douban\.com\/v\d\/app_ads\/ url reject-dict
+^https?:\/\/api\.douban\.com\/b.*\/common_ads\?.* url reject-dict
+^https?:\/\/api\.douban\.com\/v2\/app_ads\/common_ads url reject-dict
+^https?:\/\/api\.douban\.com\/v2\/app_ads\/splash url reject-dict
 # > 丁香医生
 ^https?:\/\/dxy\.com\/app\/i\/ask\/biz\/feed\/launch url reject
 
