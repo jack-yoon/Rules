@@ -3,12 +3,12 @@ hostname = 118.89.204.198,103.41.167.237,2402:4e00:1200:ed00:0:9089:6dac:96b6,ww
 # 哲也同学
 # 先问是不是再问为什么
 
-^https?:\/\/118\.89\.204\.198 url reject-dict
-^https?:\/\/103\.41\.167\.237 url reject-dict
+^https?:\/\/118\.89\.204\.198 url reject-200
+^https?:\/\/103\.41\.167\.237 url reject-200
 ^https?:\/\/2402:4e00:1200:ed00:0:9089:6dac:96b6 url reject-200
 
 # 屏蔽下发的配置，如皮肤等
-^https?:\/\/api\.zhihu\.com\/ab\/api\/v1\/products\/zhihu\/platforms\/ios\/config url reject
+^https?:\/\/api\.zhihu\.com\/ab\/api\/v1\/products\/zhihu\/platforms\/ios\/config url reject-200
 
 # 屏蔽我的页面开通会员的卡片
 # ^https?:\/\/api\.zhihu\.com\/unlimited\/go\/my_card url reject
@@ -52,8 +52,8 @@ hostname = 118.89.204.198,103.41.167.237,2402:4e00:1200:ed00:0:9089:6dac:96b6,ww
 ^https?:\/\/www\.zhihu\.com\/api\/v\d+\/search\/related_queries\/answer url reject-dict
 
 # 暂不清楚作用
-^https?:\/\/api\.zhihu\.com\/commercial_api\/banners_v3\/app_topstory_banner url reject-dict
-^https?:\/\/api\.zhihu\.com\/ad-style-service\/request url reject
+^https?:\/\/*.zhihu\.com\/commercial_api url reject-dict
+^https?:\/\/*.zhihu\.com\/ad-style-service\/request url reject
 
 # 获取用户信息 - 隔离用户数据，开启本地会员等
 ^https?:\/\/api\.zhihu\.com\/people\/ url script-response-body https://raw.githubusercontent.com/jack-yoon/Rules/master/JS/zhihu.js
