@@ -31,11 +31,6 @@ hostname = -broadcast.chat.bilibili.com, -cm.bilibili.com, -*cdn*.biliapi.net, -
 ^https:\/\/app\.bilibili\.com\/x\/v2\/splash\/list url script-response-body https://raw.githubusercontent.com/jack-yoon/Rules/master/JS/bilibili.js
 
 
-# ======= BiliJson 高码率仅粉色旧版[V7.65] ======= #
-# > BiliBili_哔哩哔哩_1080P高码率+4K画质[番剧和影视除外]
-^https?:\/\/app\.bilibili\.com\/x\/v2\/account\/myinfo\? url script-response-body https://raw.githubusercontent.com/jack-yoon/Rules/master/JS/bilibili.js
-
-
 # ======= BiliJson Tab页处理 ======= #
 # > BiliBili_哔哩哔哩_屏蔽直播页顶部轮播图
 ^https?:\/\/api\.live\.bilibili\.com\/xlive\/app-interface\/v2\/index\/feed url script-response-body https://raw.githubusercontent.com/jack-yoon/Rules/master/JS/bilibili.js
