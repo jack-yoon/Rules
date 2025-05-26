@@ -1,8 +1,8 @@
 # outside rules fixed;
 
 #bilibili
-host, grpc.biliapi.net, reject
-host-suffix, cm.bilibili.com, reject
+#host, grpc.biliapi.net, reject
+#host-suffix, cm.bilibili.com, reject
 
 # weibo
 host, sdkapp.uve.weibo.com, direct
